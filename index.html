@@ -1179,6 +1179,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-s
 .dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,0.2); }
 .dot.on { background: #F7941D; }
 
+.verso { flex-direction: row; }
 .v-left { width: 220px; flex-shrink: 0; background: #002D5C; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 20px; gap: 14px; }
 .qr-box { width: 130px; height: 130px; background: #fff; border-radius: 8px; padding: 10px; display: flex; align-items: center; justify-content: center; }
 .qr-label { font-size: 8px; color: rgba(255,255,255,0.7); letter-spacing: 1px; text-align: center; line-height: 1.5; font-weight: 500; }
@@ -3791,6 +3792,20 @@ function openModal(ideia, isTaken) {
     document.getElementById('cv-solucao').innerText = ideia.solucao || ideia.descricao || '';
     document.getElementById('cv-monetizacao').innerText = ideia.monetizacao || '';
     
+    if(ideia.roteiro) {
+        document.getElementById('rot-ap').innerText = ideia.roteiro.apresentacao || 'Nome, curso e a frase: "Eu resolvi o problema de..."';
+        document.getElementById('rot-prob').innerText = ideia.roteiro.problema || 'Quem sofre com isso e por que ainda não foi resolvido?';
+        document.getElementById('rot-sol').innerText = ideia.roteiro.solucao || 'Como funciona? Seja concreto — mostre ou simule o produto/serviço.';
+        document.getElementById('rot-mod').innerText = ideia.roteiro.modelo || 'Como o dinheiro entra? Quem paga e quanto?';
+        document.getElementById('rot-fec').innerText = ideia.roteiro.fechamento || 'Uma frase forte. Por que o júri deve escolher a sua ideia?';
+    } else {
+        document.getElementById('rot-ap').innerText = 'Nome, curso e a frase: "Eu resolvi o problema de..."';
+        document.getElementById('rot-prob').innerText = 'Quem sofre com isso e por que ainda não foi resolvido?';
+        document.getElementById('rot-sol').innerText = 'Como funciona? Seja concreto — mostre ou simule o produto/serviço.';
+        document.getElementById('rot-mod').innerText = 'Como o dinheiro entra? Quem paga e quanto?';
+        document.getElementById('rot-fec').innerText = 'Uma frase forte. Por que o júri deve escolher a sua ideia?';
+    }
+
     toggleLines('l-cli', ideia.cliente);
     toggleLines('l-prob', ideia.problema);
     toggleLines('l-sol', ideia.solucao || ideia.descricao);
