@@ -683,23 +683,23 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-s
 
 
 /* ===== SLIDE AI TOOLS ===== */
-section.slide.s-ai { background: linear-gradient(150deg, #002D5C 0%, #005BB5 100%) !important; }
+section.slide.s-ai { background: var(--azul-escuro) !important; }
 .s-ai .inner { justify-content: center; align-items: center; text-align: center; }
-.s-ai .k { color: rgba(255,255,255,0.75); font-size: 13px; letter-spacing: 3px; font-weight: 700; text-align: center; }
-.s-ai h2 { color: #fff; font-weight: 800; font-size: 52px; margin-top: 10px; letter-spacing: -0.5px; text-align: center; line-height: 1.1; }
-.s-ai p.d3 { text-align: center; color: rgba(255,255,255,0.7); max-width: 800px; margin: 15px auto 40px; font-size: 18px; line-height: 1.5; }
+.s-ai .k { color: var(--laranja); font-size: 13px; letter-spacing: 3px; font-weight: 800; text-align: center; }
+.s-ai h2 { color: var(--branco); font-weight: 800; font-size: 52px; margin-top: 10px; letter-spacing: -0.5px; text-align: center; line-height: 1.1; }
+.s-ai p.d3 { text-align: center; color: rgba(255,255,255,0.8); max-width: 800px; margin: 15px auto 40px; font-size: 18px; line-height: 1.5; }
 
 .s-ai .ai-cols { display: flex; gap: 40px; justify-content: center; width: 100%; max-width: 1100px; margin: 0 auto; }
-.s-ai .ai-box { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 40px; flex: 1; text-align: center; transition: all 0.3s; }
-.s-ai .ai-box:hover { background: rgba(255,255,255,0.12); border-color: var(--azul-claro); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.4); }
-.s-ai .ai-icon { font-size: 50px; color: #fff; margin-bottom: 25px; }
-.s-ai .ai-box h3 { color: #fff; font-weight: 800; font-size: 26px; margin-bottom: 12px; }
-.s-ai .ai-box p { color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 35px; line-height: 1.6; }
+.s-ai .ai-box { background: var(--azul-mid); border: 1px solid var(--azul-claro); border-radius: 20px; padding: 40px; flex: 1; text-align: center; transition: all 0.3s; }
+.s-ai .ai-box:hover { background: var(--azul); border-color: var(--laranja); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.4); }
+.s-ai .ai-icon { font-size: 50px; color: var(--laranja); margin-bottom: 25px; }
+.s-ai .ai-box h3 { color: var(--branco); font-weight: 800; font-size: 26px; margin-bottom: 12px; }
+.s-ai .ai-box p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 35px; line-height: 1.6; }
 .s-ai .ai-links { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
-.s-ai .ai-btn { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 10px; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; transition: all 0.3s; }
-.s-ai .ai-btn i { color: rgba(255,255,255,0.7); font-size: 16px; }
-.s-ai .ai-btn:hover { background: var(--azul-claro); border-color: var(--azul-claro); color: #fff; transform: translateY(-3px); box-shadow: 0 5px 20px rgba(0,91,181,0.5); }
-.s-ai .ai-btn:hover i { color: #fff; }
+.s-ai .ai-btn { background: var(--azul-claro); border: 1px solid var(--azul-claro); color: var(--branco); text-decoration: none; padding: 12px 22px; border-radius: 10px; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; transition: all 0.3s; }
+.s-ai .ai-btn i { color: rgba(255,255,255,0.8); font-size: 16px; }
+.s-ai .ai-btn:hover { background: var(--laranja); border-color: var(--laranja); color: var(--branco); transform: translateY(-3px); box-shadow: 0 5px 20px rgba(247,148,29,0.5); }
+.s-ai .ai-btn:hover i { color: var(--branco); }
 
 /* ===== MOBILE PORTRAIT 9:16 (até 430px) ===== */
 @media (max-width: 430px) {
@@ -1540,14 +1540,19 @@ section.slide.s-ai { background: linear-gradient(150deg, #002D5C 0%, #005BB5 100
   .s1 .counter { font-size: 54px !important; }
   .s1 .sub { font-size: 13px !important; }
 
-  /* 2. Cards e Objetivos - Empilhados Verticalmente */
-  .card-prize, .cat, .c, .obj-card {
+  /* 2. Containers e Cards - Empilhados Verticalmente */
+  .cards, .cats, .cards4, .cards3, .comp-grid, .obj-grid, .ai-cols {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  
+  .card-prize, .cat, .c, .comp-card, .obj-card, .ai-box {
     width: 100% !important;
     max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    flex-direction: column !important;
-    display: flex !important;
   }
 
   /* 3. Imagens e QR Codes com Limite de 80% */
