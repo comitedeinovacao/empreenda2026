@@ -1521,7 +1521,7 @@ function goTo(n){
   document.getElementById('progress').style.width = (((current+1)/total)*100)+'%';
   document.getElementById('scCur').textContent = pad(current+1);
   document.getElementById('scTotal').textContent = pad(total);
-  try{localStorage.setItem('empreenda_slide',current);}catch(e){}
+  
   if(current===0)runCounter();
 }
 
@@ -3978,7 +3978,7 @@ setTimeout(() => {
 // Init
 function init(){
   let start = 0;
-  try{const s = parseInt(localStorage.getItem('empreenda_slide'));if(!isNaN(s)&&s>=0&&s<total)start=s;}catch(e){}
+  
   slides[0].classList.remove('active');
   slides[start].classList.add('active');
   dots[0].classList.remove('active');
