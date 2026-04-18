@@ -1,0 +1,55 @@
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = sheet.getDataRange().getValues();
+  
+  // A primeira linha é cabeçalho (Nome, Curso, Email, ID_da_Ideia, Datahora)
+  var takenIdeas = [];
+  for(var i = 1; i < data.length; i++) {
+    var ideaId = data[i][3]; // A coluna D possui a ID da ideia!
+    if(ideaId) {
+      takenIdeas.push(String(ideaId).trim());
+    }
+  }
+
+  // Retorna os dados em formato JSON para que o site leia
+  var response = ContentService.createTextOutput(JSON.stringify({ "taken": takenIdeas }));
+  response.setMimeType(ContentService.MimeType.JSON);
+  return response;
+}
+
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var postData = JSON.parse(e.postData.contents);
+    
+    // Preparando os dados a serem salvos
+    var row = [
+      postData.nome || "",
+      postData.curso || "",
+      postData.email || "",
+      postData.id || "",
+      new Date().toLocaleString("pt-BR") // Hora do registro
+    ];
+    
+    // Adiciona uma nova linha com os dados do aluno
+    sheet.appendRow(row);
+    
+    var response = ContentService.createTextOutput(JSON.stringify({ "status": "success" }));
+    response.setMimeType(ContentService.MimeType.JSON);
+    return response;
+    
+  } catch(err) {
+    var response = ContentService.createTextOutput(JSON.stringify({ "status": "error", "message": err.toString() }));
+    response.setMimeType(ContentService.MimeType.JSON);
+    return response;
+  }
+}
+
+function configurarPlanilha() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  // Configura os títulos das colunas na primeira execução
+  if(sheet.getLastRow() === 0) {
+    sheet.appendRow(["Nome", "Curso", "Email", "ID_da_Ideia", "Carimbo de Data/Hora"]);
+    sheet.getRange("A1:E1").setFontWeight("bold").setBackground("#d9ead3");
+  }
+}

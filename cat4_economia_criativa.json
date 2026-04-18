@@ -1,0 +1,487 @@
+{
+  "categoria": "Economia Criativa e Experiência do Cliente",
+  "cor": "#C2410C",
+  "icone": "estrela",
+  "ideias": [
+    {
+      "id": "ECE-01",
+      "nome": "SaborLocal",
+      "resumo": "Roteiro gastronômico digital de comidas típicas regionais com experiências guiadas",
+      "cliente": "Turistas e moradores que querem descobrir a culinária local autêntica além dos restaurantes convencionais.",
+      "problema": "Visitantes e até moradores não conhecem os sabores regionais e autênticos da cidade — vendedores de pastel, quitandas, doceiros artesanais — porque não há guia acessível.",
+      "solucao": "App com mapa de experiências gastronômicas locais: produtores artesanais, comidas de rua, restaurantes familiares e eventos de culinária. O visitante compra pacotes de experiência guiada.",
+      "monetizacao": "Comissão sobre pacotes de experiência vendidos. Taxa mensal para produtores e restaurantes listados. Parcerias com hotéis e pousadas.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SaborLocal para que turista e morador descubram o sabor verdadeiro da nossa região.",
+        "problema": "Visitante chega à cidade e vai ao mesmo restaurante de sempre. Não sabe que a dois quarteirões tem um pasteleiro premiado, uma doceira de receita centenária e uma feira toda sexta.",
+        "solucao": "O SaborLocal mapeia produtores artesanais, comidas de rua e experiências gastronômicas locais. O visitante compra um roteiro guiado e vive a culinária da cidade de verdade.",
+        "modelo": "Comissão sobre roteiros vendidos. Mensalidade para produtores listados. Parcerias com hotéis.",
+        "fechamento": "O melhor da cidade não está no Google Maps. O SaborLocal coloca no mapa o que só quem mora aqui conhecia."
+      }
+    },
+    {
+      "id": "ECE-02",
+      "nome": "ArteNaRua",
+      "resumo": "Plataforma de comissionamento e venda de arte urbana e grafite autoral",
+      "cliente": "Empresas, condomínios e prefeituras que querem grafite artístico em fachadas e muros, e artistas urbanos que buscam clientes.",
+      "problema": "Artistas urbanos e grafiteiros têm dificuldade de transformar seu talento em renda formal. Empresas que querem arte em fachadas não sabem onde encontrar artistas confiáveis.",
+      "solucao": "Plataforma que conecta artistas urbanos com clientes corporativos e residenciais para comissionamento de obras. Inclui portfólio, orçamento, contrato e pagamento protegido.",
+      "monetizacao": "Comissão de 15% sobre cada obra comissionada. Assinatura premium para artistas com mais visibilidade. Parcerias com tintas e materiais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ArteNaRua para transformar talento de grafiteiro em carreira sustentável.",
+        "problema": "Grafiteiro talentoso pinta muro sem pedir, sem cobrar, sem garantir nada. Empresa quer arte na fachada mas não sabe onde encontrar artista sério. Os dois ficam sem se encontrar.",
+        "solucao": "O ArteNaRua tem portfólios de artistas verificados. O cliente descreve o que quer, recebe orçamentos, escolhe, paga protegido. O artista entrega e recebe. Profissional do começo ao fim.",
+        "modelo": "Comissão de 15% sobre obras. Assinatura premium para artistas. Parcerias com materiais.",
+        "fechamento": "Arte boa merece ser paga. O ArteNaRua garante que talento urbano se transforme em carreira sustentável."
+      }
+    },
+    {
+      "id": "ECE-03",
+      "nome": "StudioLocal",
+      "resumo": "Estúdio de gravação e produção musical compartilhado para artistas independentes do interior",
+      "cliente": "Músicos independentes e bandas do interior que precisam de estúdio de qualidade sem pagar o preço de grandes centros.",
+      "problema": "Artistas do interior têm que viajar para São Paulo ou Ribeirão Preto e pagar caro por horas de estúdio, ou gravar em condições precárias.",
+      "solucao": "Estúdio compartilhado por assinatura com equipamento profissional, técnico de som disponível e sala de ensaio. Modelo de coworking musical.",
+      "monetizacao": "Mensalidade de sócio com horas incluídas. Avulso por hora. Parcerias com eventos e selos independentes locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o StudioLocal para que músico do interior grave com qualidade profissional sem sair da cidade.",
+        "problema": "Banda do interior tem música boa mas sem como gravar. Estúdio profissional fica longe e custa caro. O resultado é áudio ruim que não chega em lugar nenhum.",
+        "solucao": "O StudioLocal é um estúdio compartilhado com equipamento profissional. Você paga mensalidade e tem horas incluídas. Técnico de som disponível. Gravação profissional perto de casa.",
+        "modelo": "Mensalidade com horas incluídas. Avulso por hora. Parcerias com eventos e selos locais.",
+        "fechamento": "Música boa merece produção boa. O StudioLocal coloca essa produção no interior."
+      }
+    },
+    {
+      "id": "ECE-04",
+      "nome": "FotoMemória",
+      "resumo": "Serviço de fotografia profissional acessível para famílias de baixa renda em datas especiais",
+      "cliente": "Famílias de baixa renda que querem registros fotográficos profissionais de momentos especiais mas não têm acesso ao serviço.",
+      "problema": "Fotografia profissional é cara e inacessível para famílias de baixa renda. Momentos únicos — formatura, aniversário, casamento — ficam registrados só pelo celular.",
+      "solucao": "Serviço de fotografia profissional com pacotes acessíveis voltados para famílias de baixa renda. Fotógrafos parceiros atendem em fins de semana com desconto social.",
+      "monetizacao": "Pagamento pelos pacotes fotográficos. Fotógrafos ganham demanda em horários ociosos. Empresas patrocinam sessões como ação social.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FotoMemória para que toda família tenha o direito de guardar seus momentos com qualidade.",
+        "problema": "Formatura da filha. Casamento do filho. Aniversário de 15 anos. A família não pode pagar fotógrafo profissional. A foto vai ficar só no celular com iluminação ruim.",
+        "solucao": "O FotoMemória conecta fotógrafos parceiros com famílias que querem pacotes acessíveis. Sessão profissional, edição incluída, entrega digital. Memória de qualidade ao alcance de todos.",
+        "modelo": "Pacotes fotográficos acessíveis. Fotógrafos têm demanda extra. Empresas patrocinam sessões.",
+        "fechamento": "Memória boa não tem preço — mas precisa ter acesso. O FotoMemória garante que toda família possa guardar o que importa."
+      }
+    },
+    {
+      "id": "ECE-05",
+      "nome": "CenaViva",
+      "resumo": "Plataforma de venda de ingressos e divulgação de cultura e entretenimento local",
+      "cliente": "Produtores culturais locais que têm dificuldade de vender ingressos e divulgar eventos, e público que quer encontrar opções culturais na cidade.",
+      "problema": "Eventos culturais locais — teatro, shows, exposições — ficam com cadeiras vazias por falta de divulgação e sistema de venda de ingressos acessível para pequenos produtores.",
+      "solucao": "Plataforma de venda de ingressos e agenda cultural com taxa menor que concorrentes nacionais, focada em produtores culturais locais de cidades do interior.",
+      "monetizacao": "Taxa de 8% sobre ingressos vendidos. Plano mensal para produtores com eventos recorrentes. Parcerias com patrocinadores locais de cultura.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CenaViva para que cultura local encha a plateia que merece.",
+        "problema": "Peça de teatro local com elenco incrível. Divulgada só no boca a boca. Ingresso vendido por transferência bancária. Seis pessoas na plateia de 80 lugares.",
+        "solucao": "O CenaViva vende ingressos, manda e-mail, divulga nas redes e coloca o evento no radar da cidade. Taxa menor que as plataformas nacionais. Feito para quem produz aqui perto.",
+        "modelo": "Taxa de 8% sobre ingressos. Plano mensal para produtores recorrentes. Patrocinadores locais.",
+        "fechamento": "Cultura local não falta — falta palco para ser encontrada. O CenaViva constrói esse palco."
+      }
+    },
+    {
+      "id": "ECE-06",
+      "nome": "GiftLocal",
+      "resumo": "Marketplace de presentes artesanais e experiências locais para datas especiais",
+      "cliente": "Consumidores que querem presentes com significado e originalidade, e artesãos e produtores locais que buscam canais de venda.",
+      "problema": "Quem quer dar um presente diferente não encontra produto artesanal local com facilidade. E artesãos não têm canal de vendas adequado além de feiras esporádicas.",
+      "solucao": "Marketplace de presentes artesanais e experiências locais (massagem, aula de culinária, passeio guiado) disponíveis para compra e presentear com vale-presente digital.",
+      "monetizacao": "Comissão de 12% sobre cada venda. Assinatura mensal para produtores. Parcerias com floriculturas e papelarias para entrega.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o GiftLocal para que presente especial venha de quem produz perto de você.",
+        "problema": "Aniversário chegando. Você quer dar algo com significado. Vai ao shopping e compra o mesmo produto de sempre, feito longe, sem história. O artesão da cidade fica sem venda.",
+        "solucao": "O GiftLocal é um marketplace de presentes artesanais e experiências da cidade. Você compra e manda o vale-presente digital. O presenteado escolhe quando usar.",
+        "modelo": "Comissão de 12%. Assinatura para produtores. Parcerias com floriculturas para entrega.",
+        "fechamento": "Presente com história vale mais. O GiftLocal garante que a história venha de perto."
+      }
+    },
+    {
+      "id": "ECE-07",
+      "nome": "CinemaAr",
+      "resumo": "Sessões de cinema ao ar livre itinerante em praças e comunidades",
+      "cliente": "Moradores de bairros periféricos e cidades pequenas sem cinema próximo que querem acesso a lazer e cultura.",
+      "problema": "Cinema é caro e distante para quem mora em bairro periférico ou cidade pequena. O lazer audiovisual fica restrito ao celular e à TV.",
+      "solucao": "Estrutura portátil de cinema ao ar livre que instala em praças e espaços públicos. Sessões gratuitas ou de baixo custo financiadas por patrocinadores locais.",
+      "monetizacao": "Patrocínio de empresas locais. Prefeituras contratam para eventos e datas comemorativas. Sessões privadas para empresas e eventos corporativos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CinemaAr para levar cinema a quem nunca teve uma tela perto de casa.",
+        "problema": "Criança do bairro periférico nunca foi ao cinema. Ingresso caro, shopping longe, sem transporte. O lazer que qualquer criança merece parece privilégio.",
+        "solucao": "O CinemaAr monta uma tela de cinema ao ar livre na praça do bairro. Sessão gratuita para as crianças, patrocinada por uma empresa local. O cinema vai até quem não pode ir ao cinema.",
+        "modelo": "Patrocínio de empresas locais. Prefeituras contratam. Sessões privadas corporativas.",
+        "fechamento": "Cinema não é luxo. O CinemaAr garante que não pareça um."
+      }
+    },
+    {
+      "id": "ECE-08",
+      "nome": "DesignSocial",
+      "resumo": "Serviço de identidade visual acessível para pequenos negócios e projetos sociais",
+      "cliente": "Pequenos negócios, MEIs e projetos sociais que precisam de identidade visual profissional mas não têm orçamento para agência.",
+      "problema": "Pequenos negócios e projetos sociais ficam com identidade visual amadora por não poder pagar agência de design. Isso prejudica credibilidade e vendas.",
+      "solucao": "Serviço de identidade visual acessível: logo, paleta, tipografia e aplicações básicas feitas por designers formandos supervisionados por profissionais. Entrega em 5 dias.",
+      "monetizacao": "Pagamento pelo pacote de identidade. Mensalidade de suporte e atualizações. Parcerias com gráficas para materiais impressos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o DesignSocial para que pequeno negócio pareça tão profissional quanto realmente é.",
+        "problema": "O negócio é bom, o produto é bom, mas o logotipo foi feito no Word. O cliente não leva a sério. Agência cobra R$ 3.000. MEI não tem esse dinheiro.",
+        "solucao": "O DesignSocial entrega logo, paleta, tipografia e aplicações em 5 dias por um preço que MEI consegue pagar. Feito por designers em formação, supervisionados por profissionais.",
+        "modelo": "Pacote de identidade. Mensalidade de suporte. Parcerias com gráficas.",
+        "fechamento": "Aparência profissional não é supérfluo — é credibilidade. O DesignSocial coloca isso ao alcance de quem empreende com pouco."
+      }
+    },
+    {
+      "id": "ECE-09",
+      "nome": "TurismoComunidade",
+      "resumo": "Roteiros de turismo de base comunitária em cidades do interior",
+      "cliente": "Turistas que buscam experiências autênticas e comunidades rurais e periféricas com potencial turístico inexplorado.",
+      "problema": "Turistas buscam experiências autênticas mas passam pelo interior sem parar porque não há roteiro organizado. Comunidades com história e cultura ficam invisíveis.",
+      "solucao": "Plataforma de roteiros turísticos comunitários: visitas a produtores rurais, artesãos, culinária doméstica, história local e hospedagem nas próprias casas das famílias.",
+      "monetizacao": "Comissão sobre roteiros vendidos. As famílias anfitriãs recebem diretamente. Parcerias com agências de viagem especializadas em turismo alternativo.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o TurismoComunidade para que turista vivencie o interior de verdade, não só a beira de estrada.",
+        "problema": "Turista passa pela cidade em 20 minutos. Não sabe que 10 km adiante tem uma fazenda de queijo artesanal centenária, uma comunidade quilombola com história incrível.",
+        "solucao": "O TurismoComunidade organiza roteiros com famílias anfitriãs: almoço caseiro, visita ao produtor, artesanato local, hospedagem simples. Turismo com propósito e renda para quem mais precisa.",
+        "modelo": "Comissão sobre roteiros. Famílias recebem diretamente. Parcerias com agências alternativas.",
+        "fechamento": "O melhor do interior não está no mapa. O TurismoComunidade coloca lá — e leva turista até lá."
+      }
+    },
+    {
+      "id": "ECE-10",
+      "nome": "NarrativaViva",
+      "resumo": "Produção de podcasts e audiobooks sobre história e cultura local",
+      "cliente": "Cidades do interior com história rica e mal documentada e público interessado em conteúdo local autêntico.",
+      "problema": "A história e a cultura das cidades do interior são ricas mas ficam guardadas em memórias de anciãos e em arquivos empoeirados. O conteúdo não chega às novas gerações.",
+      "solucao": "Produção de podcasts e audiobooks sobre a história, os personagens e a cultura das cidades do interior, com distribuição em plataformas digitais e parcerias com escolas.",
+      "monetizacao": "Patrocínio de empresas locais. Prefeituras contratam como projeto de memória histórica. Venda de licença para escolas e museus.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o NarrativaViva para que a história da cidade seja ouvida — não só lembrada.",
+        "problema": "Araçatuba tem uma história incrível. Pioneiros, ferrovia, fazendas históricas. Mas onde isso está? Em livros empoeirados que ninguém lê e em memórias de quem tem 80 anos.",
+        "solucao": "O NarrativaViva produz podcasts e audiobooks sobre a história local: entrevistas, reconstituições, personagens. Disponível no Spotify, Apple e nas escolas da cidade.",
+        "modelo": "Patrocínio de empresas locais. Prefeituras contratam. Escolas e museus licenciam.",
+        "fechamento": "Cidade que não conta sua história a perde. O NarrativaViva garante que ela seja ouvida pelas próximas gerações."
+      }
+    },
+    {
+      "id": "ECE-11",
+      "nome": "OficinaLúdica",
+      "resumo": "Espaço de atividades lúdicas e criativas para crianças em shoppings e centros comerciais",
+      "cliente": "Pais que frequentam shoppings e centros comerciais e precisam de atividade segura e criativa para os filhos.",
+      "problema": "Shoppings têm praças de alimentação e lojas mas pouco espaço criativo e seguro para crianças. Pais ficam com filhos entediados enquanto fazem compras.",
+      "solucao": "Espaço lúdico fixo em shoppings com atividades de artes, ciências e jogos supervisionadas por educadores. Pais deixam a criança por uma ou duas horas.",
+      "monetizacao": "Pagamento por hora de permanência. Mensalidade para uso frequente. Taxa de instalação para o shopping.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei a OficinaLúdica para que compras de fim de semana não sejam um tormento para pais e filhos.",
+        "problema": "Pai vai ao shopping com filho de 7 anos. A criança não quer saber de loja. Fica entediada, chorando, pedindo para ir embora. A compra vira correria e estresse.",
+        "solucao": "A OficinaLúdica é um espaço no shopping com atividades de artes, ciências e jogos supervisionadas. O pai deixa a criança por até duas horas e faz suas compras em paz.",
+        "modelo": "Pagamento por hora. Mensalidade para uso frequente. Taxa para o shopping.",
+        "fechamento": "Criança feliz, pai em paz. A OficinaLúdica transforma a saída de compras em experiência boa para todo mundo."
+      }
+    },
+    {
+      "id": "ECE-12",
+      "nome": "ExperiênciaBrew",
+      "resumo": "Roteiros de degustação de cervejas artesanais e produtos locais com experiência educativa",
+      "cliente": "Consumidores interessados em gastronomia e cultura local e produtores artesanais que querem criar experiência de marca.",
+      "problema": "Cervejarias artesanais e produtores locais têm produto de qualidade mas não conseguem criar experiência de visita e degustação estruturada para atrair clientes.",
+      "solucao": "Roteiros de experiência com visita guiada a cervejarias, destilarias, queijeiras e produtores artesanais da região, com degustação e compra direta.",
+      "monetizacao": "Venda dos roteiros de experiência. Comissão para produtores parceiros. Pacotes para eventos corporativos e datas especiais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ExperiênciaBrew para que produto artesanal local se torne uma experiência que o cliente não esquece.",
+        "problema": "Cervejaria artesanal da região tem produto premiado. Mas o consumidor não sabe que existe, nunca visitou, nunca degustou. O produto não tem história na cabeça do cliente.",
+        "solucao": "O ExperiênciaBrew organiza roteiros de visita e degustação em cervejarias, queijeiras e produtores locais. O cliente vive a história do produto e compra diretamente do produtor.",
+        "modelo": "Venda dos roteiros. Comissão para produtores. Pacotes corporativos.",
+        "fechamento": "Produto com experiência vale mais. O ExperiênciaBrew transforma visita em memória e memória em fidelidade."
+      }
+    },
+    {
+      "id": "ECE-13",
+      "nome": "VintageInterior",
+      "resumo": "Marketplace de itens vintage e antiguidades de cidades do interior",
+      "cliente": "Colecionadores e consumidores que buscam itens vintage únicos e moradores que querem vender peças antigas com história.",
+      "problema": "Cidades do interior são ricas em itens vintage únicos — móveis, roupas, objetos de época — guardados em casas e armazéns. Não há canal organizado para compra e venda.",
+      "solucao": "Marketplace online de itens vintage e antiguidades com curadoria, descrição de procedência e entrega via transportadoras parceiras. Foco em cidades do interior brasileiro.",
+      "monetizacao": "Comissão de 15% sobre cada venda. Assinatura premium para vendedores recorrentes. Parceria com transportadoras especializadas em itens frágeis.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VintageInterior para que tesouro de vó não vá para o lixo quando pode ir para quem vai amá-lo.",
+        "problema": "Família vai desocupar a casa da avó. Cadeira de balanço de 1940, porcelana importada, máquina de costura Singer. Vai para o lixo ou para a feira por R$ 20. Em São Paulo valem 20 vezes mais.",
+        "solucao": "O VintageInterior conecta quem tem com quem busca. Fotos, descrição, procedência e entrega segura. O item vintage encontra quem vai valorizá-lo.",
+        "modelo": "Comissão de 15%. Assinatura para vendedores recorrentes. Transportadoras parceiras.",
+        "fechamento": "Peça com história merece um novo capítulo. O VintageInterior escreve esse capítulo."
+      }
+    },
+    {
+      "id": "ECE-14",
+      "nome": "ImpressãoLocal",
+      "resumo": "Gráfica digital de demanda com foco em pequenas tiragens e personalização para empreendedores locais",
+      "cliente": "Empreendedores, artistas e pequenos negócios que precisam de material gráfico personalizado em pequenas quantidades.",
+      "problema": "Gráficas convencionais exigem grandes tiragens. Empreendedores que precisam de 50 flyers, 20 cardápios ou 10 camisetas personalizadas ficam sem opção acessível.",
+      "solucao": "Gráfica digital sob demanda que aceita pedidos a partir de 1 unidade com entrega em 48h. Atende impressão, personalização de brindes e produtos promocionais.",
+      "monetizacao": "Pagamento por pedido. Mensalidade para pequenos negócios com pedidos recorrentes. Parcerias com designers locais para complementar o serviço.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei a ImpressãoLocal para que empreendedor não precise comprar 500 quando precisa de 20.",
+        "problema": "Empreendedor quer 30 camisetas para o evento. A gráfica exige 100. Fica com 70 sobrando e sem grana. Ou desiste do material e perde profissionalismo.",
+        "solucao": "A ImpressãoLocal aceita pedido a partir de 1 unidade. Flyer, cardápio, camiseta, brinde personalizado — entregue em 48h no volume que você precisa.",
+        "modelo": "Pagamento por pedido. Mensalidade para recorrentes. Parcerias com designers.",
+        "fechamento": "Quantidade certa no momento certo. A ImpressãoLocal entrega o que empreendedor precisa — nem mais, nem menos."
+      }
+    },
+    {
+      "id": "ECE-15",
+      "nome": "PersonalizaJá",
+      "resumo": "Plataforma de produtos personalizados com arte de artistas locais",
+      "cliente": "Consumidores que querem produtos personalizados únicos e artistas locais que querem monetizar sua arte em produtos físicos.",
+      "problema": "Artistas locais criam arte mas não conseguem transformá-la em produto físico e vender com escala. Consumidores querem produto personalizado mas não encontram opção original.",
+      "solucao": "Plataforma onde artistas locais licenciam sua arte para ser impressa em camisetas, canecas, capas de celular e outros produtos sob demanda, sem estoque.",
+      "monetizacao": "Comissão sobre cada produto vendido. O artista define o preço da arte. A plataforma gerencia produção e entrega.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PersonalizaJá para que arte local entre na vida das pessoas de forma concreta.",
+        "problema": "Artista local faz ilustrações incríveis. Coloca no Instagram. Recebe elogios. Não vende nada. A arte fica na tela e não gera renda.",
+        "solucao": "No PersonalizaJá, o artista sobe sua arte e escolhe em quais produtos vai aparecer. O cliente compra, a gente produz e entrega. O artista recebe royalties sem gerenciar nada.",
+        "modelo": "Comissão sobre vendas. Artista define preço da licença. Plataforma gerencia tudo.",
+        "fechamento": "Arte que entra na vida das pessoas tem impacto real. O PersonalizaJá garante que arte local chegue às casas, não fique só nas telas."
+      }
+    },
+    {
+      "id": "ECE-16",
+      "nome": "EventoCerto",
+      "resumo": "Plataforma de gestão e produção de eventos para pequenos produtores culturais e sociais",
+      "cliente": "Produtores de pequenos eventos — aniversários, workshops, casamentos modestos — que precisam de suporte de produção sem pagar valor de grande agência.",
+      "problema": "Pequenos produtores culturais e de eventos não têm acesso a ferramentas de gestão profissional — lista de convidados, venda de ingressos, cronograma, fornecedores — sem custo proibitivo.",
+      "solucao": "Plataforma de gestão completa de eventos com checklist, lista de convidados, venda de ingressos, orçamentos de fornecedores parceiros e cronograma automático.",
+      "monetizacao": "Taxa mensal de assinatura. Taxa sobre ingressos vendidos. Comissão de fornecedores parceiros indicados.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EventoCerto para que qualquer pessoa organize um evento com profissionalismo.",
+        "problema": "Você quer fazer um evento. Lista de convidados no caderno. Ingresso por transferência. Fornecedor do bolo por WhatsApp sem confirmação. No dia do evento, metade da logística falhou.",
+        "solucao": "O EventoCerto tem checklist automático, venda de ingressos integrada, confirmação de fornecedores e cronograma do dia. Tudo num só lugar, para qualquer tamanho de evento.",
+        "modelo": "Mensalidade. Taxa sobre ingressos. Comissão de fornecedores parceiros.",
+        "fechamento": "Evento bem organizado começa antes do evento. O EventoCerto organiza tudo antes para que no dia nada falhe."
+      }
+    },
+    {
+      "id": "ECE-17",
+      "nome": "ClubeLeitura",
+      "resumo": "Clube de leitura presencial com curadoria temática e encontros mensais em livrarias e cafés locais",
+      "cliente": "Leitores que querem compartilhar leituras e fazer conexões sociais reais, e livrarias e cafés que querem atrair público fiel.",
+      "problema": "Leitores querem compartilhar leituras mas clubes existentes são informais e irregulares. Livrarias e cafés precisam de movimento em dias de semana sem evento.",
+      "solucao": "Clube de leitura com curadoria mensal temática, encontro presencial em parceria com livraria ou café local, facilitador profissional e versão digital para quem não pode comparecer.",
+      "monetizacao": "Mensalidade do membro. Livraria parceira paga pelo aumento de tráfego. Editoras patrocinam para lançamentos e envio de exemplares.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ClubeLeitura para que ler seja também uma experiência social.",
+        "problema": "Você leu um livro incrível e não tem com quem conversar sobre ele. O grupo do WhatsApp sumiu. A livraria fica vazia na terça-feira à tarde. Dois problemas que se resolvem juntos.",
+        "solucao": "O ClubeLeitura tem curadoria mensal, encontro presencial numa livraria parceira e facilitador que guia a conversa. Um membro, uma mensalidade, um livro, uma conversa de verdade por mês.",
+        "modelo": "Mensalidade do membro. Livraria paga pelo movimento. Editoras patrocinam.",
+        "fechamento": "Livro lido sozinho é bom. Livro discutido com outros é inesquecível. O ClubeLeitura cria esse espaço."
+      }
+    },
+    {
+      "id": "ECE-18",
+      "nome": "ModoMaker",
+      "resumo": "Espaço de prototipagem e fabricação digital compartilhado para criadores e empreendedores locais",
+      "cliente": "Criadores, designers, artesãos e empreendedores que precisam de equipamentos de fabricação digital sem custo de compra.",
+      "problema": "Impressoras 3D, cortadoras laser e fresadoras CNC custam caro. Criadores e empreendedores locais não têm acesso a esses equipamentos para prototipagem e produção.",
+      "solucao": "Espaço maker compartilhado com equipamentos de fabricação digital disponíveis por hora ou assinatura mensal, com treinamentos básicos para novos membros.",
+      "monetizacao": "Mensalidade de membro com horas incluídas. Avulso por hora. Venda de materiais e treinamentos específicos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ModoMaker para que inventor local não precise de capital de giro para prototipar.",
+        "problema": "Empreendedor tem uma ideia de produto. Para prototipar, precisa de impressora 3D que custa R$ 5.000. Não tem. A ideia para na gaveta.",
+        "solucao": "O ModoMaker é um espaço com impressora 3D, cortadora laser e fresadora. Você assina e usa por hora. Treinamento incluído. Prototipagem profissional sem investimento pesado.",
+        "modelo": "Mensalidade com horas incluídas. Avulso. Materiais e treinamentos extras.",
+        "fechamento": "Ideia boa merece protótipo real. O ModoMaker transforma o que estava na cabeça em algo que se pode segurar."
+      }
+    },
+    {
+      "id": "ECE-19",
+      "nome": "PetExperiência",
+      "resumo": "Serviços diferenciados e experiências para pets e seus tutores em cidades do interior",
+      "cliente": "Tutores de pets que buscam serviços de qualidade e experiências diferenciadas para seus animais além de banho e tosa convencional.",
+      "problema": "O mercado pet cresce mas o interior tem poucas opções além do pet shop básico. Tutores que querem mais para seus animais precisam ir à capital.",
+      "solucao": "Plataforma de serviços premium para pets: fotografia, spa, hotel boutique, aniversário temático, adestramento positivo e consulta veterinária em domicílio.",
+      "monetizacao": "Comissão sobre serviços agendados. Assinatura de plano mensal de bem-estar animal. Parcerias com clínicas veterinárias e lojas de ração.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PetExperiência para que pet do interior receba o cuidado que tutor quer dar.",
+        "problema": "Tutor quer fazer aniversário do cachorro, sessão de fotos, spa. Nos grandes centros tem de tudo. No interior, tem só banho e tosa. O tutor fica sem opção para mimar o animal.",
+        "solucao": "O PetExperiência conecta tutores com serviços premium locais: fotografia de pet, spa, hotel boutique e veterinário em domicílio. Tudo que a capital oferece, aqui no interior.",
+        "modelo": "Comissão sobre serviços. Plano mensal. Parcerias com clínicas e lojas.",
+        "fechamento": "Pet bem cuidado é tutor feliz. O PetExperiência garante que no interior haja cuidado de capital."
+      }
+    },
+    {
+      "id": "ECE-20",
+      "nome": "AteliêAberto",
+      "resumo": "Aulas de artesanato e artes manuais em espaços parceiros com instrutores locais",
+      "cliente": "Adultos que buscam atividades criativas como lazer, desenvolvimento pessoal e possibilidade de renda complementar.",
+      "problema": "Pessoas querem aprender artesanato, cerâmica, pintura e outras artes manuais, mas as opções são escassas, caras ou com horários incompatíveis.",
+      "solucao": "Plataforma de aulas de artes e artesanato em espaços parceiros — cafés, estúdios, centros culturais — com instrutores locais. Aulas únicas ou pacotes de cursos.",
+      "monetizacao": "Taxa sobre cada aula vendida. Mensalidade para alunos frequentes. Instrutores e espaços recebem direto.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AteliêAberto para que criar com as mãos não seja privilégio de quem tem tempo sobrando.",
+        "problema": "Quero aprender cerâmica. A única aula é longe, cara e só aos sábados de manhã. A boa vontade esbarra na logística. O interesse some antes de começar.",
+        "solucao": "O AteliêAberto conecta você com instrutores locais que ensinam em cafés, estúdios e centros culturais. Aula avulsa ou pacote. Horários variados. Você escolhe o que e quando aprender.",
+        "modelo": "Taxa por aula. Mensalidade para frequentes. Instrutores e espaços recebem direto.",
+        "fechamento": "Criar é um direito. O AteliêAberto remove os obstáculos entre quem quer aprender e quem sabe ensinar."
+      }
+    },
+    {
+      "id": "ECE-21",
+      "nome": "FestJunto",
+      "resumo": "Plataforma de organização coletiva de festas e confraternizações com divisão de custos e tarefas",
+      "cliente": "Grupos de amigos, famílias e colegas de trabalho que querem organizar eventos coletivos sem que uma pessoa fique sobrecarregada.",
+      "problema": "Organizar festa coletiva gera conflito: quem paga o quê, quem cuida de cada tarefa, como juntar o dinheiro. A solução improvisada gera desentendimento.",
+      "solucao": "App de organização coletiva de festas: divisão de tarefas, vaquinha integrada por Pix, lista de compras compartilhada e cronograma automático.",
+      "monetizacao": "Taxa de 3% sobre o valor arrecadado na vaquinha. Versão premium com mais funcionalidades. Parcerias com fornecedores de festa (buffet, doces, decoração).",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FestJunto para que festa coletiva seja motivo de alegria, não de briga.",
+        "problema": "Aniversário da equipe. Um organiza tudo, os outros ficam dando palpite. No final, uns pagaram, outros não. O organizador jura que nunca mais faz. A festa vira trauma.",
+        "solucao": "O FestJunto divide as tarefas entre os participantes, abre vaquinha por Pix e manda lembretes automáticos. Todo mundo sabe o que deve fazer e quanto deve. Festa sem estresse.",
+        "modelo": "Taxa de 3% sobre vaquinha. Premium com mais recursos. Parcerias com fornecedores.",
+        "fechamento": "Festa boa começa com organização boa. O FestJunto cuida da organização para que todo mundo curta a festa."
+      }
+    },
+    {
+      "id": "ECE-22",
+      "nome": "VidaFit Interior",
+      "resumo": "Academia de bem-estar com metodologias inovadoras e acessíveis para cidades do interior",
+      "cliente": "Adultos do interior que buscam bem-estar físico e mental com metodologias modernas além da musculação convencional.",
+      "problema": "O interior tem poucas opções de exercício além de academias tradicionais de musculação. Pilates, yoga, funcional e dança ficam restritos a grandes centros.",
+      "solucao": "Espaço de bem-estar com múltiplas modalidades (pilates, yoga, funcional, dança, meditação) em formato de assinatura que dá acesso a aulas ilimitadas.",
+      "monetizacao": "Mensalidade de acesso ilimitado. Aulas avulsas. Parcerias com nutricionistas e psicólogos para programas de saúde integrada.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VidaFit Interior para que cuidar do corpo e da mente no interior seja tão completo quanto na capital.",
+        "problema": "No interior, a opção é musculação ou esteira. Pilates existe em uma só clínica cara. Yoga não tem. Dança é só na infância. Adulto que quer variar fica sem opção.",
+        "solucao": "O VidaFit Interior reúne pilates, yoga, funcional, dança e meditação num só lugar com uma mensalidade. Você agenda pelo app e frequenta o que quiser.",
+        "modelo": "Mensalidade de acesso ilimitado. Avulso. Parcerias com nutricionistas e psicólogos.",
+        "fechamento": "Bem-estar completo não é exclusividade da capital. O VidaFit Interior traz isso para quem mora e merece aqui."
+      }
+    },
+    {
+      "id": "ECE-23",
+      "nome": "MiniChef",
+      "resumo": "Cursos de culinária para crianças e adolescentes com foco em alimentação saudável e criatividade",
+      "cliente": "Crianças de 6 a 15 anos e seus pais que querem desenvolver autonomia culinária e hábitos alimentares saudáveis de forma lúdica.",
+      "problema": "Crianças crescem sem saber cozinhar e sem relação positiva com alimentos saudáveis. Cursos de culinária infantil existem nas grandes cidades mas raramente no interior.",
+      "solucao": "Cursos de culinária para crianças com receitas saudáveis e criativas, adaptados por faixa etária. Presencial em espaço parceiro ou em escolas como atividade extracurricular.",
+      "monetizacao": "Venda das turmas de curso. Licença para escolas oferecerem como extracurricular. Versão de festa temática para aniversários infantis.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o MiniChef para que criança aprenda a cozinhar — e a comer bem — enquanto se diverte.",
+        "problema": "Criança que não sabe cozinhar vira adulto que não sabe cozinhar. E que come mal. O hábito alimentar se forma na infância. Mas culinária não está na escola.",
+        "solucao": "O MiniChef ensina crianças a cozinhar de verdade: receitas saudáveis, técnicas básicas e muita criatividade. Turmas por faixa etária, ambiente lúdico e seguro.",
+        "modelo": "Turmas presenciais. Extracurricular em escolas. Festa temática de aniversário.",
+        "fechamento": "Criança que cozinha come melhor, é mais autônoma e tem relação mais saudável com a comida. O MiniChef planta esse hábito cedo."
+      }
+    },
+    {
+      "id": "ECE-24",
+      "nome": "LocalBrand",
+      "resumo": "Consultoria e aceleração de marcas locais para competir com produtos nacionais",
+      "cliente": "Pequenos produtores e empreendedores locais com produtos de qualidade que não conseguem escalar e competir com marcas nacionais.",
+      "problema": "Produtos locais de qualidade ficam restritos à cidade porque os empreendedores não têm conhecimento de branding, distribuição e precificação competitiva.",
+      "solucao": "Programa de aceleração de 3 meses para marcas locais: diagnóstico, rebranding, estratégia de distribuição, precificação e acesso a canais de venda online e físico.",
+      "monetizacao": "Taxa do programa de aceleração. Participação nos resultados gerados. Parcerias com distribuidores e marketplaces regionais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o LocalBrand para que o melhor produto da nossa cidade chegue ao Brasil inteiro.",
+        "problema": "A cachaça da fazenda local é premiada. O doce de leite da cooperativa regional é artesanal. Mas ficam na cidade porque o empreendedor não sabe como escalar.",
+        "solucao": "O LocalBrand acelera marcas locais em 3 meses: melhora a embalagem, posiciona o preço, abre canal de distribuição e coloca o produto em marketplace nacional.",
+        "modelo": "Taxa do programa. Participação nos resultados. Parcerias com distribuidores.",
+        "fechamento": "Produto bom merece chegar longe. O LocalBrand abre o caminho para que o melhor do interior alcance o Brasil."
+      }
+    },
+    {
+      "id": "ECE-25",
+      "nome": "CriativIdade",
+      "resumo": "Programa de desenvolvimento de criatividade e pensamento inovador para empresas do interior",
+      "cliente": "Empresas do interior que querem desenvolver cultura de inovação e criatividade entre suas equipes.",
+      "problema": "Empresas do interior não têm acesso a programas de inovação e criatividade aplicada da mesma forma que grandes centros. Equipes ficam presas em rotinas sem espaço para criar.",
+      "solucao": "Programa presencial e online de desenvolvimento de criatividade aplicada para equipes: dinâmicas, design thinking, storytelling e prototipagem de soluções internas.",
+      "monetizacao": "Pacotes corporativos por empresa. Workshops abertos para profissionais individuais. Parcerias com associações comerciais locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CriativIdade para que empresa do interior inove com a mesma qualidade que as de São Paulo.",
+        "problema": "Empresa do interior quer inovar mas o único programa de inovação fica na capital e custa caro para levar equipe toda. O resultado é criatividade zero por orçamento.",
+        "solucao": "O CriativIdade vai até a empresa com dinâmicas de criatividade, design thinking e storytelling. A equipe sai com soluções reais para problemas reais e com hábito de pensar diferente.",
+        "modelo": "Pacotes corporativos. Workshops abertos. Parcerias com associações.",
+        "fechamento": "Inovação não mora só na capital. O CriativIdade prova que empresa do interior pode criar o que o mercado ainda não viu."
+      }
+    },
+    {
+      "id": "ECE-26",
+      "nome": "SomDoCerrado",
+      "resumo": "Plataforma de streaming e distribuição de música regional do interior paulista",
+      "cliente": "Artistas independentes do interior paulista e ouvintes que buscam música regional autêntica além do sertanejo universitário.",
+      "problema": "Artistas do interior paulista produzem música de qualidade — música caipira, regional, folclórica — que não tem espaço nas plataformas generalistas dominadas pelo sertanejo comercial.",
+      "solucao": "Plataforma de streaming dedicada à música regional do interior paulista com curadoria editorial, distribuição nacional e eventos de lançamento presenciais.",
+      "monetizacao": "Assinatura mensal de ouvintes. Distribuição paga para artistas. Shows e eventos de lançamento. Licenciamento de músicas para comerciais e produções locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SomDoCerrado para que a música que nasce aqui não morra antes de ser ouvida.",
+        "problema": "Artista de Araçatuba faz música caipira de raiz. Lança no Spotify e se perde em 80 milhões de músicas. Não tem curadoria, não tem comunidade, não chega a ninguém.",
+        "solucao": "O SomDoCerrado é uma plataforma dedicada à música regional. Curadoria editorial, comunidade de ouvintes e eventos de lançamento presenciais. A música regional encontra seu público.",
+        "modelo": "Assinatura mensal. Distribuição paga para artistas. Shows e licenciamento.",
+        "fechamento": "Música regional não é nicho — é raiz. O SomDoCerrado garante que essa raiz seja ouvida."
+      }
+    },
+    {
+      "id": "ECE-27",
+      "nome": "PaisagemNobre",
+      "resumo": "Serviço de paisagismo residencial acessível com manutenção por assinatura",
+      "cliente": "Proprietários de residências que querem jardim bonito e bem cuidado sem pagar por jardineiro irregular.",
+      "problema": "Jardim residencial fica sem manutenção porque jardineiro autônomo é irregular, caro ou difícil de agendar. O proprietário desiste e o jardim vai à ruína.",
+      "solucao": "Serviço de paisagismo com projeto inicial e manutenção mensal por assinatura com equipe fixa. O cliente sempre sabe quem vem e quando.",
+      "monetizacao": "Taxa do projeto inicial. Mensalidade de manutenção. Serviços sazonais extras.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PaisagemNobre para que jardim bonito seja questão de rotina, não de sorte.",
+        "problema": "O jardineiro desapareceu. Ligou para outro que não apareceu. O jardim está seco. Quem tem jardim sabe que o maior problema não é a planta — é o prestador.",
+        "solucao": "O PaisagemNobre faz o projeto inicial e retorna todo mês com a mesma equipe. Você assina, eles aparecem. Jardim bonito o ano todo sem surpresa.",
+        "modelo": "Projeto inicial. Mensalidade fixa. Extras sazonais.",
+        "fechamento": "Jardim bem cuidado valoriza o imóvel e o dia de quem o olha. O PaisagemNobre garante que isso aconteça todo mês."
+      }
+    },
+    {
+      "id": "ECE-28",
+      "nome": "DiaDeFilme",
+      "resumo": "Serviço de produção de vídeo profissional acessível para pequenos negócios e projetos pessoais",
+      "cliente": "Pequenos negócios, empreendedores e pessoas que precisam de vídeo profissional para redes sociais e campanhas sem orçamento de produtora.",
+      "problema": "Vídeo profissional é cada vez mais necessário para negócios, mas produtoras cobram valores inacessíveis para MEIs e pequenos negócios.",
+      "solucao": "Serviço de produção de vídeo para redes sociais com pacotes acessíveis: roteiro, gravação, edição e trilha. Entrega em 3 dias.",
+      "monetizacao": "Pagamento por pacote de produção. Assinatura mensal para negócios que precisam de vídeos recorrentes. Parcerias com agências de marketing locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o DiaDeFilme para que pequeno negócio tenha vídeo profissional sem budget de grande empresa.",
+        "problema": "Todo mundo sabe que vídeo vende mais. Mas produtora cobra R$ 3.000 por um vídeo de 30 segundos. MEI não tem isso. Filma no celular e fica abaixo do esperado.",
+        "solucao": "O DiaDeFilme faz roteiro, gravação e edição profissional por um preço que MEI consegue pagar. Entrega em 3 dias. Vídeo pronto para Instagram, TikTok e WhatsApp.",
+        "modelo": "Pacote por produção. Assinatura mensal. Parcerias com agências.",
+        "fechamento": "Vídeo que vende não precisa custar caro. O DiaDeFilme prova isso todos os dias."
+      }
+    },
+    {
+      "id": "ECE-29",
+      "nome": "ComunicaLocal",
+      "resumo": "Agência de comunicação hiperlocal para negócios e projetos de cidades do interior",
+      "cliente": "Negócios e projetos locais que precisam de comunicação e marketing digital mas não encontram agência com foco no mercado do interior.",
+      "problema": "Agências de marketing atendem clientes grandes das capitais. Negócios do interior recebem serviço genérico sem entendimento do contexto local.",
+      "solucao": "Agência especializada em comunicação hiperlocal: conhece a cidade, os canais que funcionam no interior, o público local e a linguagem que gera identificação.",
+      "monetizacao": "Mensalidade de gestão de comunicação. Projetos pontuais de campanha. Parcerias com veículos de comunicação locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ComunicaLocal para que negócio do interior seja comunicado por quem conhece o interior.",
+        "problema": "Padaria contrata agência de São Paulo para gestão de redes. Recebe post genérico que poderia ser de qualquer loja. O cliente local não se identifica. A campanha não funciona.",
+        "solucao": "O ComunicaLocal conhece a cidade, os eventos locais, o que o público de Araçatuba gosta. A comunicação fala de algo real, perto, que o cliente reconhece.",
+        "modelo": "Mensalidade de gestão. Projetos pontuais. Parcerias com veículos locais.",
+        "fechamento": "Comunicação que funciona é comunicação que fala para quem você conhece. O ComunicaLocal faz exatamente isso."
+      }
+    },
+    {
+      "id": "ECE-30",
+      "nome": "ExperiênciaFazenda",
+      "resumo": "Turismo rural com experiências agrícolas para famílias urbanas do interior",
+      "cliente": "Famílias de cidades do interior que querem experiências rurais autênticas sem precisar viajar longe, e produtores rurais que querem diversificar receita.",
+      "problema": "Famílias urbanas do interior têm contato mínimo com a vida rural apesar de morarem perto. Produtores rurais têm potencial turístico inexplorado além da produção.",
+      "solucao": "Roteiros de turismo rural em fazendas parceiras: colheita, ordenha, preparo de queijo, cavalgada e almoço caipira. Agendamento pelo app.",
+      "monetizacao": "Comissão sobre roteiros vendidos. Fazendas recebem diretamente. Parcerias com pousadas rurais para hospedagem.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ExperiênciaFazenda para que família da cidade se reconecte com a vida rural que está bem perto.",
+        "problema": "Família de Araçatuba nunca vivenciou uma colheita, nunca tirou leite de uma vaca, nunca fez queijo. E tudo isso está a 30 minutos de distância. Só falta o roteiro.",
+        "solucao": "O ExperiênciaFazenda organiza visitas a fazendas parceiras para colheita, ordenha, cavalgada e almoço caipira. Experiência rural real para família urbana — sem precisar de estrada longa.",
+        "modelo": "Comissão sobre roteiros. Fazendas recebem diretamente. Parcerias com pousadas.",
+        "fechamento": "O campo está perto. O ExperiênciaFazenda garante que a cidade saiba disso — e vá até lá."
+      }
+    }
+  ]
+}

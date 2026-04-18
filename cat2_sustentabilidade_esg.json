@@ -1,0 +1,487 @@
+{
+  "categoria": "Sustentabilidade e ESG",
+  "cor": "#3B6D11",
+  "icone": "folha",
+  "ideias": [
+    {
+      "id": "ESG-01",
+      "nome": "AguaViva",
+      "resumo": "Sistema de captação e reuso de água da chuva para escolas e condomínios",
+      "cliente": "Escolas públicas, condomínios e pequenas empresas com alto consumo de água.",
+      "problema": "Água tratada é usada para irrigação, limpeza e descarga quando a água da chuva poderia substituir 40% desse consumo.",
+      "solucao": "Kit modular de captação, filtragem e distribuição de água da chuva com app de monitoramento da economia em tempo real.",
+      "monetizacao": "Venda e instalação do kit. Manutenção por assinatura. Financiamento por programa federal de eficiência hídrica.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AguaViva para transformar chuva em economia de água e dinheiro.",
+        "problema": "Gastamos água tratada para lavar calçada, dar descarga e irrigar jardim. Enquanto isso, a chuva vai pelo ralo. 40% do consumo poderia ser substituído gratuitamente.",
+        "solucao": "O AguaViva captura a chuva do telhado, filtra e distribui para descarga, limpeza e irrigação. Um app mostra quanto você já economizou.",
+        "modelo": "Vendemos e instalamos o kit. Manutenção por assinatura. O sistema se paga em menos de dois anos.",
+        "fechamento": "Água que cai não volta. O AguaViva garante que cada gota seja aproveitada."
+      }
+    },
+    {
+      "id": "ESG-02",
+      "nome": "SolNosso",
+      "resumo": "Cooperativa de energia solar compartilhada para famílias de baixa renda",
+      "cliente": "Famílias de baixa renda com conta de luz alta mas sem capital para investir em painel solar próprio.",
+      "problema": "Energia solar reduziria a conta em até 90%, mas o investimento inicial é proibitivo para famílias de baixa renda.",
+      "solucao": "Cooperativa que instala usinas solares compartilhadas. As famílias pagam mensalidade menor que a conta atual e recebem créditos de energia.",
+      "monetizacao": "Mensalidade das famílias cooperadas. Venda do excedente à distribuidora. Financiamento do BNDES.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SolNosso para que famílias de baixa renda também aproveitem a energia solar.",
+        "problema": "Painel solar é caro. A família pobre paga conta alta e não consegue investir para sair desse ciclo. A energia solar fica só para quem pode bancar o custo inicial.",
+        "solucao": "O SolNosso é uma cooperativa. A família entra pagando uma mensalidade menor do que a conta atual e recebe créditos de uma usina compartilhada. O sol trabalha para todo mundo.",
+        "modelo": "A mensalidade é a receita. Vendemos o excedente à distribuidora. BNDES financia as usinas.",
+        "fechamento": "O sol bate em todos os telhados. O SolNosso garante que todos se beneficiem dele."
+      }
+    },
+    {
+      "id": "ESG-03",
+      "nome": "CompostaFácil",
+      "resumo": "Serviço de compostagem domiciliar por assinatura com coleta e retorno de adubo",
+      "cliente": "Moradores que querem descartar resíduos orgânicos corretamente sem gerenciar o processo.",
+      "problema": "Resíduos orgânicos representam 50% do lixo doméstico e vão para aterros, gerando metano — o gás mais poluente do lixo.",
+      "solucao": "Assinatura mensal com coleta semanal dos resíduos orgânicos. Após 60 dias o cliente recebe adubo produzido do próprio lixo.",
+      "monetizacao": "Assinatura mensal. Venda do adubo excedente. Crédito de carbono pelo volume desviado do aterro.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CompostaFácil para transformar lixo orgânico em adubo sem trabalho nenhum.",
+        "problema": "Metade do lixo da sua casa é casca de fruta e sobra de comida. No aterro vira metano — gás que aquece 80 vezes mais que o CO2.",
+        "solucao": "O CompostaFácil manda um balde para você guardar os resíduos. A gente coleta toda semana. Em dois meses, você recebe adubo pronto feito do seu próprio lixo. Sem cheiro, sem mosca.",
+        "modelo": "Assinatura mensal. Adubo excedente vendido. E ainda geramos crédito de carbono.",
+        "fechamento": "Lixo que vira adubo não vai para o aterro. O CompostaFácil fecha esse ciclo na sua calçada."
+      }
+    },
+    {
+      "id": "ESG-04",
+      "nome": "FlorestaNossa",
+      "resumo": "Plataforma de plantio de árvores nativas com rastreamento e certificado digital",
+      "cliente": "Empresas que precisam compensar pegada de carbono e pessoas que querem contribuir com reflorestamento verificável.",
+      "problema": "Há muitas iniciativas de plantio sem transparência sobre o que foi plantado, se sobreviveu e onde está — gerando greenwashing.",
+      "solucao": "Cada árvore recebe QR Code. O plantador acompanha crescimento por fotos georeferenciadas e recebe certificado digital com dados reais de impacto.",
+      "monetizacao": "Valor por árvore plantada e monitorada. Plano corporativo de compensação de carbono. Certificados digitais verificáveis.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FlorestaNossa para que cada árvore plantada tenha dono, história e prova de que existe.",
+        "problema": "Empresas pagam para plantar árvores e não sabem se sobreviveram. O greenwashing prospera porque falta transparência.",
+        "solucao": "No FlorestaNossa, cada árvore tem QR Code. Você acompanha o crescimento por fotos reais. Recebe certificado com dados de carbono absorvido. É reflorestamento com prova.",
+        "modelo": "Cobramos por árvore plantada e monitorada. Plano corporativo de compensação de carbono. Certificado verificável.",
+        "fechamento": "Plantar árvore é fácil. Provar que ela cresceu é o que o FlorestaNossa faz."
+      }
+    },
+    {
+      "id": "ESG-05",
+      "nome": "OleoVerde",
+      "resumo": "Coleta de óleo de cozinha usado com transformação em biocombustível e sabão",
+      "cliente": "Residências, restaurantes e escolas com óleo de cozinha usado sem destino adequado.",
+      "problema": "Óleo jogado na pia contamina rios e solo. É descartado incorretamente por 80% das famílias por falta de ponto de coleta acessível.",
+      "solucao": "Pontos de coleta em mercados e coleta agendada em restaurantes. O óleo vira biodiesel e sabão. O doador recebe desconto em produtos parceiros.",
+      "monetizacao": "Venda do biodiesel para frotas municipais. Venda do sabão em mercados. Prefeituras pagam pela logística como serviço ambiental.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o OleoVerde para transformar um dos maiores poluidores domésticos em combustível e sabão.",
+        "problema": "Cada litro de óleo jogado na pia contamina mil litros de água. No Brasil, descartamos mal bilhões de litros por ano.",
+        "solucao": "O OleoVerde coloca pontos de coleta em mercados e busca o óleo em restaurantes. Transformamos tudo em biodiesel e sabão. Quem doa ganha desconto em parceiros.",
+        "modelo": "Vendemos biodiesel para frotas municipais e sabão nos mercados. Prefeituras pagam pela logística.",
+        "fechamento": "Óleo que polui pode ser combustível. O OleoVerde muda o destino de um resíduo presente em todo lar."
+      }
+    },
+    {
+      "id": "ESG-06",
+      "nome": "TerraFértil",
+      "resumo": "Agricultura urbana em espaços ociosos com distribuição comunitária da colheita",
+      "cliente": "Prefeituras com terrenos ociosos e comunidades próximas sem acesso a alimento fresco.",
+      "problema": "Cidades têm terrenos ociosos que geram mato e insegurança, enquanto famílias próximas não têm acesso a alimentos frescos.",
+      "solucao": "Terrenos cedidos são transformados em hortas comunitárias. A colheita abastece as famílias e o excedente é vendido em feira local.",
+      "monetizacao": "Prefeituras pagam pela gestão como política de segurança alimentar. Venda do excedente. Restaurantes compram orgânicos locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o TerraFértil para transformar terrenos abandonados em fonte de alimento para a comunidade.",
+        "problema": "Na mesma rua onde famílias não têm acesso a verduras, há terrenos cheios de mato. Desperdício de espaço e de oportunidade.",
+        "solucao": "O TerraFértil pede o terreno emprestado, monta a horta e treina moradores para gerir. A colheita abastece as famílias e o excedente vai para a feira.",
+        "modelo": "Prefeituras pagam a gestão. Venda do excedente gera receita. Restaurantes compram orgânicos com rastreabilidade.",
+        "fechamento": "Terreno vazio vira problema. Terreno cultivado vira solução. O TerraFértil faz essa transformação acontecer."
+      }
+    },
+    {
+      "id": "ESG-07",
+      "nome": "VestirBem",
+      "resumo": "Plataforma de troca e aluguel de roupas de qualidade entre consumidores locais",
+      "cliente": "Consumidores conscientes que querem renovar o guarda-roupa sem aumentar o impacto ambiental.",
+      "problema": "A moda é a segunda indústria mais poluente do mundo. Roupas são usadas poucas vezes e descartadas.",
+      "solucao": "App de troca e aluguel de roupas entre pessoas da mesma cidade. O usuário cadastra o que não usa e troca ou aluga para ocasiões específicas.",
+      "monetizacao": "Taxa de serviço sobre cada troca ou aluguel. Assinatura mensal. Parceria com lavanderias para higienização.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VestirBem para que você renove o guarda-roupa sem gastar nem poluir.",
+        "problema": "A indústria da moda gasta 2.700 litros de água para fazer uma camiseta que é usada em média sete vezes antes de ser descartada.",
+        "solucao": "O VestirBem é um app de troca e aluguel entre pessoas da mesma cidade. Você cadastra o que não usa, troca por algo novo para você ou aluga uma peça especial.",
+        "modelo": "Taxa sobre cada transação. Assinatura mensal para usuários frequentes. Lavanderias parceiras fazem a higienização.",
+        "fechamento": "A roupa mais sustentável é a que já existe. O VestirBem mantém ela circulando, não no lixo."
+      }
+    },
+    {
+      "id": "ESG-08",
+      "nome": "DescarteCerto",
+      "resumo": "Mapa e agenda de descarte correto de eletrônicos, pilhas e materiais especiais",
+      "cliente": "Consumidores que precisam descartar eletrônicos, pilhas e resíduos especiais sem saber onde.",
+      "problema": "Lixo eletrônico é descartado incorretamente por falta de informação sobre pontos de coleta, contaminando solo e lençol freático.",
+      "solucao": "App com mapa geolocalizado de pontos de descarte por tipo de resíduo, agenda de coletas especiais e notificações por bairro.",
+      "monetizacao": "Municípios pagam como ferramenta de gestão ambiental. Fabricantes financiam para cumprir logística reversa. Recicladores pagam pela triagem.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o DescarteCerto para que ninguém jogue pilha ou celular no lixo comum por falta de informação.",
+        "problema": "Você sabe onde descartar uma pilha usada? A maioria não sabe. Então joga no lixo comum. E o chumbo e o mercúrio vão para o solo.",
+        "solucao": "O DescarteCerto mostra no mapa todos os pontos de coleta por tipo de resíduo. Avisa quando tem coleta especial no bairro. E salva o histórico do que você já descartou corretamente.",
+        "modelo": "Prefeituras pagam pelo sistema. Fabricantes financiam para cumprir a lei. Recicladores pagam pela triagem.",
+        "fechamento": "O descarte correto começa com a informação certa. O DescarteCerto garante que ninguém tenha desculpa para poluir."
+      }
+    },
+    {
+      "id": "ESG-09",
+      "nome": "EmbalaNão",
+      "resumo": "Mercado sem embalagem com estações de reabastecimento de produtos a granel",
+      "cliente": "Consumidores que querem reduzir plástico no dia a dia com alternativas acessíveis.",
+      "problema": "Embalagens plásticas são 70% do lixo doméstico. O consumidor quer reduzir mas não tem onde comprar sem embalagem de forma conveniente.",
+      "solucao": "Loja e pontos de reabastecimento em mercados parceiros onde o cliente traz o recipiente e abastece produtos a granel.",
+      "monetizacao": "Margem sobre produtos a granel. Taxa para mercados parceiros. Linha própria de refis de higiene.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EmbalaNão para provar que é possível fazer as compras do mês sem gerar lixo plástico.",
+        "problema": "70% do lixo doméstico é embalagem. Plástico leva 400 anos para degradar. Queremos reduzir, mas o mercado ainda vende tudo embalado.",
+        "solucao": "No EmbalaNão, você traz seu recipiente e abastece: arroz, feijão, detergente, xampu — tudo a granel e com preço menor. Também instalamos estações em mercados parceiros.",
+        "modelo": "Margem sobre produtos vendidos. Taxa para mercados parceiros. Linha de refil própria em crescimento.",
+        "fechamento": "Não é sobre sacrifício — é sobre hábito. O EmbalaNão torna o hábito sustentável mais fácil do que jogar fora."
+      }
+    },
+    {
+      "id": "ESG-10",
+      "nome": "RioLimpo",
+      "resumo": "Monitoramento colaborativo da qualidade de rios e córregos urbanos em tempo real",
+      "cliente": "Comunidades ribeirinhas, prefeituras e pesquisadores que precisam de dados de qualidade da água.",
+      "problema": "Rios urbanos são monitorados de forma precária e esporádica. Comunidades ficam expostas a riscos sem informação.",
+      "solucao": "Sensores de baixo custo instalados em pontos estratégicos enviam dados para um app aberto com qualidade da água, histórico e alertas de contaminação.",
+      "monetizacao": "Prefeituras contratam o monitoramento. Universidades pagam pelos dados históricos. Editais de recursos hídricos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o RioLimpo para que qualquer pessoa saiba em tempo real se o rio está contaminado.",
+        "problema": "Rios são monitorados uma vez por mês. Quando chega o relatório de contaminação, as crianças já nadaram naquela água.",
+        "solucao": "O RioLimpo instala sensores que enviam dados em tempo real para um app aberto. Turbidez, pH, oxigênio — e alerta automático se algo mudar para o pior.",
+        "modelo": "Prefeituras contratam. Universidades pagam pelos dados. Editais de recursos hídricos financiam.",
+        "fechamento": "Rio limpo começa com informação. O RioLimpo coloca o dado na mão de quem precisa, antes que o problema se espalhe."
+      }
+    },
+    {
+      "id": "ESG-11",
+      "nome": "TelhadorVerde",
+      "resumo": "Jardins em telhados de edificações urbanas para reduzir ilha de calor",
+      "cliente": "Condomínios, empresas e escolas que querem reduzir temperatura interna, consumo de energia e impacto ambiental.",
+      "problema": "Ilhas de calor urbanas elevam a temperatura em até 5°C. Telhados negros absorvem calor e aumentam o consumo de energia dos edifícios.",
+      "solucao": "Projeto e instalação de telhados verdes com substratos leves, plantas adaptadas e irrigação automatizada. Reduz temperatura interna em até 3°C.",
+      "monetizacao": "Instalação do telhado verde. Manutenção por assinatura. Incentivos fiscais de prefeituras para adesão.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o TelhadorVerde para transformar telhados em jardins que combatem o calor.",
+        "problema": "O centro da cidade fica mais quente a cada verão. Telhado de concreto absorve calor, transfere para dentro e o ar-condicionado consome mais. Um ciclo vicioso.",
+        "solucao": "O TelhadorVerde instala jardim no telhado com plantas adaptadas, substrato leve e irrigação automática. A temperatura cai até 3°C e o telhado dura o dobro.",
+        "modelo": "Cobramos pela instalação e manutenção mensal. Prefeituras oferecem desconto de IPTU para quem adere.",
+        "fechamento": "Telhado verde refresca a cidade inteira. O TelhadorVerde começa pelo seu."
+      }
+    },
+    {
+      "id": "ESG-12",
+      "nome": "BioconstruVida",
+      "resumo": "Moradias sustentáveis com materiais naturais e baixo custo para comunidades rurais",
+      "cliente": "Famílias rurais de baixa renda que precisam de moradia digna com menor impacto ambiental.",
+      "problema": "A construção civil convencional é cara e usa materiais de alto impacto. Famílias rurais não têm acesso a moradia digna.",
+      "solucao": "Construção com terra crua, bambu e palha usando técnicas ensinadas em mutirões comunitários. Casa pronta em 30 dias.",
+      "monetizacao": "Projetos e consultoria de bioconstrução. Cursos de capacitação. Contratos com prefeituras para habitação rural sustentável.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o BioconstruVida para provar que casa boa não precisa de tijolo caro.",
+        "problema": "Família rural quer uma casa. Tijolo caro, logística impossível. O resultado é moradia precária por geração.",
+        "solucao": "O BioconstruVida usa terra, bambu e palha do local. Ensinamos a técnica em mutirão. Em 30 dias, uma casa confortável e fresca está pronta pelo custo do material.",
+        "modelo": "Projetos e consultoria. Prefeituras contratam para habitação rural. Cursos geram receita complementar.",
+        "fechamento": "A melhor construção usa o que a terra já oferece. O BioconstruVida prova que sustentável e digno andam juntos."
+      }
+    },
+    {
+      "id": "ESG-13",
+      "nome": "MigraCarbon",
+      "resumo": "Consultoria acessível de inventário e redução de carbono para pequenas empresas",
+      "cliente": "Pequenas e médias empresas que precisam medir e reduzir pegada de carbono para atender exigências de clientes e bancos.",
+      "problema": "Grandes empresas têm consultoria de carbono, mas PMEs não têm acesso a esse serviço com preço acessível.",
+      "solucao": "Plataforma digital de inventário de carbono simplificada para PMEs, com cálculo automático, relatório padronizado e plano de ação.",
+      "monetizacao": "Assinatura mensal da plataforma. Relatório certificado por emissão. Consultoria premium para apoio aprofundado.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o MigraCarbon para que pequenas empresas não fiquem de fora da agenda ESG.",
+        "problema": "Grandes clientes exigem ESG. A pequena empresa não tem como pagar uma consultoria cara. Fica de fora da cadeia de fornecimento.",
+        "solucao": "O MigraCarbon é uma plataforma onde a PME lança os dados e recebe o inventário de carbono e plano de ação prontos em dois dias.",
+        "modelo": "Assinatura mensal. Relatório certificado gera receita. Consultoria aprofundada para quem precisa.",
+        "fechamento": "ESG deixou de ser opção. O MigraCarbon torna acessível o que antes era só para grandes."
+      }
+    },
+    {
+      "id": "ESG-14",
+      "nome": "FazendaCircular",
+      "resumo": "Aproveitamento integral dos resíduos agrícolas em novos produtos de valor",
+      "cliente": "Produtores agrícolas que geram resíduos como casca, bagaço e folha sem aproveitamento.",
+      "problema": "Na produção agrícola, 30 a 40% da safra se perde em resíduos que poderiam gerar novos produtos e receita.",
+      "solucao": "Plataforma que mapeia resíduos de produtores e conecta com empresas de cosmética, alimentação e construção que usam esses materiais como matéria-prima.",
+      "monetizacao": "Comissão sobre negociações. Assinatura de produtores e empresas. Consultoria de certificação de resíduos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FazendaCircular para transformar o que o agricultor joga fora em matéria-prima para outra indústria.",
+        "problema": "O produtor de laranja descarta toneladas de casca. A indústria cosmética paga caro por extrato de laranja. Os dois não se conhecem.",
+        "solucao": "O FazendaCircular mapeia o resíduo e conecta com quem compra. Casca para cosmética, bagaço para construção. Economia circular na prática.",
+        "modelo": "Comissão sobre negociações. Assinatura mensal para produtores e compradores.",
+        "fechamento": "O resíduo de um é a matéria-prima do outro. O FazendaCircular fecha esse ciclo na nossa região."
+      }
+    },
+    {
+      "id": "ESG-15",
+      "nome": "BikeCidade",
+      "resumo": "Sistema de bicicletas compartilhadas de baixo custo para cidades do interior",
+      "cliente": "Moradores de cidades do interior que precisam de mobilidade urbana sem carro para distâncias curtas.",
+      "problema": "Cidades do interior não têm sistema de transporte eficiente e bicicleta compartilhada existe só em metrópoles.",
+      "solucao": "Bicicletas em pontos estratégicos com desbloqueio por QR Code e pagamento por Pix. Simples, sem tecnologia cara.",
+      "monetizacao": "Pagamento por uso ou mensalidade ilimitada. Patrocínio de empresas locais nos pontos e nas bicicletas.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o BikeCidade para que você chegue no mercado ou na escola sem precisar de carro.",
+        "problema": "Muita gente mora perto do trabalho mas vai de carro porque não tem opção. Congestionamento, poluição e gasto para distâncias que dariam para pedalar.",
+        "solucao": "O BikeCidade tem bicicletas em pontos fixos pela cidade. Você escaneia o QR Code, paga por Pix e vai. Na chegada, deixa em qualquer ponto da rede.",
+        "modelo": "Cobrança por viagem ou assinatura mensal. Empresas locais patrocinam os pontos.",
+        "fechamento": "Bicicleta compartilhada não é luxo de grande cidade. O BikeCidade prova isso aqui no interior."
+      }
+    },
+    {
+      "id": "ESG-16",
+      "nome": "PlanteAgora",
+      "resumo": "Venda de mudas nativas com plantio garantido em áreas de preservação parceiras",
+      "cliente": "Pessoas e empresas que querem reflorestar de forma simples, verificável e com impacto local.",
+      "problema": "Quem quer reflorestar não sabe como, não tem terra e não confia que o dinheiro vira árvore de verdade.",
+      "solucao": "O cliente compra mudas nativas. Parceiros rurais plantam em áreas de APP ou RL. O comprador acompanha crescimento com fotos mensais georreferenciadas.",
+      "monetizacao": "Venda dos pacotes com plantio incluído. Plano corporativo de compensação. Certificado de carbono.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PlanteAgora para conectar quem quer reflorestar com quem tem terra e sabe plantar.",
+        "problema": "Todo mundo quer plantar árvore mas não tem terra, tempo e não sabe se o dinheiro doado vira árvore mesmo.",
+        "solucao": "No PlanteAgora, você compra um pacote de mudas. Um produtor rural planta na área de preservação dele. Você recebe fotos mensais de como estão crescendo.",
+        "modelo": "Venda dos pacotes. Plano corporativo. Certificado de carbono em parceria.",
+        "fechamento": "Reflorestar é possível, verificável e acontece perto. O PlanteAgora começa pelo seu clique."
+      }
+    },
+    {
+      "id": "ESG-17",
+      "nome": "FreteVerde",
+      "resumo": "Entregas urbanas por bicicleta elétrica para e-commerce e comércio local",
+      "cliente": "Lojas e restaurantes que fazem entregas em até 15 km e querem reduzir custos e emissões.",
+      "problema": "Entregas de última milha por motos e carros consomem combustível, poluem e congestionam. Há espaço para soluções mais limpas e baratas.",
+      "solucao": "Frota de bicicletas elétricas cargo com baú térmico. Lojista agenda coleta pelo app e a entrega chega em até 2 horas com rastreamento.",
+      "monetizacao": "Taxa por entrega. Plano mensal para lojistas. Parcerias com marketplaces locais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FreteVerde para entregar mais rápido, mais barato e sem poluir.",
+        "problema": "Cada moto de entrega polui e consome gasolina cara. Para distâncias de até 15 km, isso não faz sentido ambiental nem econômico.",
+        "solucao": "O FreteVerde entrega com bicicletas elétricas cargo. O lojista agenda pelo app, a gente coleta e entrega em até 2 horas com rastreamento.",
+        "modelo": "Taxa por entrega. Plano mensal para lojistas. Parceria com marketplaces locais.",
+        "fechamento": "Entrega verde é entrega inteligente. O FreteVerde prova que dá para ser rápido sem poluir."
+      }
+    },
+    {
+      "id": "ESG-18",
+      "nome": "AgroOrganico",
+      "resumo": "Certificação simplificada e marketplace de orgânicos de pequenos produtores",
+      "cliente": "Pequenos produtores orgânicos sem acesso à certificação formal e consumidores que querem comprar orgânico com confiança.",
+      "problema": "A certificação orgânica oficial é cara para pequenos produtores. O consumidor paga caro sem saber se é realmente orgânico.",
+      "solucao": "Certificação participativa digital onde consumidores verificam as práticas do produtor. Seguida de marketplace com entrega local dos produtos.",
+      "monetizacao": "Taxa de certificação anual. Comissão no marketplace. Assinatura de caixas semanais de orgânicos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AgroOrganico para que o pequeno produtor orgânico venda com o valor que merece.",
+        "problema": "O produtor planta sem agrotóxico mas não tem como provar. A certificação custa uma fortuna. O consumidor quer orgânico mas não confia sem certificado.",
+        "solucao": "O AgroOrganico cria certificação participativa: consumidores verificam o produtor por vídeo e avaliam. O produto certificado vai para o marketplace e a caixa semanal.",
+        "modelo": "Taxa de certificação anual. Comissão no marketplace. Assinatura de caixas semanais.",
+        "fechamento": "Orgânico acessível começa pelo produtor certificado. O AgroOrganico conecta os dois com transparência."
+      }
+    },
+    {
+      "id": "ESG-19",
+      "nome": "EnergiaComunidade",
+      "resumo": "Mini-usinas de biogás a partir de resíduos agrícolas para comunidades rurais sem rede elétrica",
+      "cliente": "Comunidades rurais sem acesso à rede elétrica e produtores com resíduos de produção animal.",
+      "problema": "Comunidades rurais isoladas pagam caro por gerador a diesel enquanto resíduos animais são descartados sem aproveitamento.",
+      "solucao": "Mini-usina de biogás comunitária que usa esterco animal para gerar energia elétrica e biofertilizante.",
+      "monetizacao": "Mensalidade da energia. Venda do biofertilizante. Financiamento do Luz para Todos e BNDES.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EnergiaComunidade para transformar resíduo animal em energia para quem não tem acesso à rede.",
+        "problema": "Comunidade rural paga R$ 800 por mês em gerador a diesel. No mesmo sítio, toneladas de esterco são descartadas. São dois problemas que se resolvem juntos.",
+        "solucao": "O EnergiaComunidade instala mini-usina de biogás que usa o esterco para gerar energia. A comunidade paga mensalidade menor que o diesel e ainda produz biofertilizante.",
+        "modelo": "Mensalidade da energia. Venda do biofertilizante. BNDES e Luz para Todos financiam.",
+        "fechamento": "O campo já tem tudo para gerar energia. O EnergiaComunidade organiza o que estava sendo desperdiçado."
+      }
+    },
+    {
+      "id": "ESG-20",
+      "nome": "ProdutoVidaLonga",
+      "resumo": "Reparação e revitalização de eletrodomésticos para prolongar sua vida útil",
+      "cliente": "Consumidores com eletrodomésticos com defeito que preferem reparar a trocar e reduzir lixo eletrônico.",
+      "problema": "Eletrodomésticos são descartados com defeitos simples porque a assistência cobra quase o preço de um produto novo.",
+      "solucao": "Rede de técnicos certificados com diagnóstico gratuito e conserto com garantia de 6 meses. Aparelhos reparados também podem ser vendidos na plataforma.",
+      "monetizacao": "Pagamento pelo reparo. Venda de aparelhos reparados e certificados. Assinatura de manutenção preventiva anual.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ProdutoVidaLonga para que você conserte em vez de jogar fora.",
+        "problema": "A geladeira parou e o conserto custa quase o preço de outra. Você compra outra e a velha vai para o lixo. 50 milhões de toneladas de lixo eletrônico por ano no mundo.",
+        "solucao": "O ProdutoVidaLonga faz diagnóstico gratuito. Conserta com garantia de 6 meses. Se não valer, compramos e reaproveitamos as peças.",
+        "modelo": "Cobramos pelo conserto. Vendemos aparelhos reparados. Assinatura de manutenção preventiva.",
+        "fechamento": "O melhor aparelho é o que você já tem funcionando. O ProdutoVidaLonga garante que ele dure muito mais."
+      }
+    },
+    {
+      "id": "ESG-21",
+      "nome": "MapaVerde",
+      "resumo": "Mapeamento colaborativo de áreas verdes e biodiversidade urbana",
+      "cliente": "Prefeituras, universidades e cidadãos interessados em conhecer e proteger a biodiversidade das cidades.",
+      "problema": "Cidades perdem biodiversidade sem monitoramento organizado. Decisões de urbanização são tomadas sem dados de impacto ambiental local.",
+      "solucao": "App colaborativo onde qualquer pessoa registra plantas e animais com foto e localização, alimentando um mapa aberto que informa decisões públicas.",
+      "monetizacao": "Prefeituras pagam pelo sistema. Universidades pagam pelo acesso à base de dados. Editais de biodiversidade.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o MapaVerde para que cada árvore e animal da cidade seja conhecido e protegido.",
+        "problema": "Quando uma árvore vai ser derrubada para um prédio, ninguém sabe se é rara ou centenária. A biodiversidade urbana é invisível.",
+        "solucao": "O MapaVerde é um app onde qualquer pessoa fotografa e registra plantas e animais com localização. Os dados formam um mapa aberto que guia as decisões da prefeitura.",
+        "modelo": "Prefeituras pagam pelo sistema. Universidades pagam pela base de dados. Editais de conservação financiam.",
+        "fechamento": "O que é mapeado é protegido. O MapaVerde começa a contar o que a cidade tem antes que se perca."
+      }
+    },
+    {
+      "id": "ESG-22",
+      "nome": "SacolaSustentável",
+      "resumo": "Embalagens biodegradáveis de fibras vegetais locais para o comércio varejista",
+      "cliente": "Comércio varejista, feiras livres e eventos que precisam de embalagens sustentáveis com preço competitivo.",
+      "problema": "As alternativas biodegradáveis às sacolas plásticas são mais caras e dependem de matéria-prima importada.",
+      "solucao": "Produção de sacolas e embalagens biodegradáveis com fibra de cana-de-açúcar e outros subprodutos agrícolas locais.",
+      "monetizacao": "Venda para comércio e eventos. Contratos com prefeituras para feiras livres. Exportação para mercados exigentes.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei a SacolaSustentável para que o comerciante não precise escolher entre custo e consciência.",
+        "problema": "Proibiram a sacolinha plástica. As alternativas ecológicas custam 3 vezes mais. O pequeno comerciante não consegue pagar e volta ao plástico proibido.",
+        "solucao": "A SacolaSustentável usa fibra de cana-de-açúcar da nossa região. Sacolas biodegradáveis a preço competitivo com o plástico. Regional, sustentável e acessível.",
+        "modelo": "Venda para varejistas e eventos. Contratos com prefeituras. Exportação.",
+        "fechamento": "Sustentabilidade que o comércio consegue pagar é sustentabilidade que acontece de verdade."
+      }
+    },
+    {
+      "id": "ESG-23",
+      "nome": "TintaNatura",
+      "resumo": "Tintas naturais e não-tóxicas de pigmentos minerais e vegetais regionais",
+      "cliente": "Consumidores conscientes, arquitetos e construtores que buscam alternativas às tintas com compostos orgânicos voláteis tóxicos.",
+      "problema": "Tintas convencionais contêm compostos tóxicos que contaminam o ar interno por anos. As alternativas naturais são importadas e caras.",
+      "solucao": "Linha de tintas com argilas, óxidos minerais e pigmentos de plantas regionais. Sem VOC, laváveis, duráveis e em cores inspiradas no cerrado.",
+      "monetizacao": "Venda direta e por lojas de material de construção. Linha premium para arquitetos. Workshops de pintura natural.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei a TintaNatura porque a tinta que pinta sua casa não deveria envenenar o ar dentro dela.",
+        "problema": "Tinta convencional libera gases tóxicos por anos. Crianças e gestantes são as mais afetadas. As alternativas naturais existem lá fora, mas são caras.",
+        "solucao": "A TintaNatura é produzida com argila, óxidos minerais e pigmentos vegetais daqui. Sem toxinas, lavável, durável. Disponível em lojas de material de construção.",
+        "modelo": "Venda por lojas e direta. Linha premium para arquitetos. Workshops de pintura natural.",
+        "fechamento": "A casa mais saudável começa pelas paredes. A TintaNatura garante que o que cobre protege sem envenenar."
+      }
+    },
+    {
+      "id": "ESG-24",
+      "nome": "DealerVerde",
+      "resumo": "Assessoria para frotas e empresas na transição para veículos elétricos e híbridos",
+      "cliente": "Frotas empresariais e prefeituras que querem iniciar a transição para veículos elétricos mas não sabem por onde começar.",
+      "problema": "A transição para elétricos é inevitável mas confusa: qual modelo, qual infraestrutura, quais incentivos, qual o custo real.",
+      "solucao": "Plataforma de assessoria e calculadora de viabilidade para planejamento gradual da frota, com TCO, incentivos e mapa de recarga.",
+      "monetizacao": "Assessoria por projeto. Assinatura de plataforma de gestão de frota elétrica. Comissão em parcerias com montadoras.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o DealerVerde para que a transição para elétricos não seja um salto no escuro.",
+        "problema": "Elétrico é o futuro. Mas qual modelo comprar? Onde recarregar? Quanto custa de verdade? As empresas travam na dúvida e mantêm a frota poluindo.",
+        "solucao": "O DealerVerde calcula o custo real de propriedade, mapeia carregadores, lista incentivos fiscais e elabora o plano de transição gradual.",
+        "modelo": "Assessoria por projeto. Assinatura de plataforma. Comissão com montadoras.",
+        "fechamento": "Elétrico não é moda — é matemática. O DealerVerde mostra os números para quem precisa decidir."
+      }
+    },
+    {
+      "id": "ESG-25",
+      "nome": "ManteigaDaTerra",
+      "resumo": "Cooperativa de produtos da sociobiodiversidade do cerrado com preço justo e rastreabilidade",
+      "cliente": "Consumidores que querem produtos do cerrado com origem verificada e extrativistas que querem preço justo.",
+      "problema": "Extrativistas vendem produtos do cerrado por preços irrisórios. O consumidor paga caro sem saber se o produtor foi bem pago.",
+      "solucao": "Cooperativa digital que conecta extrativistas do cerrado com consumidores urbanos. Rastreabilidade por QR Code e pagamento justo verificável.",
+      "monetizacao": "Margem sobre produtos. Linha gourmet para restaurantes. Exportação para mercados europeus interessados em bioeconomia.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei a ManteigaDaTerra para que o cerrado alimente quem o preserva.",
+        "problema": "O extrativista vende o litro de óleo de pequi por R$ 8. Na loja gourmet custa R$ 80. O dinheiro não volta para quem preserva a floresta.",
+        "solucao": "A ManteigaDaTerra conecta diretamente o extrativista ao consumidor. QR Code no produto mostra quem coletou, onde e quanto recebeu.",
+        "modelo": "Margem sobre vendas. Linha gourmet para restaurantes. Exportação para Europa.",
+        "fechamento": "Preservar o cerrado precisa ser lucrativo para quem vive nele. A ManteigaDaTerra garante isso."
+      }
+    },
+    {
+      "id": "ESG-26",
+      "nome": "ClimaClasse",
+      "resumo": "Educação ambiental prática com horta, compostagem e eficiência energética nas escolas",
+      "cliente": "Escolas públicas de ensino fundamental que querem integrar educação ambiental prática ao currículo.",
+      "problema": "Educação ambiental nas escolas é teórica. Faltam projetos práticos que mostrem o impacto real das escolhas individuais.",
+      "solucao": "Programa que instala horta, composteira e medidor de energia na escola. Alunos gerenciam os sistemas e medem o impacto.",
+      "monetizacao": "Secretarias de educação contratam. Editais do MMA. Empresas patrocinam.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ClimaClasse para que o aluno aprenda sustentabilidade fazendo, não só lendo.",
+        "problema": "Educação ambiental na escola é só texto de livro. O aluno lê sobre reciclagem mas nunca compostou. A teoria não muda comportamento.",
+        "solucao": "O ClimaClasse instala horta, composteira e medidor de energia na escola. Os alunos gerenciam e medem os resultados. Aprendizado real com impacto real.",
+        "modelo": "Secretarias de educação pagam. Editais do MMA. Empresas patrocinam.",
+        "fechamento": "Sustentabilidade que se vive não se esquece. O ClimaClasse planta esse hábito enquanto é tempo."
+      }
+    },
+    {
+      "id": "ESG-27",
+      "nome": "EstoqueVivo",
+      "resumo": "Marketplace de insumos agrícolas em excesso entre produtores rurais da região",
+      "cliente": "Produtores rurais com excedente de sementes e insumos e produtores que precisam desses itens sem capacidade de compra.",
+      "problema": "Produtores descartam insumos em excesso no final da safra enquanto outros produtores próximos precisam dos mesmos itens.",
+      "solucao": "Marketplace regional de insumos entre produtores para compra, venda, troca ou doação de sementes, mudas, fertilizantes e equipamentos.",
+      "monetizacao": "Comissão sobre transações. Assinatura para produtores frequentes. Parcerias com cooperativas.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EstoqueVivo para que insumos agrícolas não sejam descartados quando produtores próximos precisam.",
+        "problema": "No fim da safra, o produtor descarta sementes que sobraram. O vizinho que quer plantar não tem dinheiro. Um desperdiça, o outro perde a safra.",
+        "solucao": "O EstoqueVivo é um marketplace regional. Sementes, mudas, fertilizantes, equipamentos — compra, venda, troca ou doação entre produtores da região.",
+        "modelo": "Comissão nas transações. Assinatura para frequentes. Parcerias com cooperativas.",
+        "fechamento": "O campo desperdiça o que o campo precisa. O EstoqueVivo conecta os dois lados e resolve isso."
+      }
+    },
+    {
+      "id": "ESG-28",
+      "nome": "FlorUrbanA",
+      "resumo": "Paisagismo com plantas nativas e compostagem para condomínios residenciais",
+      "cliente": "Condomínios que querem espaços verdes bonitos, de baixa manutenção e com impacto positivo para biodiversidade.",
+      "problema": "Condomínios gastam muito com jardins de plantas exóticas que não se adaptam ao clima local.",
+      "solucao": "Paisagismo com plantas nativas do cerrado, irrigação por gotejamento com água da chuva e compostagem do resíduo orgânico.",
+      "monetizacao": "Projeto e implantação. Manutenção mensal por assinatura. Venda de mudas nativas.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FlorUrbanA para que o jardim do condomínio seja bonito, barato e ajude a natureza.",
+        "problema": "Condomínio gasta R$ 2.000 por mês regando plantas que não são daqui e morrem na seca.",
+        "solucao": "O FlorUrbanA projeta jardins com plantas nativas: resistentes à seca, sem adubo, atraentes para pássaros. Irrigação com água da chuva e compostagem no condomínio.",
+        "modelo": "Projeto e implantação. Manutenção mensal. Vendemos mudas nativas.",
+        "fechamento": "Jardim que se cuida sozinho e ainda ajuda a natureza. O FlorUrbanA prova que os dois não se excluem."
+      }
+    },
+    {
+      "id": "ESG-29",
+      "nome": "LogisticaReversa",
+      "resumo": "Plataforma de gestão do retorno e reaproveitamento de embalagens entre indústria e varejo",
+      "cliente": "Indústrias e varejistas que precisam cumprir obrigações de logística reversa da Política Nacional de Resíduos Sólidos.",
+      "problema": "A PNRS obriga as indústrias à logística reversa de embalagens, mas poucas têm sistema operacional para isso.",
+      "solucao": "Plataforma que organiza coleta, triagem, contagem e certificação das embalagens retornadas com relatório de conformidade e rastreabilidade.",
+      "monetizacao": "Assinatura mensal das indústrias. Taxa por relatório de conformidade. Venda do material triado a recicladores.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o LogísticaReversa para resolver a obrigação de retorno de embalagens de forma simples e documentada.",
+        "problema": "A lei obriga a indústria a recolher suas embalagens. A maioria não tem sistema, paga multa e continua gerando resíduo.",
+        "solucao": "O LogísticaReversa organiza a coleta no varejo, a triagem, a contagem e emite o relatório de conformidade automaticamente.",
+        "modelo": "Assinatura mensal. Taxa por relatório. Venda do material triado.",
+        "fechamento": "Cumprir a lei pode virar vantagem competitiva. O LogísticaReversa transforma obrigação em eficiência."
+      }
+    },
+    {
+      "id": "ESG-30",
+      "nome": "CasaEficiente",
+      "resumo": "Auditoria e retrofit de eficiência energética acessível para residências",
+      "cliente": "Proprietários com contas de energia alta que querem reduzir consumo e custo sem saber por onde começar.",
+      "problema": "Residências desperdiçam energia em iluminação e climatização ineficiente. Uma auditoria profissional é cara para a maioria.",
+      "solucao": "Auditoria energética por técnicos certificados com relatório priorizado de melhorias. Parceria com lojas para fornecimento de produtos eficientes.",
+      "monetizacao": "Taxa de auditoria. Comissão nas vendas de produtos recomendados. Plano de acompanhamento trimestral.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CasaEficiente para que você descubra onde está jogando energia — e dinheiro — fora.",
+        "problema": "Conta de luz alta, mas você não sabe por quê. Seria o ar-condicionado? O chuveiro antigo? Sem uma auditoria, fica no escuro.",
+        "solucao": "O CasaEficiente manda um técnico fazer a auditoria completa. Você recebe relatório com o que trocar e em qual ordem para maior economia.",
+        "modelo": "Taxa de auditoria. Comissão nas vendas. Acompanhamento trimestral de economia.",
+        "fechamento": "A casa que gasta menos vale mais. O CasaEficiente encontra o desperdício antes que ele continue cobrando."
+      }
+    }
+  ]
+}

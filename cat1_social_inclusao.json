@@ -1,0 +1,487 @@
+{
+  "categoria": "Inovação Social e Inclusão",
+  "cor": "#1D9E75",
+  "icone": "pessoas",
+  "ideias": [
+    {
+      "id": "SI-01",
+      "nome": "VozAtiva",
+      "resumo": "Plataforma de comunicação alternativa para pessoas com dificuldade de fala",
+      "cliente": "Pessoas com deficiência de fala (AVC, autismo, paralisia cerebral) e seus familiares e cuidadores.",
+      "problema": "Pessoas com limitações na fala ficam sem comunicação efetiva no dia a dia, dependendo de outros para tarefas simples como pedir água ou expressar dor.",
+      "solucao": "Aplicativo com símbolos visuais, frases pré-programadas e síntese de voz em português, personalizável por cuidador ou terapeuta. Funciona offline.",
+      "monetizacao": "Assinatura mensal para famílias e clínicas. Plano gratuito limitado. Licença institucional para escolas e hospitais.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], curso [área] no Senac Araçatuba. Eu criei uma solução para quem não consegue se comunicar pela fala.",
+        "problema": "Imagine não conseguir pedir ajuda quando sente dor. Milhões de brasileiros com autismo, AVC ou paralisia cerebral vivem isso todo dia. As alternativas existentes são caras ou em inglês.",
+        "solucao": "Criei o VozAtiva: um app com símbolos visuais e síntese de voz em português. O cuidador personaliza as frases, e a pessoa toca na tela para falar. Funciona sem internet.",
+        "modelo": "Famílias pagam uma assinatura mensal acessível. Clínicas e escolas têm plano institucional. Existe versão gratuita básica.",
+        "fechamento": "Comunicação é um direito. O VozAtiva devolve a voz para quem mais precisa."
+      }
+    },
+    {
+      "id": "SI-02",
+      "nome": "MãoAmiga",
+      "resumo": "Rede de voluntários para acompanhar idosos em consultas médicas",
+      "cliente": "Idosos acima de 65 anos sem familiar disponível para acompanhá-los em consultas, exames e procedimentos médicos.",
+      "problema": "Muitos idosos faltam consultas ou vão sozinhos a procedimentos complexos por não ter quem os acompanhe, gerando riscos à saúde e solidão.",
+      "solucao": "Plataforma que conecta idosos cadastrados com voluntários verificados da comunidade. O idoso agenda a consulta, o sistema aloca um voluntário próximo com avaliação de confiança.",
+      "monetizacao": "Empresas e planos de saúde pagam pela redução de faltas e reinternações. ONGs e prefeituras financiam via convênio. Taxa simbólica opcional do idoso.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do curso de [área] no Senac Araçatuba. Criei uma solução para idosos que precisam de apoio para ir ao médico.",
+        "problema": "No Brasil, milhares de idosos faltam consultas porque não têm quem os leve. Esse abandono gera doenças que poderiam ser evitadas e custa caro ao sistema de saúde.",
+        "solucao": "O MãoAmiga conecta idosos com voluntários verificados da comunidade. Pelo aplicativo ou telefone, o idoso agenda a consulta e recebe um acompanhante de confiança.",
+        "modelo": "Planos de saúde e prefeituras pagam pela plataforma. Cada falta evitada economiza muito mais do que o custo do serviço.",
+        "fechamento": "Cuidar de quem construiu nossa cidade não é caridade — é responsabilidade. O MãoAmiga torna isso simples."
+      }
+    },
+    {
+      "id": "SI-03",
+      "nome": "BolsaVizinha",
+      "resumo": "Banco comunitário de alimentos e produtos entre vizinhos em situação de vulnerabilidade",
+      "cliente": "Famílias em vulnerabilidade alimentar em bairros periféricos de cidades do interior paulista.",
+      "problema": "Famílias passam necessidade enquanto vizinhos têm excedente de alimentos ou produtos que seriam descartados, por falta de um canal organizado de partilha.",
+      "solucao": "App simples com cadastro de oferta e pedido de alimentos, roupas e higiene. A distribuição é feita por pontos de coleta nos próprios bairros, geridos por líderes comunitários voluntários.",
+      "monetizacao": "Supermercados e padarias pagam para inserir seus excedentes na plataforma como responsabilidade social. Prefeituras financiam a operação. Editais de impacto social.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o BolsaVizinha para resolver o desperdício e a fome ao mesmo tempo.",
+        "problema": "Enquanto famílias passam fome em um bairro, no mesmo quarteirão alimentos são jogados fora. Falta um canal simples para conectar quem tem com quem precisa.",
+        "solucao": "O BolsaVizinha é um app onde qualquer pessoa cadastra o que tem para oferecer — alimento, roupa, produto de higiene. Famílias próximas recebem a oferta e retiram em pontos do bairro.",
+        "modelo": "Supermercados pagam para inserir seus excedentes com certificado de impacto social. Prefeituras podem financiar a operação.",
+        "fechamento": "A fome não espera burocracia. O BolsaVizinha resolve isso entre vizinhos, agora."
+      }
+    },
+    {
+      "id": "SI-04",
+      "nome": "ReempreGA",
+      "resumo": "Capacitação e recolocação profissional para pessoas em situação de rua",
+      "cliente": "Pessoas em situação de rua entre 18 e 50 anos com interesse em reinserção no mercado de trabalho formal ou autônomo.",
+      "problema": "Pessoas em situação de rua têm enorme dificuldade de reintegração porque carecem de documentação, endereço, higiene e qualificação profissional — barreiras que se reforçam mutuamente.",
+      "solucao": "Programa de 30 dias com alojamento transitório, regularização documental, curso profissionalizante rápido e encaminhamento a empregadores parceiros que se comprometem com vagas de reinserção.",
+      "monetizacao": "Empresas parceiras pagam por vaga preenchida com profissional reinserido. Editais municipais e estaduais. Responsabilidade social corporativa de grandes varejistas.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ReempreGA para ajudar pessoas em situação de rua a voltarem ao mercado de trabalho.",
+        "problema": "Quem está nas ruas enfrenta um ciclo impossível: sem endereço não tem emprego, sem emprego não tem casa. As políticas públicas existentes não quebram esse ciclo.",
+        "solucao": "O ReempreGA oferece 30 dias de alojamento, documentação, curso profissionalizante e encaminhamento direto a empresas parceiras. É um corredor de saída da rua.",
+        "modelo": "Empresas pagam por candidato reintegrado. Prefeituras financiam o programa como política social. Editais de impacto.",
+        "fechamento": "Reinserção não é favor — é investimento. O ReempreGA transforma custo social em produtividade."
+      }
+    },
+    {
+      "id": "SI-05",
+      "nome": "EscolaViva",
+      "resumo": "Reforço escolar gratuito mediado por estudantes universitários voluntários via vídeo",
+      "cliente": "Alunos do ensino fundamental e médio de escolas públicas com dificuldade em matemática, português e ciências.",
+      "problema": "Estudantes de escolas públicas têm desempenho inferior por falta de reforço escolar, que é caro e inacessível para famílias de baixa renda.",
+      "solucao": "Plataforma que conecta alunos carentes com estudantes universitários voluntários para sessões de reforço por vídeo. O universitário ganha horas de extensão curricular. O aluno, aprendizado.",
+      "monetizacao": "Universidades pagam pela certificação de horas de extensão. Empresas patrocinam para fortalecer marca entre jovens. Editais de educação do MEC e secretarias estaduais.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o EscolaViva para conectar quem precisa aprender com quem quer ensinar.",
+        "problema": "Alunos da escola pública ficam para trás porque não têm reforço escolar. Ao mesmo tempo, universitários precisam de horas de extensão e não sabem onde cumprir.",
+        "solucao": "O EscolaViva conecta os dois por vídeo. O aluno agenda uma sessão de reforço grátis. O universitário atende e recebe horas de extensão certificadas.",
+        "modelo": "Universidades pagam pela gestão das horas de extensão. Empresas patrocinam sessões e aparecem na plataforma.",
+        "fechamento": "Educação de qualidade não deveria depender do CEP. O EscolaViva muda isso hoje."
+      }
+    },
+    {
+      "id": "SI-06",
+      "nome": "CuidarBem",
+      "resumo": "Suporte emocional e orientação para cuidadores informais de idosos e PCD",
+      "cliente": "Familiares que cuidam de idosos ou pessoas com deficiência em casa, sem suporte profissional ou emocional.",
+      "problema": "Cuidadores informais desenvolvem síndrome do esgotamento, depressão e doenças físicas por sobrecarga, sem ter com quem conversar ou pedir orientação técnica.",
+      "solucao": "Plataforma com grupos de apoio online moderados por psicólogos voluntários, biblioteca de vídeos técnicos sobre cuidados e canal de plantão para dúvidas urgentes.",
+      "monetizacao": "Planos de saúde pagam para reduzir hospitalização de cuidadores. Assinatura mensal de baixo custo. Parcerias com farmácias e clínicas.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CuidarBem para quem cuida de alguém e esquece de cuidar de si mesmo.",
+        "problema": "No Brasil há mais de 30 milhões de cuidadores informais. A maioria cuida de idosos ou PCD sozinha, sem suporte técnico nem emocional, e adoece por isso.",
+        "solucao": "O CuidarBem oferece grupos de apoio online, vídeos técnicos sobre cuidados e plantão de dúvidas com psicólogos e enfermeiros voluntários. Tudo acessível pelo celular.",
+        "modelo": "Planos de saúde financiam porque cuidador saudável evita hospitalizações. Assinatura mensal acessível para quem quer mais recursos.",
+        "fechamento": "Quem cuida também precisa ser cuidado. O CuidarBem existe para isso."
+      }
+    },
+    {
+      "id": "SI-07",
+      "nome": "LabRecicla",
+      "resumo": "Oficinas de artesanato e geração de renda com materiais recicláveis para mulheres em vulnerabilidade",
+      "cliente": "Mulheres em situação de vulnerabilidade social e econômica, especialmente mães solo e ex-detentas em processo de reinserção.",
+      "problema": "Mulheres em vulnerabilidade têm dificuldade de inserção no mercado formal e carecem de alternativas de renda que respeitem sua realidade de cuidado com filhos.",
+      "solucao": "Oficinas presenciais e virtuais de produção artesanal com materiais recicláveis. Os produtos são vendidos em feiras, e-commerce e empresas que buscam brindes sustentáveis.",
+      "monetizacao": "Venda direta dos produtos. Empresas compram lotes de brindes corporativos sustentáveis. Editais de economia solidária.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o LabRecicla para transformar resíduos em renda para mulheres que mais precisam.",
+        "problema": "Mulheres em vulnerabilidade não conseguem emprego formal por causa dos filhos, da falta de transporte ou do histórico. Ficam sem renda e sem perspectiva.",
+        "solucao": "O LabRecicla oferece oficinas de artesanato com materiais recicláveis, que podem ser feitas em casa. Os produtos são vendidos online e em feiras, e a mulher fica com a maior parte da renda.",
+        "modelo": "Venda direta dos produtos artesanais. Empresas compram lotes como brindes sustentáveis com certificado de impacto social.",
+        "fechamento": "Sustentabilidade e empoderamento no mesmo produto. O LabRecicla prova que é possível."
+      }
+    },
+    {
+      "id": "SI-08",
+      "nome": "PonteJovem",
+      "resumo": "Mentoria de carreira entre jovens periféricos e profissionais estabelecidos da mesma cidade",
+      "cliente": "Jovens de 16 a 24 anos de bairros periféricos de cidades do interior, sem rede de contatos profissionais.",
+      "problema": "Jovens periféricos têm talento mas não têm acesso a orientação de carreira, estágio ou emprego porque não conhecem as pessoas certas — a rede de contatos ainda é o maior filtro do mercado.",
+      "solucao": "Plataforma que conecta jovens com profissionais locais voluntários para sessões mensais de mentoria de carreira, além de indicações de vagas e cursos gratuitos.",
+      "monetizacao": "Empresas pagam para ter seus profissionais como mentores e acessar candidatos qualificados. Prefeituras financiam como política de emprego jovem.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PonteJovem para conectar o talento da periferia com as oportunidades que existem na mesma cidade.",
+        "problema": "O maior filtro do mercado de trabalho não é o currículo — é a rede de contatos. Jovens periféricos têm talento mas não conhecem as pessoas certas. Isso perpetua a desigualdade.",
+        "solucao": "O PonteJovem conecta jovens com profissionais locais para mentoria mensal por vídeo. O jovem recebe orientação real, indicações de vagas e acesso a uma rede que antes era invisível.",
+        "modelo": "Empresas pagam para participar e acessar candidatos qualificados. Prefeituras financiam como programa de primeiro emprego.",
+        "fechamento": "Talento existe em todo lugar. O que falta é a ponte. O PonteJovem constrói ela."
+      }
+    },
+    {
+      "id": "SI-09",
+      "nome": "CasaSegura",
+      "resumo": "Sistema de alertas e rede de apoio para mulheres em situação de violência doméstica",
+      "cliente": "Mulheres em situação de violência doméstica, especialmente em cidades do interior onde os serviços de proteção são distantes.",
+      "problema": "Mulheres vítimas de violência doméstica no interior têm dificuldade de acionar ajuda com discrição, por medo do agressor e pela distância dos serviços de proteção.",
+      "solucao": "Aplicativo com botão de pânico discreto que aciona vizinhos cadastrados como rede de apoio, além de gravar automaticamente áudio e localização e notificar a delegacia da mulher.",
+      "monetizacao": "Prefeituras e governos estaduais contratam como política pública. Editais do Ministério da Mulher. Parcerias com planos de saúde e seguradoras.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CasaSegura para que nenhuma mulher enfrente a violência doméstica sozinha.",
+        "problema": "No interior, quando uma mulher é agredida, demora horas para o socorro chegar. Ela não pode ligar na frente do agressor. Os serviços de proteção ficam longe. Muitas não pedem ajuda.",
+        "solucao": "O CasaSegura tem um botão de pânico disfarçado no celular. Ao acionar, grava áudio, captura localização e aciona vizinhos cadastrados e a delegacia da mulher — tudo em segundos.",
+        "modelo": "Prefeituras contratam como política pública de proteção. Governos estaduais financiam via editais de combate à violência.",
+        "fechamento": "Segurança não pode depender de sorte. O CasaSegura coloca uma rede entre a mulher e o perigo."
+      }
+    },
+    {
+      "id": "SI-10",
+      "nome": "LetraNova",
+      "resumo": "Alfabetização de adultos com metodologia lúdica via aplicativo e grupos presenciais",
+      "cliente": "Adultos acima de 30 anos que não sabem ler ou escrever, especialmente trabalhadores rurais e domésticos.",
+      "problema": "O Brasil ainda tem milhões de analfabetos adultos que têm vergonha de admitir e não frequentam as turmas do EJA por incompatibilidade de horário ou por constrangimento.",
+      "solucao": "App de alfabetização com lições curtas de 10 minutos usando imagens e áudios, sem necessidade de saber usar smartphone previamente. Grupos de apoio presenciais mensais conduzidos por educadores voluntários.",
+      "monetizacao": "Sindicatos e associações rurais pagam para oferecer aos associados. Prefeituras financiam como programa de EJA digital. Editais do MEC.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o LetraNova para adultos que nunca tiveram a chance de aprender a ler.",
+        "problema": "Há mais de 11 milhões de analfabetos adultos no Brasil. Muitos têm vergonha e não vão à escola. Outros trabalham quando as turmas acontecem. O problema continua invisível.",
+        "solucao": "O LetraNova é um app com lições de 10 minutos usando imagens e áudios. Não precisa saber usar celular para começar. Grupos de apoio mensais ajudam quem precisa de suporte.",
+        "modelo": "Sindicatos rurais e prefeituras financiam como programa de inclusão. O app é gratuito para o usuário final.",
+        "fechamento": "Aprender a ler muda tudo. O LetraNova chegou para tornar isso possível para quem mais esperou."
+      }
+    },
+    {
+      "id": "SI-11",
+      "nome": "ConectaIdoso",
+      "resumo": "Inclusão digital para idosos com aulas práticas conduzidas por jovens da mesma comunidade",
+      "cliente": "Idosos acima de 60 anos que têm dificuldade de usar smartphone e internet, especialmente para serviços bancários e de saúde.",
+      "problema": "Com a digitalização dos serviços bancários, de saúde e governo, idosos que não sabem usar smartphone ficam excluídos e dependentes de terceiros para tarefas básicas.",
+      "solucao": "Programa de aulas práticas de inclusão digital ministradas por jovens treinados da mesma comunidade. Aulas pequenas, presenciais ou em domicílio, com linguagem acessível.",
+      "monetizacao": "Bancos e operadoras de telecom pagam pelo programa como responsabilidade social. Prefeituras financiam. Os jovens instrutores recebem bolsa.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ConectaIdoso para que tecnologia não seja uma barreira para quem mais precisa dela.",
+        "problema": "Bancos fecharam agências. Consultas médicas são marcadas por app. Documentos são digitais. E os idosos ficaram para trás, dependendo dos filhos para tudo.",
+        "solucao": "O ConectaIdoso treina jovens da comunidade para ensinar idosos a usar o celular em aulas práticas e domiciliares. Do WhatsApp ao Pix, com paciência e linguagem simples.",
+        "modelo": "Bancos e operadoras pagam pelo programa como ação de inclusão. Os jovens instrutores recebem bolsa e certificação.",
+        "fechamento": "Tecnologia deve aproximar pessoas, não excluí-las. O ConectaIdoso garante que ninguém fique para trás."
+      }
+    },
+    {
+      "id": "SI-12",
+      "nome": "SaúdePerto",
+      "resumo": "Teleatendimento médico e de enfermagem para comunidades rurais sem posto de saúde próximo",
+      "cliente": "Moradores de comunidades rurais e pequenos distritos sem acesso a posto de saúde ou médico nos dias úteis.",
+      "problema": "Moradores rurais percorrem dezenas de quilômetros para consultas básicas, perdem dias de trabalho e frequentemente desistem do atendimento, agravando doenças simples.",
+      "solucao": "Unidade móvel com enfermeiro presente e médico conectado por videoconferência. Atende triagem, diagnóstico básico, receitas e encaminhamentos. A unidade circula entre comunidades em escala semanal.",
+      "monetizacao": "Prefeituras contratam como extensão do serviço de saúde pública. Planos de saúde do agronegócio financiam para trabalhadores rurais. Convênios estaduais de saúde.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SaúdePerto para levar atendimento médico a quem mora longe de tudo.",
+        "problema": "No interior, há comunidades rurais sem posto de saúde. Para uma consulta simples, o morador perde o dia inteiro. Muitos desistem e o problema vira emergência.",
+        "solucao": "O SaúdePerto é uma van com enfermeiro e médico por vídeo. Circula entre comunidades semanalmente fazendo consultas, triagem e encaminhamentos na porta de casa.",
+        "modelo": "Prefeituras contratam o serviço. Planos rurais financiam para garantir a saúde dos trabalhadores do campo.",
+        "fechamento": "Saúde é direito — não importa o CEP. O SaúdePerto leva o médico até quem não pode ir até ele."
+      }
+    },
+    {
+      "id": "SI-13",
+      "nome": "TrabalhoSem Barreira",
+      "resumo": "Plataforma de vagas de emprego exclusiva para PCD com matching por habilidade real",
+      "cliente": "Pessoas com deficiência em busca de emprego formal e empresas com cota de PCD não preenchida.",
+      "problema": "Empresas têm dificuldade de preencher cotas de PCD porque não sabem onde encontrar candidatos qualificados, e PCD têm dificuldade de encontrar vagas adaptadas às suas habilidades reais.",
+      "solucao": "Plataforma de matching que cruza as habilidades do candidato PCD com as necessidades reais da vaga, além de orientar empresas sobre adaptações simples de ambiente e processo seletivo.",
+      "monetizacao": "Empresas pagam assinatura para acesso ao banco de candidatos PCD. Consultorias de adaptação de posto de trabalho são serviço adicional.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o TrabalhoSem Barreira para conectar PCD com empregos que realmente funcionam para eles.",
+        "problema": "Empresas precisam preencher a cota de PCD mas não sabem onde encontrar. PCD qualificados existem mas não aparecem nas plataformas convencionais. É um problema de matching, não de escassez.",
+        "solucao": "Nossa plataforma cruza as habilidades reais do candidato PCD com as necessidades da vaga. E ainda orienta a empresa sobre adaptações simples de processo e ambiente.",
+        "modelo": "Empresas pagam assinatura mensal. Consultorias de adaptação de posto de trabalho são receita adicional.",
+        "fechamento": "A cota existe. O talento existe. Falta a ponte certa. TrabalhoSem Barreira é essa ponte."
+      }
+    },
+    {
+      "id": "SI-14",
+      "nome": "MercadoJusto",
+      "resumo": "Feira digital de produtos de agricultores familiares com entrega no bairro",
+      "cliente": "Consumidores urbanos que querem comprar produtos frescos diretamente do produtor, e agricultores familiares que perdem margem nos intermediários.",
+      "problema": "Agricultores familiares vendem seus produtos por preços baixíssimos ao atravessador, enquanto o consumidor paga caro no supermercado. Os dois lados perdem.",
+      "solucao": "App de feira virtual que conecta diretamente o agricultor familiar ao consumidor urbano. Pedidos são feitos semanalmente, e a entrega é feita por motoboys locais em pontos de bairro.",
+      "monetizacao": "Comissão de 12% sobre cada venda. O agricultor recebe mais que no atravessador. O consumidor paga menos que no mercado.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o MercadoJusto para conectar quem planta com quem come, sem atravessador.",
+        "problema": "O agricultor vende o quilo do tomate por R$ 0,80. No supermercado, o mesmo tomate custa R$ 4,00. O atravessador fica com tudo. O produtor e o consumidor perdem.",
+        "solucao": "O MercadoJusto é uma feira digital. O agricultor cadastra o que vai colher, o consumidor faz o pedido semanal, e a entrega acontece por motoboys locais em pontos de bairro.",
+        "modelo": "Cobramos 12% de comissão sobre cada venda. Mesmo assim, o produtor ganha mais e o consumidor paga menos.",
+        "fechamento": "Alimento justo é alimento mais fresco, mais barato e que valoriza quem trabalha a terra. O MercadoJusto faz isso acontecer."
+      }
+    },
+    {
+      "id": "SI-15",
+      "nome": "VidaPlena",
+      "resumo": "Centro de saúde mental comunitário itinerante para periferias urbanas",
+      "cliente": "Moradores de bairros periféricos com sinais de ansiedade, depressão ou sofrimento psíquico, sem acesso a serviços de saúde mental.",
+      "problema": "Saúde mental é um tabu nas periferias e os serviços especializados estão concentrados nas áreas centrais. Quem mais precisa é quem menos acessa.",
+      "solucao": "Van adaptada com psicólogo e assistente social que circula por bairros periféricos em dias fixos, oferecendo atendimento individual, grupos terapêuticos e encaminhamentos.",
+      "monetizacao": "Prefeituras contratam como complemento ao CAPS. Editais de saúde mental do Ministério da Saúde. ONGs e fundações privadas cofinanciam.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VidaPlena para levar saúde mental a quem mais precisa e menos acessa.",
+        "problema": "Ansiedade e depressão não escolhem bairro, mas os psicólogos sim. Nas periferias, o sofrimento psíquico é tratado com silêncio. Quem mais precisa nunca chega ao consultório.",
+        "solucao": "O VidaPlena é uma van com psicólogo e assistente social que circula por bairros periféricos em dias fixos. Oferece atendimento individual, grupos e encaminhamentos na porta da comunidade.",
+        "modelo": "Prefeituras pagam como extensão do serviço de saúde. Editais do Ministério da Saúde e fundações privadas financiam a operação.",
+        "fechamento": "Saúde mental é saúde. O VidaPlena vai até onde o sistema ainda não chegou."
+      }
+    },
+    {
+      "id": "SI-16",
+      "nome": "EduFinança",
+      "resumo": "Educação financeira gamificada para jovens de escolas públicas",
+      "cliente": "Estudantes do ensino médio de escolas públicas entre 14 e 18 anos, especialmente os que já trabalham ou vão entrar no mercado em breve.",
+      "problema": "Jovens de baixa renda entram no mercado de trabalho sem nenhuma educação financeira, repetem os erros dos pais e entram em ciclos de endividamento desde o primeiro salário.",
+      "solucao": "App de simulação financeira gamificado onde o jovem toma decisões de vida — emprego, aluguel, crédito — e aprende as consequências em ambiente seguro. Integra com o currículo da escola.",
+      "monetizacao": "Secretarias de educação pagam por licença escolar. Bancos e fintechs patrocinam como ação de educação financeira. Versão premium individual.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o EduFinança para que jovens não repitam os erros financeiros que ninguém os ensinou a evitar.",
+        "problema": "O jovem pega o primeiro salário e em três meses está no cheque especial. Ninguém ensinou juros compostos, planejamento nem como sair do cartão. A escola pública não tem esse conteúdo.",
+        "solucao": "O EduFinança é um jogo onde o jovem vive cenários reais — paga aluguel, compra no crédito, perde emprego — e aprende as consequências sem as dívidas reais. Funciona integrado à aula.",
+        "modelo": "Escolas públicas pagam licença. Bancos patrocinam como ação de educação financeira. Versão premium para quem quer ir mais fundo.",
+        "fechamento": "O jogo ensina. A vida cobra. O EduFinança prepara antes da cobrança chegar."
+      }
+    },
+    {
+      "id": "SI-17",
+      "nome": "RaizesVivas",
+      "resumo": "Preservação e difusão de cultura e memória de comunidades quilombolas e indígenas via plataforma digital",
+      "cliente": "Comunidades quilombolas e indígenas que desejam preservar e difundir sua cultura, e o público em geral interessado em diversidade cultural.",
+      "problema": "Culturas, línguas e tradições de comunidades quilombolas e indígenas se perdem a cada geração por falta de registro, de espaço de difusão e de interesse das gerações mais jovens.",
+      "solucao": "Plataforma digital com acervo colaborativo de vídeos, receitas, músicas, línguas e histórias orais de comunidades. As próprias comunidades alimentam o conteúdo com suporte técnico.",
+      "monetizacao": "Licença para escolas e museus. Editais de cultura do MinC e Funai. Turismo cultural com roteiros pagos às comunidades. Doações e patrocínios.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o RaizesVivas para que culturas ancestrais não desapareçam com o tempo.",
+        "problema": "Línguas indígenas estão morrendo. Receitas quilombolas estão sendo esquecidas. Histórias orais somem com os anciãos. Sem registro, sem difusão, sem continuidade.",
+        "solucao": "O RaizesVivas é uma plataforma onde as próprias comunidades registram sua cultura em vídeos, áudios e textos. Nós oferecemos suporte técnico. O mundo acessa e aprende.",
+        "modelo": "Escolas e museus pagam licença de acesso. Turismo cultural gera renda direta para as comunidades. Editais de cultura financiam a operação.",
+        "fechamento": "Raiz forte não deixa árvore cair. O RaizesVivas garante que essas raízes perdurem."
+      }
+    },
+    {
+      "id": "SI-18",
+      "nome": "AmpararCE",
+      "resumo": "Apoio psicossocial e jurídico para crianças vítimas de abuso",
+      "cliente": "Crianças e adolescentes vítimas de abuso e suas famílias, em cidades sem CREAS ou com serviços sobrecarregados.",
+      "problema": "Em cidades pequenas do interior, crianças vítimas de abuso têm dificuldade de acesso a atendimento psicológico e jurídico especializado, prolongando o sofrimento e a impunidade.",
+      "solucao": "Central de atendimento por vídeo com psicólogos e advogados especializados em direito da criança, com protocolo de acionamento do conselho tutelar e da polícia integrado ao sistema.",
+      "monetizacao": "Prefeituras contratam como serviço de proteção da criança. Editais do ECA e programas federais de proteção. ONGs internacionais de proteção à infância cofinanciam.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AmpararCE para que nenhuma criança enfrente o abuso sem apoio imediato.",
+        "problema": "Em cidades pequenas, quando uma criança sofre abuso, faltam psicólogos, faltam advogados, faltam estruturas. A família não sabe o que fazer. O agressor continua impune.",
+        "solucao": "O AmpararCE oferece atendimento psicológico e jurídico por vídeo, especializado em crianças. Aciona conselho tutelar e polícia de forma integrada e documenta tudo para o processo.",
+        "modelo": "Prefeituras contratam como serviço de proteção. Editais federais e estaduais do ECA. ONGs internacionais cofinanciam.",
+        "fechamento": "Criança protegida é futuro garantido. O AmpararCE coloca o sistema do lado da vítima, não do agressor."
+      }
+    },
+    {
+      "id": "SI-19",
+      "nome": "OportuniDADE",
+      "resumo": "Capacitação profissional acelerada para pessoas em liberdade condicional",
+      "cliente": "Pessoas em cumprimento de pena em regime semiaberto ou liberdade condicional que buscam reinserção profissional.",
+      "problema": "A taxa de reincidência criminal é alta porque ex-detentos não encontram emprego após o cumprimento da pena, por falta de qualificação e pelo preconceito do mercado de trabalho.",
+      "solucao": "Cursos profissionalizantes de 60 horas em formato presencial e online, com certificação reconhecida, parceria com empresas que se comprometem com vagas de reinserção e acompanhamento pós-contratação.",
+      "monetizacao": "Sistema penitenciário estadual financia como programa de ressocialização. Empresas recebem benefícios fiscais pela contratação. Editais de justiça restaurativa.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o OportuniDADE para quebrar o ciclo de reincidência com qualificação real.",
+        "problema": "Mais de 40% dos ex-detentos voltam para a prisão em cinco anos. O principal motivo é a falta de emprego. Sem oportunidade, o crime se torna a única saída.",
+        "solucao": "O OportuniDADE oferece cursos de 60 horas com certificação, já com empresas parceiras dispostas a contratar. Fazemos acompanhamento dos primeiros seis meses de emprego.",
+        "modelo": "O sistema penitenciário financia como ressocialização. Empresas recebem benefícios fiscais pela contratação. Isso custa menos que um preso por mês.",
+        "fechamento": "Reintegrar é mais barato que reincidir. O OportuniDADE escolhe o caminho mais inteligente e mais humano."
+      }
+    },
+    {
+      "id": "SI-20",
+      "nome": "BrincarSem Limites",
+      "resumo": "Brinquedoteca itinerante com brinquedos adaptados para crianças com deficiência",
+      "cliente": "Crianças com deficiência física, sensorial ou intelectual de 2 a 12 anos, e suas famílias em cidades do interior.",
+      "problema": "Crianças com deficiência raramente têm acesso a brinquedos adaptados às suas necessidades, privando-as de desenvolvimento lúdico, sociabilização e alegria.",
+      "solucao": "Van equipada com brinquedos adaptados e terapeutas ocupacionais voluntários que circula por escolas especiais, clínicas e comunidades em dias fixos.",
+      "monetizacao": "Prefeituras contratam como serviço de educação especial. Associações de pais financiam mensalidades. Empresas patrocinam como responsabilidade social.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o BrincarSem Limites para que toda criança tenha o direito de brincar.",
+        "problema": "Brinquedos adaptados para crianças com deficiência são caros e raros. Famílias não têm onde levar seus filhos para brincar com segurança e alegria. O desenvolvimento lúdico é negado.",
+        "solucao": "Nossa van vai até escolas especiais e comunidades com brinquedos adaptados e terapeutas. As crianças brincam, desenvolvem e socializam. As famílias descansam e se conectam.",
+        "modelo": "Prefeituras contratam o serviço. Associações de pais financiam mensalidades. Empresas patrocinam como responsabilidade social.",
+        "fechamento": "Toda criança tem direito à alegria. O BrincarSem Limites garante que a deficiência não roube isso."
+      }
+    },
+    {
+      "id": "SI-21",
+      "nome": "VizinhoSolidário",
+      "resumo": "Rede de solidariedade comunitária para situações de emergência local",
+      "cliente": "Moradores de bairros que enfrentam emergências locais como enchentes, desabamentos ou acidentes, e que precisam de ajuda imediata.",
+      "problema": "Em emergências locais, a ajuda demora horas para chegar. Os vizinhos querem ajudar mas não sabem como se organizar. Falta coordenação e comunicação.",
+      "solucao": "App de rede solidária de bairro que ativa voluntários cadastrados em caso de emergência, distribui tarefas, coordena doações e orienta as ações antes da chegada da defesa civil.",
+      "monetizacao": "Prefeituras contratam como ferramenta de defesa civil comunitária. Seguradoras financiam como prevenção de danos. Editais de gestão de riscos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VizinhoSolidário para que emergências não nos peguem despreparados.",
+        "problema": "Quando vem a enchente, a defesa civil demora horas. Os vizinhos querem ajudar mas ficam se atrapalhando. Falta coordenação nos primeiros minutos — que são os que salvam vidas.",
+        "solucao": "O VizinhoSolidário ativa uma rede de voluntários do bairro em segundos. Cada um recebe uma tarefa: quem ajuda idosos, quem coordena doações, quem orienta os abrigos.",
+        "modelo": "Prefeituras contratam como extensão da defesa civil. Seguradoras financiam como prevenção. Editais de gestão de riscos.",
+        "fechamento": "Na emergência, o vizinho chega antes do Estado. O VizinhoSolidário organiza essa força que já existe."
+      }
+    },
+    {
+      "id": "SI-22",
+      "nome": "EsporteVida",
+      "resumo": "Esporte e lazer gratuito como prevenção à violência e às drogas em bairros periféricos",
+      "cliente": "Jovens de 10 a 18 anos de bairros periféricos com alto índice de vulnerabilidade social e baixa oferta de lazer.",
+      "problema": "Jovens periféricos sem opções de lazer e esporte ficam mais vulneráveis ao envolvimento com drogas e violência. A ociosidade é um fator de risco documentado.",
+      "solucao": "Programa de esportes coletivos (futsal, vôlei, atletismo) com educadores sociais em quadras comunitárias nos contra-turnos escolares, combinado com rodas de conversa e orientação.",
+      "monetizacao": "Prefeituras contratam como política de prevenção. Empresas patrocinam como responsabilidade social. Editais de esporte e juventude do Governo Federal.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EsporteVida porque esporte não é lazer — é prevenção.",
+        "problema": "Jovem sem o que fazer em bairro periférico encontra o crime antes de encontrar oportunidade. A falta de lazer e esporte é um fator de risco que as políticas ignoram.",
+        "solucao": "O EsporteVida leva futsal, vôlei e atletismo com educadores sociais para quadras comunitárias nos contra-turnos. O esporte vem junto com conversa, orientação e perspectiva.",
+        "modelo": "Prefeituras pagam como prevenção à violência. Empresas patrocinam. Editais federais de esporte e juventude financiam.",
+        "fechamento": "Jovem no esporte é jovem longe do perigo. O EsporteVida escolhe onde investir o tempo que faz diferença."
+      }
+    },
+    {
+      "id": "SI-23",
+      "nome": "TelhaAmiga",
+      "resumo": "Mutirão organizado de reforma habitacional para famílias em vulnerabilidade",
+      "cliente": "Famílias em situação de vulnerabilidade habitacional — telhados danificados, paredes sem reboco, ausência de banheiro — em zonas urbanas e rurais.",
+      "problema": "Famílias pobres vivem em condições precárias de moradia que causam doenças, acidentes e sofrimento, mas não conseguem realizar reformas por falta de dinheiro e de mão de obra organizada.",
+      "solucao": "Plataforma que organiza mutirões de reforma com voluntários, técnicos e materiais doados por construtoras parceiras. Cada reforma é documentada e certificada.",
+      "monetizacao": "Construtoras doam materiais e ganham certificado de responsabilidade social. Prefeituras financiam a operação. Editais de habitação social.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o TelhaAmiga para organizar o que as comunidades já fazem: se ajudar.",
+        "problema": "Há famílias dormindo com o telhado passando chuva, criando doenças e acidentes. Elas não têm dinheiro para reformar. E o material de construção muitas vezes existe nas construtoras — sem destino.",
+        "solucao": "O TelhaAmiga conecta a família que precisa de reforma com voluntários técnicos e construtoras que doam material. A plataforma organiza o mutirão do começo ao fim.",
+        "modelo": "Construtoras ganham certificado de responsabilidade social pela doação. Prefeituras financiam. Editais de habitação social cobrem o resto.",
+        "fechamento": "Uma telhado seguro muda tudo. O TelhaAmiga organiza a solidariedade que já existe e dá resultado."
+      }
+    },
+    {
+      "id": "SI-24",
+      "nome": "SaborGerações",
+      "resumo": "Restaurante escola com culinária de avós para jovens aprendizes em situação de vulnerabilidade",
+      "cliente": "Jovens de 16 a 22 anos em vulnerabilidade social interessados em gastronomia, e idosos com conhecimento culinário regional.",
+      "problema": "Jovens em vulnerabilidade não têm acesso a formação em gastronomia, enquanto idosos detêm conhecimentos culinários regionais únicos que se perdem com o tempo.",
+      "solucao": "Restaurante comunitário onde idosos ensinam culinária regional a jovens aprendizes. O restaurante atende o público em almoços e jantares, e os jovens saem certificados.",
+      "monetizacao": "Receita do restaurante. Cursos abertos pagos de culinária regional. Prefeituras financiam a formação dos jovens como política de emprego.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SaborGerações para juntar o conhecimento dos avós com o futuro dos jovens.",
+        "problema": "Jovens vulneráveis não têm como se qualificar em gastronomia. Idosos têm receitas e técnicas únicas que morrem com eles. Duas gerações com algo a oferecer, sem canal de encontro.",
+        "solucao": "No SaborGerações, avós ensinam culinária regional a jovens aprendizes em um restaurante comunitário real. O restaurante funciona, os jovens aprendem e saem certificados.",
+        "modelo": "O restaurante gera receita. Cursos abertos ao público também. Prefeituras financiam a formação como política de emprego jovem.",
+        "fechamento": "Receita boa alimenta o estômago. Receita passada de geração alimenta o futuro. O SaborGerações serve os dois."
+      }
+    },
+    {
+      "id": "SI-25",
+      "nome": "BibliotecaViva",
+      "resumo": "Biblioteca comunitária itinerante com contação de histórias em bairros sem acesso à cultura",
+      "cliente": "Crianças de 4 a 12 anos de bairros periféricos sem biblioteca pública ou livraria próxima.",
+      "problema": "Crianças pobres têm acesso muito menor a livros e leitura, o que impacta diretamente no desenvolvimento cognitivo, desempenho escolar e formação de hábitos culturais.",
+      "solucao": "Bicicleta-biblioteca com acervo rotativo que circula pelos bairros em dias fixos, combinada com sessões de contação de histórias conduzidas por educadores voluntários.",
+      "monetizacao": "Prefeituras contratam como extensão de serviços culturais. Editais de leitura e literatura do MinC. Livrarias e editoras doam o acervo como responsabilidade cultural.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o BibliotecaViva para levar histórias a quem ainda não as conhece.",
+        "problema": "Em bairros periféricos não há biblioteca. Os livros chegam — se chegam — pela escola. Crianças crescem sem o hábito da leitura, e isso aparece no desempenho escolar e além.",
+        "solucao": "A BibliotecaViva é uma bicicleta carregada de livros que vai ao bairro em dias fixos. Leitura livre, empréstimos, e toda semana uma sessão de contação de histórias.",
+        "modelo": "Prefeituras contratam o serviço. Editais de cultura financiam o acervo. Livrarias e editoras doam livros como responsabilidade cultural.",
+        "fechamento": "Toda criança merece uma história para dormir. O BibliotecaViva garante que ela chegue onde a livraria ainda não foi."
+      }
+    },
+    {
+      "id": "SI-26",
+      "nome": "HoraMed",
+      "resumo": "Sistema de lembretes e acompanhamento de medicação para pacientes crônicos de baixa renda",
+      "cliente": "Pacientes com doenças crônicas (hipertensão, diabetes, epilepsia) de baixa renda que têm dificuldade de seguir o tratamento médico.",
+      "problema": "Pacientes crônicos de baixa renda interrompem o tratamento por esquecimento, confusão com os medicamentos ou dificuldade de leitura — gerando internações evitáveis e piora do quadro.",
+      "solucao": "App com lembretes por WhatsApp com áudio e imagem dos medicamentos, integrado a agentes comunitários de saúde que fazem acompanhamento remoto de pacientes de risco.",
+      "monetizacao": "Prefeituras e secretarias de saúde contratam como ferramenta de saúde pública. Planos de saúde pagam pela redução de internações. Laboratórios patrocinam.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o HoraMed para que ninguém esqueça de tomar o remédio que mantém a vida em ordem.",
+        "problema": "Um diabético que para de tomar insulina vai para a UTI. Um hipertenso que esquece a medicação pode ter um AVC. E isso acontece todos os dias por simples esquecimento ou confusão.",
+        "solucao": "O HoraMed manda lembretes por WhatsApp com foto e áudio do medicamento na hora certa. O agente de saúde vê quem não confirmou e liga para verificar. Simples e eficaz.",
+        "modelo": "Prefeituras pagam pelo sistema. Planos de saúde financiam porque UTI custa 10 vezes mais que o serviço.",
+        "fechamento": "Prevenir é mais barato que tratar. O HoraMed cuida de quem mais precisa de cuidado constante."
+      }
+    },
+    {
+      "id": "SI-27",
+      "nome": "EmpreendeFamília",
+      "resumo": "Microcrédito e capacitação para negócios familiares em comunidades de baixa renda",
+      "cliente": "Famílias de baixa renda com um pequeno negócio informal (quitanda, costura, salgadinho) que querem formalizar e crescer.",
+      "problema": "Pequenos negócios familiares informais não conseguem crédito bancário por falta de histórico financeiro, e sem crédito não crescem nem se formalizam — um ciclo difícil de romper.",
+      "solucao": "Combinação de microcrédito com juro social, capacitação em gestão básica e acompanhamento mensal por mentores voluntários até a formalização do negócio.",
+      "monetizacao": "Juros do microcrédito (menores que o mercado, mas sustentáveis). Prefeituras financiam a capacitação. Bancos comunitários parceiros operam o crédito.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EmpreendeFamília para que o talento de quem vende salgadinho vire um negócio de verdade.",
+        "problema": "Há famílias que já empreendem há anos no informal e nunca conseguiram crédito para crescer. O banco pede garantia que elas não têm. O informal fica informal para sempre.",
+        "solucao": "O EmpreendeFamília oferece microcrédito com juro social, capacitação em gestão básica e mentor voluntário. Em seis meses, a família tem CNPJ e acesso ao crédito convencional.",
+        "modelo": "O juro do microcrédito sustenta a operação. Prefeituras financiam a capacitação. É investimento social com retorno real.",
+        "fechamento": "Empreendedor de verdade já existe em cada esquina. O EmpreendeFamília só dá a ferramentas que faltavam."
+      }
+    },
+    {
+      "id": "SI-28",
+      "nome": "ClimaEscola",
+      "resumo": "Programa de mediação de conflitos e combate ao bullying em escolas públicas",
+      "cliente": "Alunos do ensino fundamental e médio de escolas públicas que sofrem ou praticam bullying e violência escolar.",
+      "problema": "Bullying e conflitos escolares causam evasão, depressão e violência. As escolas públicas não têm psicólogos suficientes e os diretores não sabem como agir de forma eficaz.",
+      "solucao": "Programa de formação de alunos mediadores de conflitos, treinados por psicólogos voluntários para identificar, mediar e encaminhar situações de bullying com protocolo claro.",
+      "monetizacao": "Secretarias de educação contratam o programa. Editais de educação e saúde mental escolar. Fundações privadas cofinanciam.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ClimaEscola para que a escola seja um lugar seguro para todos.",
+        "problema": "Bullying não é brincadeira. Causa depressão, evasão e, nos casos extremos, tragédias. A escola não tem psicólogo suficiente. O diretor não sabe o que fazer. E o aluno sofre em silêncio.",
+        "solucao": "O ClimaEscola treina os próprios alunos como mediadores. Eles identificam conflitos antes que escalem, mediam conversas e chamam ajuda quando necessário. A escola cuida de si mesma.",
+        "modelo": "Secretarias de educação contratam. Editais de saúde mental escolar financiam. O custo é muito menor que uma tragédia.",
+        "fechamento": "Escola segura é escola que aprende. O ClimaEscola coloca a proteção nas mãos de quem vive ela todos os dias."
+      }
+    },
+    {
+      "id": "SI-29",
+      "nome": "SanduícheSolidário",
+      "resumo": "Distribuição de refeições prontas para pessoas em situação de rua via rede de restaurantes parceiros",
+      "cliente": "Pessoas em situação de rua que passam fome, e restaurantes com excedente de comida no final do expediente.",
+      "problema": "Restaurantes descartam toneladas de comida diariamente enquanto pessoas em situação de rua passam fome nas mesmas ruas. Falta um sistema logístico simples para conectar os dois.",
+      "solucao": "Plataforma que conecta restaurantes com excedente de refeições a pontos de distribuição comunitários e voluntários de moto que fazem a coleta e entrega ao longo do dia.",
+      "monetizacao": "Restaurantes pagam taxa simbólica e ganham certificado de impacto social. Prefeituras financiam a logística. Doações de empresas e pessoas físicas.",
+      "roteiro": {
+        "apresentacao": "Oi, eu sou [nome], do Senac Araçatuba. Criei o SanduícheSolidário para acabar com o absurdo de jogar comida fora enquanto alguém passa fome.",
+        "problema": "Todo dia, restaurantes descartam comida no fim do expediente. E na mesma rua, pessoas passam fome. Não falta comida — falta sistema.",
+        "solucao": "O SanduícheSolidário tem um app onde o restaurante registra o excedente. Um voluntário de moto faz a coleta e leva ao ponto de distribuição. A comida chega quente a quem precisa.",
+        "modelo": "Restaurante paga taxa e ganha certificado de impacto. Prefeitura financia a logística. Doações complementam.",
+        "fechamento": "Sobrou comida? Não joga fora. O SanduícheSolidário leva para quem precisa em minutos."
+      }
+    },
+    {
+      "id": "SI-30",
+      "nome": "VozDoCampo",
+      "resumo": "Canal de comunicação e advocacy digital para trabalhadores rurais e agricultores familiares",
+      "cliente": "Agricultores familiares e trabalhadores rurais sem acesso a informação sobre direitos, preços de mercado, clima e políticas públicas.",
+      "problema": "Agricultores familiares tomam decisões importantes — plantio, crédito, venda — sem informação adequada sobre preços, tempo, políticas e direitos, ficando à mercê de atravessadores e intermediários.",
+      "solucao": "App com boletim diário por áudio (para analfabetos) com preços de mercado regionais, previsão do tempo agrícola, alertas de pragas, dicas técnicas e informações sobre acesso ao Pronaf e seguros rurais.",
+      "monetizacao": "Assinatura mensal de sindicatos rurais para acesso dos associados. Prefeituras e secretarias de agricultura financiam. Publicidade de cooperativas e fornecedores de insumos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VozDoCampo para que o agricultor tome decisões com informação, não com sorte.",
+        "problema": "O agricultor planta sem saber se vai chover. Vende sem saber o preço justo. Pede crédito sem saber a que tem direito. E paga caro por esse desconhecimento a vida inteira.",
+        "solucao": "O VozDoCampo manda um áudio diário pelo WhatsApp com preço de mercado, tempo, alertas de praga e notícia do Pronaf. Simples, em linguagem rural, para quem tem pouco tempo.",
+        "modelo": "Sindicatos rurais pagam assinatura para seus associados. Prefeituras financiam. Cooperativas anunciam e chegam ao produtor.",
+        "fechamento": "Informação é poder. No campo, é também renda. O VozDoCampo leva os dois para quem mais precisa."
+      }
+    }
+  ]
+}

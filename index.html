@@ -22,7 +22,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-serif;background:#000;color:#fff;-webkit-font-smoothing:antialiased;}
-.deck{position:relative;width:100vw;height:100vh;overflow:hidden;}
+.deck{position:relative;width:100%;height:100vh;overflow:hidden;}
 
 /* Progress bar */
 .progress-bar{position:fixed;top:0;left:0;height:4px;background:var(--laranja);z-index:100;transition:width .5s cubic-bezier(.4,0,.2,1);box-shadow:0 0 12px rgba(247,148,29,.5);}
@@ -32,7 +32,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-s
 .slide-counter .sc-cur{color:var(--laranja);}
 
 /* Slides */
-.slide{position:absolute;inset:0;width:100vw;height:100vh;padding:60px 80px 80px;display:flex;opacity:0;visibility:hidden;transition:opacity .5s ease;overflow:hidden;}
+.slide{position:absolute;inset:0;width:100%;height:100vh;padding:60px 80px 80px;display:flex;opacity:0;visibility:hidden;transition:opacity .5s ease;overflow:hidden;}
 .slide.active{opacity:1;visibility:visible;}
 .slide .inner{position:relative;z-index:5;width:100%;height:100%;display:flex;flex-direction:column;}
 
@@ -667,28 +667,103 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-s
 
   /* Oculte elementos de parallax ou particulas que vazam */
   .particulas { display: none !important; }
-}
+
+  /* Slide AI — empilha colunas no mobile */
+  .s-ai .ai-cols { flex-direction: column !important; gap: 20px !important; max-width: 100% !important; }
+  .s-ai .ai-box { padding: 22px !important; width: 100% !important; box-sizing: border-box !important; }
+  .s-ai .ai-icon { font-size: 36px !important; margin-bottom: 15px !important; }
+  .s-ai .ai-box h3 { font-size: 20px !important; }
+  .s-ai p.d3 { font-size: 14px !important; margin: 10px auto 22px !important; }
+  .s-ai .ai-links { gap: 10px !important; }
+  .s-ai .ai-btn { padding: 10px 16px !important; font-size: 13px !important; }
 }
 
 
 /* ===== SLIDE AI TOOLS ===== */
-.s-ai { background: var(--azul-escuro) !important; }
+section.slide.s-ai { background: linear-gradient(150deg, #002D5C 0%, #005BB5 100%) !important; }
 .s-ai .inner { justify-content: center; align-items: center; text-align: center; }
-.s-ai .k { color: var(--laranja); font-size: 13px; letter-spacing: 3px; font-weight: 700; text-align: center; }
+.s-ai .k { color: rgba(255,255,255,0.75); font-size: 13px; letter-spacing: 3px; font-weight: 700; text-align: center; }
 .s-ai h2 { color: #fff; font-weight: 800; font-size: 52px; margin-top: 10px; letter-spacing: -0.5px; text-align: center; line-height: 1.1; }
 .s-ai p.d3 { text-align: center; color: rgba(255,255,255,0.7); max-width: 800px; margin: 15px auto 40px; font-size: 18px; line-height: 1.5; }
 
 .s-ai .ai-cols { display: flex; gap: 40px; justify-content: center; width: 100%; max-width: 1100px; margin: 0 auto; }
-.s-ai .ai-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; flex: 1; text-align: center; transition: all 0.3s; }
-.s-ai .ai-box:hover { background: rgba(255,255,255,0.08); border-color: var(--laranja); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.3); }
-.s-ai .ai-icon { font-size: 50px; color: var(--laranja); margin-bottom: 25px; }
+.s-ai .ai-box { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 40px; flex: 1; text-align: center; transition: all 0.3s; }
+.s-ai .ai-box:hover { background: rgba(255,255,255,0.12); border-color: var(--azul-claro); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.4); }
+.s-ai .ai-icon { font-size: 50px; color: #fff; margin-bottom: 25px; }
 .s-ai .ai-box h3 { color: #fff; font-weight: 800; font-size: 26px; margin-bottom: 12px; }
 .s-ai .ai-box p { color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 35px; line-height: 1.6; }
 .s-ai .ai-links { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
-.s-ai .ai-btn { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 10px; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; transition: all 0.3s; }
-.s-ai .ai-btn i { color: var(--laranja); font-size: 16px; }
-.s-ai .ai-btn:hover { background: var(--laranja); border-color: var(--laranja); color: #fff; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(247,148,29,0.4); }
+.s-ai .ai-btn { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 10px; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; transition: all 0.3s; }
+.s-ai .ai-btn i { color: rgba(255,255,255,0.7); font-size: 16px; }
+.s-ai .ai-btn:hover { background: var(--azul-claro); border-color: var(--azul-claro); color: #fff; transform: translateY(-3px); box-shadow: 0 5px 20px rgba(0,91,181,0.5); }
 .s-ai .ai-btn:hover i { color: #fff; }
+
+/* ===== MOBILE PORTRAIT 9:16 (até 430px) ===== */
+@media (max-width: 430px) {
+
+  /* Slide 2 — Cards de prêmio (400px fixo → responsivo) */
+  .card-prize { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; padding: 28px !important; }
+  .s2 .cards { flex-direction: column !important; align-items: center !important; gap: 16px !important; }
+  .s2 .badge { font-size: 11px !important; padding: 8px 16px !important; }
+
+  /* Slide 3 — Anéis pulsantes (400–800px → esconder) + barra + citação */
+  .rings { display: none !important; }
+  .s3 .date { font-size: 56px !important; }
+  .s3 .pbar { width: 90% !important; max-width: 100% !important; box-sizing: border-box !important; }
+  .s3 .quote { max-width: 100% !important; font-size: 14px !important; padding: 14px 16px !important; box-sizing: border-box !important; }
+
+  /* Slide 4 — Layout duas colunas → empilhar */
+  .s4 .inner { flex-direction: column !important; gap: 20px !important; align-items: flex-start !important; }
+  .s4 .l, .s4 .r { flex: 1 !important; width: 100% !important; }
+  .s4 .t1 { font-size: 52px !important; letter-spacing: -2px !important; }
+  .s4 .t2 { font-size: 30px !important; }
+
+  /* Slide 5 — Painel diagonal (clip-path) → empilhar sem recorte */
+  .s5 .inner { flex-direction: column !important; }
+  .s5 .l-panel { flex: none !important; height: auto !important; clip-path: none !important; width: 100% !important; padding: 40px 20px 28px !important; }
+  .s5 .r-panel { flex: none !important; width: 100% !important; padding: 28px 20px 40px !important; box-sizing: border-box !important; }
+  .s5 .badge-team { align-self: center !important; }
+
+  /* Slide 8 — Timeline horizontal → vertical */
+  .s8 .tl { flex-direction: column !important; padding: 0 !important; align-items: center !important; gap: 24px !important; margin-top: 32px !important; }
+  .s8 .tl-line { display: none !important; }
+  .s8 .node { max-width: 100% !important; width: 100% !important; }
+  .s8 h2 { font-size: 28px !important; }
+  .s8 .sub { font-size: 15px !important; }
+
+  /* Slide 10b — Grupos de prêmio horizontais → vertical */
+  .s10b .groups { flex-direction: column !important; gap: 16px !important; }
+  .s10b .g { flex: 1 !important; width: 100% !important; padding: 20px !important; box-sizing: border-box !important; }
+  .s10b h2 { font-size: 28px !important; }
+  .s10b .vp { flex-direction: column !important; text-align: center !important; gap: 10px !important; }
+
+  /* Slide sB — comp-grid 4 colunas → 1 coluna */
+  .comp-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .sB h2 { font-size: 30px !important; }
+  .sB .valor-shine { font-size: 52px !important; }
+  .sB .cta-row { flex-direction: column !important; gap: 12px !important; }
+
+  /* Slide sA — obj-grid 4 colunas → 2 colunas */
+  .obj-grid { grid-template-columns: 1fr 1fr !important; gap: 14px !important; }
+  .sA h2 { font-size: 30px !important; }
+
+  /* Slide 10 — Pódio horizontal → vertical */
+  .s10 .podium { flex-direction: column !important; gap: 12px !important; align-items: center !important; }
+  .s10 .pl { min-width: auto !important; width: 100% !important; max-width: 280px !important; height: auto !important; padding: 20px 24px !important; border-radius: 16px !important; }
+  .s10 .pl.first .amt { font-size: 44px !important; }
+  .s10 .pl.second .amt { font-size: 38px !important; }
+  .s10 .pl.third .amt { font-size: 32px !important; }
+  .s10 h2 { font-size: 28px !important; }
+  .s10 .special { flex-direction: column !important; text-align: center !important; gap: 10px !important; padding: 16px !important; }
+
+  /* Slide 11 — Dinâmica (max-width: 900px → sem limite) */
+  .s11 .inner { padding: 40px 20px 60px !important; }
+  .s11 .body { max-width: 100% !important; margin: 24px 0 0 !important; }
+  .s11 .top h2 { font-size: 28px !important; }
+  .s11 .row span { font-size: 13px !important; }
+  .s11 .row { padding: 14px 16px !important; }
+  .s11 .foot-b { max-width: 100% !important; font-size: 13px !important; }
+}
 
 </style>
 </head>

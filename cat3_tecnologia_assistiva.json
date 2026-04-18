@@ -1,0 +1,487 @@
+{
+  "categoria": "Tecnologia Assistiva e Digital",
+  "cor": "#185FA5",
+  "icone": "digital",
+  "ideias": [
+    {
+      "id": "TAD-01",
+      "nome": "NavegaFácil",
+      "resumo": "Navegador de internet simplificado e acessível para idosos e pessoas com baixa literacia digital",
+      "cliente": "Idosos e pessoas com baixa literacia digital que têm dificuldade de usar a internet convencional.",
+      "problema": "Idosos e pessoas com pouca escolaridade ficam excluídos dos serviços digitais por interfaces complexas, letras pequenas e fluxos confusos.",
+      "solucao": "Navegador com interface radical simplificada: botões grandes, letras ampliadas, comandos por voz e acesso direto a apenas os serviços mais usados (banco, INSS, saúde, WhatsApp).",
+      "monetizacao": "Assinatura mensal de bancos e operadoras que querem ampliar inclusão. Licença para prefeituras como ferramenta de inclusão digital. Versão básica gratuita.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o NavegaFácil para que ninguém fique de fora da internet por ela ser difícil demais.",
+        "problema": "Banco fechou a agência. INSS marca consulta só pelo app. A internet tomou conta de tudo — mas ninguém perguntou se o idoso conseguia acompanhar.",
+        "solucao": "O NavegaFácil é um navegador com botões grandes, letras ampliadas e comandos por voz. Acesso direto ao banco, INSS, saúde e WhatsApp. Simples como ligar um rádio.",
+        "modelo": "Bancos e operadoras pagam pela inclusão. Prefeituras licenciam como política pública. Versão básica gratuita.",
+        "fechamento": "Internet que todos conseguem usar não é utopia. O NavegaFácil já está construindo isso."
+      }
+    },
+    {
+      "id": "TAD-02",
+      "nome": "AudioDescreve",
+      "resumo": "Aplicativo de audiodescrição automática de imagens e ambientes para pessoas com deficiência visual",
+      "cliente": "Pessoas com deficiência visual que precisam de descrição em tempo real de imagens, documentos e ambientes ao redor.",
+      "problema": "Pessoas cegas ou com baixa visão têm dificuldade de acessar conteúdo visual — imagens em redes sociais, documentos escaneados, menus de restaurante, sinalizações.",
+      "solucao": "App que usa câmera do celular e IA para descrever em áudio o que está na tela ou ao redor em tempo real. Funciona com imagens, textos impressos, rostos e ambientes.",
+      "monetizacao": "Assinatura mensal. Licença para empresas que precisam tornar conteúdo acessível. Parcerias com editoras e plataformas de conteúdo.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AudioDescreve para que pessoa cega veja o mundo pelo som.",
+        "problema": "Pessoa cega abre o Instagram e não sabe o que está na foto. Chega num restaurante e não consegue ler o cardápio. O mundo visual é uma barreira constante.",
+        "solucao": "O AudioDescreve usa a câmera do celular e IA para descrever tudo: imagens, textos, ambientes, rostos. Aponte e ouça. Sem custo de assistência humana.",
+        "modelo": "Assinatura mensal. Licença para empresas que precisam de acessibilidade. Parcerias com editoras.",
+        "fechamento": "Ver com os ouvidos é possível. O AudioDescreve transforma câmera em guia para quem mais precisa."
+      }
+    },
+    {
+      "id": "TAD-03",
+      "nome": "LibrasAgora",
+      "resumo": "Intérprete de Libras por IA em tempo real para atendimento público e corporativo",
+      "cliente": "Pessoas surdas que usam Libras e precisam de interpretação em atendimentos presenciais sem intérprete disponível.",
+      "problema": "Pessoas surdas ficam sem atendimento em hospitais, bancos e repartições públicas por falta de intérprete de Libras, gerando exclusão e risco.",
+      "solucao": "Totem ou tablet com IA de interpretação de Libras em tempo real, disponível em balcões de atendimento. O surdo sinaliza, o sistema interpreta para o atendente e vice-versa.",
+      "monetizacao": "Venda dos totens. Assinatura do serviço de IA por estabelecimento. Prefeituras contratam para serviços públicos. Multa por acessibilidade substituída por contrato.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o LibrasAgora para que pessoa surda não dependa de intérprete humano para ser atendida.",
+        "problema": "Surdo chega no banco, no hospital, na prefeitura. Não tem intérprete. Fica aguardando — às vezes horas — ou vai embora sem ser atendido. Isso é exclusão sistemática.",
+        "solucao": "O LibrasAgora é um tablet no balcão que interpreta Libras em tempo real por IA. O surdo sinaliza, o sistema traduz para o atendente. E o atendente fala, o sistema sinaliza. Comunicação completa.",
+        "modelo": "Venda dos equipamentos. Assinatura do serviço de IA. Prefeituras contratam. É mais barato que a multa por falta de acessibilidade.",
+        "fechamento": "Libras é idioma oficial. O LibrasAgora garante que esse idioma seja compreendido em qualquer balcão."
+      }
+    },
+    {
+      "id": "TAD-04",
+      "nome": "LêPorMim",
+      "resumo": "Leitor de documentos e formulários por voz para pessoas com dificuldade de leitura",
+      "cliente": "Pessoas com dislexia, analfabetismo funcional ou deficiência visual que precisam preencher documentos e formulários.",
+      "problema": "Pessoas com dificuldade de leitura ficam dependentes de terceiros para preencher formulários, assinar contratos e acessar serviços essenciais.",
+      "solucao": "App que escaneia qualquer documento impresso ou digital e lê em voz alta com linguagem simplificada. Permite responder campos com voz e gerar assinatura digital.",
+      "monetizacao": "Assinatura mensal. Licença para cartórios, bancos e serviços públicos como ferramenta de inclusão. Editais de acessibilidade.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o LêPorMim para que documento difícil não seja barreira para ninguém.",
+        "problema": "Vai assinar um contrato e não consegue ler. Preencher formulário no posto de saúde e não entende o que está escrito. Depender de alguém para isso toda vez é humilhante.",
+        "solucao": "O LêPorMim escaneia qualquer documento e lê em voz alta em linguagem simples. Você responde falando. Gera assinatura digital. Sem precisar de ninguém por perto.",
+        "modelo": "Assinatura mensal. Licença para cartórios e serviços públicos. Editais de acessibilidade.",
+        "fechamento": "Documento difícil não precisa ser barreira. O LêPorMim lê por quem precisa — com dignidade."
+      }
+    },
+    {
+      "id": "TAD-05",
+      "nome": "AlertaMed",
+      "resumo": "Sistema de lembretes inteligentes de medicação e consultas para pacientes crônicos via WhatsApp",
+      "cliente": "Pacientes com doenças crônicas que esquecem de tomar medicação ou de ir a consultas, especialmente idosos e analfabetos.",
+      "problema": "Pacientes crônicos interrompem tratamento por esquecimento, gerando internações evitáveis e piora do quadro. Apps convencionais são complexos demais.",
+      "solucao": "Sistema de lembretes por WhatsApp com foto do medicamento, horário, nome simples e confirmação de recebimento. Integrado ao ACS para acompanhamento dos que não respondem.",
+      "monetizacao": "Secretarias de saúde contratam. Planos de saúde pagam pela redução de internações. Laboratórios patrocinam.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AlertaMed para que ninguém esqueça o remédio que mantém a saúde em dia.",
+        "problema": "Diabético que para de tomar insulina vai para a UTI. Hipertenso que esquece a medicação pode ter AVC. E isso acontece todo dia por simples esquecimento.",
+        "solucao": "O AlertaMed manda mensagem por WhatsApp na hora certa com foto do remédio e o nome simples. O paciente confirma com um emoji. O ACS vê quem não respondeu e liga.",
+        "modelo": "Secretarias de saúde pagam. Planos financiam porque internação custa muito mais.",
+        "fechamento": "Prevenir é mais barato que tratar. O AlertaMed cuida de quem mais precisa de cuidado constante."
+      }
+    },
+    {
+      "id": "TAD-06",
+      "nome": "CidadeAcessível",
+      "resumo": "Mapa colaborativo de acessibilidade urbana para cadeirantes e pessoas com mobilidade reduzida",
+      "cliente": "Cadeirantes, pessoas com mobilidade reduzida e cuidadores que precisam planejar rotas acessíveis na cidade.",
+      "problema": "Cidades têm calçadas quebradas, rampas bloqueadas e banheiros inacessíveis sem mapeamento confiável. Cadeirantes planejam deslocamentos sem informação e enfrentam obstáculos.",
+      "solucao": "App colaborativo onde usuários avaliam e registram a acessibilidade de calçadas, rampas, banheiros e estabelecimentos. O mapa ajuda a planejar rotas viáveis.",
+      "monetizacao": "Prefeituras pagam pelos dados para priorizar obras de acessibilidade. Empresas pagam pela certificação de acessibilidade. Editais de mobilidade inclusiva.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o CidadeAcessível para que cadeirante planeje seu dia com informação real.",
+        "problema": "Cadeirante tenta sair de casa e descobre que a rampa da esquina está bloqueada por uma loja. Vai dar a volta. A volta tem uma calçada destruída. A saída virou aventura.",
+        "solucao": "O CidadeAcessível tem um mapa onde usuários registram o que funciona e o que não funciona. Calçada, rampa, banheiro, elevador. A rota acessível fica visível antes de sair de casa.",
+        "modelo": "Prefeituras pagam pelos dados. Empresas pagam pela certificação de acessibilidade. Editais de mobilidade inclusiva.",
+        "fechamento": "Acessibilidade começa com informação. O CidadeAcessível coloca essa informação no bolso de quem precisa."
+      }
+    },
+    {
+      "id": "TAD-07",
+      "nome": "FalaComigo",
+      "resumo": "Plataforma de comunicação aumentativa e alternativa personalizável para autistas e não-verbais",
+      "cliente": "Crianças e adultos autistas, não-verbais ou com paralisia cerebral que precisam de comunicação alternativa personalizada.",
+      "problema": "Pessoas com autismo severo ou paralisia cerebral que não se comunicam verbalmente ficam dependentes de sistemas importados caros e não adaptados ao contexto brasileiro.",
+      "solucao": "App de comunicação por símbolos visuais personalizáveis, com síntese de voz em português brasileiro e banco de símbolos do cotidiano nacional. Configurável pelo terapeuta.",
+      "monetizacao": "Assinatura mensal para famílias e clínicas. Licença institucional para escolas e APAE. Versão básica gratuita.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o FalaComigo para que toda criança tenha uma forma de dizer o que sente.",
+        "problema": "Criança autista não-verbal tenta se comunicar e não consegue. Os sistemas existentes são caros, importados e cheios de símbolos que não fazem parte do contexto brasileiro.",
+        "solucao": "O FalaComigo tem símbolos do cotidiano brasileiro — açaí, bola de futebol, pastel. O terapeuta personaliza. A criança toca e a voz fala. Em português. Sem tradução necessária.",
+        "modelo": "Assinatura mensal. Licença para escolas e APAE. Versão básica gratuita.",
+        "fechamento": "Toda pessoa merece uma voz. O FalaComigo constrói essa voz para quem mais precisa."
+      }
+    },
+    {
+      "id": "TAD-08",
+      "nome": "Telereab",
+      "resumo": "Plataforma de reabilitação física por vídeo com acompanhamento de fisioterapeuta para cidades sem especialistas",
+      "cliente": "Pacientes em processo de reabilitação física em cidades sem fisioterapeuta disponível ou sem transporte.",
+      "problema": "Pacientes que precisam de fisioterapia em cidades pequenas ou zonas rurais ficam sem tratamento por falta de profissional ou de transporte até a clínica.",
+      "solucao": "Plataforma de teleconsulta e exercícios supervisionados por vídeo com fisioterapeuta. Câmera do celular detecta postura e corrige movimentos em tempo real.",
+      "monetizacao": "Pagamento por sessão. Assinatura mensal de pacientes. Planos de saúde financiam como alternativa ao atendimento presencial.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o Telereab para que reabilitação física aconteça onde o paciente está, não onde o especialista está.",
+        "problema": "Paciente sofreu cirurgia no joelho e precisa de fisioterapia. O único fisioterapeuta fica 60 km longe. Sem carro, sem transporte, sem reabilitação. A recuperação não acontece.",
+        "solucao": "O Telereab conecta fisioterapeuta e paciente por vídeo. A câmera detecta a postura e corrige o exercício em tempo real. A sessão acontece na sala de casa.",
+        "modelo": "Pagamento por sessão. Assinatura mensal. Planos de saúde financiam.",
+        "fechamento": "Distância não pode ser barreira para recuperar a saúde. O Telereab resolve isso de onde você estiver."
+      }
+    },
+    {
+      "id": "TAD-09",
+      "nome": "MemóriaViva",
+      "resumo": "App de estimulação cognitiva e memória para idosos com risco de demência",
+      "cliente": "Idosos acima de 65 anos com risco de demência ou nos estágios iniciais de Alzheimer que precisam de estimulação cognitiva regular.",
+      "problema": "Estimulação cognitiva regular reduz a progressão de demências, mas clínicas são caras e distantes. Famílias não sabem como estimular em casa.",
+      "solucao": "App com jogos de memória, linguagem, atenção e funções executivas adaptados ao nível cognitivo do idoso, com relatório de evolução enviado ao familiar e ao médico.",
+      "monetizacao": "Assinatura mensal de famílias. Licença para clínicas e hospitais. Planos de saúde incluem como benefício de prevenção.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o MemóriaViva para manter a mente ativa e adiar o avanço das demências.",
+        "problema": "Alzheimer avança mais devagar com estimulação cognitiva regular. Mas a clínica especializada fica longe e custa caro. E a família não sabe como estimular em casa.",
+        "solucao": "O MemóriaViva tem jogos cognitivos adaptados ao nível do idoso. Toda semana um relatório vai para o familiar e para o médico. A estimulação acontece todos os dias, em casa.",
+        "modelo": "Assinatura mensal. Licença para clínicas. Planos de saúde incluem como prevenção.",
+        "fechamento": "Memória não precisa morrer antes do tempo. O MemóriaViva mantém ela ativa todos os dias."
+      }
+    },
+    {
+      "id": "TAD-10",
+      "nome": "InclusãoDigitalPlus",
+      "resumo": "Certificação de acessibilidade digital para sites e apps brasileiros",
+      "cliente": "Empresas e órgãos públicos que precisam tornar seus sites e aplicativos acessíveis para PCD conforme a legislação brasileira.",
+      "problema": "Apenas 2% dos sites brasileiros são acessíveis. A legislação obriga, mas poucos sabem como implementar acessibilidade digital com qualidade.",
+      "solucao": "Plataforma de auditoria automatizada de acessibilidade digital com relatório de correções priorizadas, consultoria de implementação e certificado anual verificável.",
+      "monetizacao": "Taxa de auditoria e certificação. Assinatura de monitoramento contínuo. Consultoria de implementação.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o InclusãoDigitalPlus para que sites e apps brasileiros sejam usáveis por todos.",
+        "problema": "98% dos sites brasileiros têm barreiras de acessibilidade. A lei obriga a correção. As empresas não sabem como. Milhões de PCD ficam excluídos do digital.",
+        "solucao": "O InclusãoDigitalPlus audita o site automaticamente e gera um relatório com as correções prioritárias. Quem corrige recebe o certificado anual. Quem não corrige recebe a multa.",
+        "modelo": "Taxa de auditoria e certificação. Monitoramento contínuo por assinatura. Consultoria de implementação.",
+        "fechamento": "Site acessível não é generosidade — é lei. O InclusãoDigitalPlus transforma obrigação em diferencial."
+      }
+    },
+    {
+      "id": "TAD-11",
+      "nome": "TraduzonA",
+      "resumo": "Tradução simultânea de conteúdo educacional para Libras via IA",
+      "cliente": "Estudantes surdos e professores de escolas públicas que não têm intérprete de Libras disponível em sala de aula.",
+      "problema": "Escolas públicas têm direito a intérprete de Libras mas não têm professores suficientes. Alunos surdos ficam sem acesso ao conteúdo.",
+      "solucao": "Sistema que traduz a fala do professor em tempo real para Libras em avatar 3D projetado na tela da sala de aula. O aluno surdo acompanha sem intérprete humano.",
+      "monetizacao": "Secretarias de educação contratam por escola. Editais de educação especial. Licença para universidades e cursinhos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o TraduzonA para que aluno surdo acompanhe a aula sem precisar esperar por intérprete.",
+        "problema": "A escola tem direito a intérprete de Libras. Mas não há intérpretes suficientes. O aluno surdo entra na sala, o professor fala, e ele não entende nada.",
+        "solucao": "O TraduzonA capta a voz do professor e projeta na tela um avatar sinalizando em Libras em tempo real. O aluno surdo acompanha a aula como todo mundo. Sem esperar por ninguém.",
+        "modelo": "Secretarias de educação contratam. Editais de educação especial. Licença para universidades.",
+        "fechamento": "Educação inclusiva de verdade acontece quando o aluno entende o que o professor ensina. O TraduzonA garante isso."
+      }
+    },
+    {
+      "id": "TAD-12",
+      "nome": "SensórioCalmo",
+      "resumo": "Dispositivo portátil de regulação sensorial para crianças autistas em crises",
+      "cliente": "Crianças autistas com sensibilidade sensorial intensa e seus cuidadores que enfrentam crises em ambientes públicos.",
+      "problema": "Crianças autistas com hipersensibilidade sensorial entram em crise em ambientes barulhentos ou com muita estimulação. Os cuidadores não têm ferramentas de regulação portáteis.",
+      "solucao": "Dispositivo vestível que monitora sinais de estresse (frequência cardíaca, galvânica) e aplica automaticamente vibração, pressão ou áudio de regulação antes da crise se instalar.",
+      "monetizacao": "Venda direta para famílias. Licença para escolas especiais e clínicas de terapia. Planos de saúde incluem como dispositivo terapêutico.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SensórioCalmo para que criança autista tenha regulação sensorial onde precisar.",
+        "problema": "A criança autista entra no supermercado, o ruído aumenta, a crise começa. O cuidador tenta acalmar mas é tarde. Ambiente público virou campo minado.",
+        "solucao": "O SensórioCalmo é uma pulseira que monitora os sinais de estresse. Quando a crise está chegando, o dispositivo aplica vibração suave ou pressão antes que exploda. Intervenção antes da crise.",
+        "modelo": "Venda para famílias. Licença para escolas e clínicas. Planos de saúde incluem.",
+        "fechamento": "Crise que não acontece é melhor do que crise bem gerenciada. O SensórioCalmo chega antes."
+      }
+    },
+    {
+      "id": "TAD-13",
+      "nome": "OrientaJovem",
+      "resumo": "Chatbot de orientação vocacional e de carreira para jovens de escola pública",
+      "cliente": "Jovens de 15 a 18 anos de escolas públicas que precisam de orientação vocacional e de carreira sem acesso a psicólogos ou orientadores.",
+      "problema": "Jovens de escola pública chegam ao fim do ensino médio sem orientação vocacional. Escolhem cursos aleatoriamente ou por pressão familiar, gerando evasão universitária.",
+      "solucao": "Chatbot de orientação vocacional com mapeamento de interesses, aptidões e mercado de trabalho local, além de informações sobre cursos técnicos, bolsas e ENEM.",
+      "monetizacao": "Secretarias de educação licenciam para as escolas. Faculdades e cursos técnicos pagam para aparecer como recomendação relevante. Editais de orientação profissional.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o OrientaJovem para que jovem de escola pública não escolha o futuro no escuro.",
+        "problema": "Jovem termina o ensino médio sem saber o que quer ser. Entra num curso por falta de opção, abandona em seis meses. O problema não é vocação — é falta de orientação.",
+        "solucao": "O OrientaJovem conversa com o jovem pelo celular: mapeia interesses, mostra profissões do mercado local, recomenda cursos técnicos e bolsas. Orientação vocacional no bolso.",
+        "modelo": "Secretarias de educação licenciam. Faculdades e cursos técnicos pagam pela visibilidade. Editais de orientação.",
+        "fechamento": "Escolha de carreira não deveria ser um tiro no escuro. O OrientaJovem acende a luz."
+      }
+    },
+    {
+      "id": "TAD-14",
+      "nome": "PrintAjuda",
+      "resumo": "Serviço de impressão, digitalização e assinatura digital móvel para comunidades sem acesso",
+      "cliente": "Moradores de bairros sem papelaria ou serviços de impressão e digitalização que precisam de documentos físicos ou digitais.",
+      "problema": "Moradores de bairros periféricos percorrem quilômetros para imprimir um documento, digitalizar uma certidão ou assinar digitalmente um contrato.",
+      "solucao": "Moto-serviço que vai até o endereço do cliente para imprimir, escanear, plastificar e orientar sobre assinatura digital. Agendado pelo WhatsApp.",
+      "monetizacao": "Cobrança por serviço. Mensalidade para quem usa frequentemente. Parcerias com cartórios e serviços públicos.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PrintAjuda para que documento necessário não exija uma viagem longa até a papelaria.",
+        "problema": "Mora longe, não tem carro. Precisa imprimir uma certidão de nascimento para a escola do filho. Vai de ônibus duas horas para encontrar uma papelaria.",
+        "solucao": "O PrintAjuda é um motoboy com impressora portátil que vai até você. Agenda pelo WhatsApp, ele chega, imprime, digitaliza ou plastifica no local.",
+        "modelo": "Cobrança por serviço. Mensalidade para usuários frequentes. Parcerias com cartórios.",
+        "fechamento": "Documento urgente não deveria exigir uma expedição. O PrintAjuda vai onde você está."
+      }
+    },
+    {
+      "id": "TAD-15",
+      "nome": "RedeProtege",
+      "resumo": "Plataforma digital de denúncia segura e anônima de violação de direitos para populações vulneráveis",
+      "cliente": "Pessoas em situação de vulnerabilidade que sofreram violação de direitos e têm medo de denunciar por falta de anonimato e segurança.",
+      "problema": "Vítimas de violação de direitos — trabalho escravo, violência, discriminação — não denunciam por medo de retaliação e desconfiança no sistema.",
+      "solucao": "Plataforma de denúncia anônima com criptografia de ponta a ponta, conexão automática com o órgão competente e acompanhamento anônimo do andamento.",
+      "monetizacao": "Prefeituras e governos estaduais contratam como canal oficial. Órgãos de direitos humanos financiam. Empresas contratam para canal interno de compliance.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o RedeProtege para que medo não impeça quem foi lesado de buscar justiça.",
+        "problema": "Trabalhador em situação de trabalho escravo sabe o que está acontecendo. Mas denunciar tem risco. O patrão vai saber. Não tem como ser anônimo. O silêncio protege o agressor.",
+        "solucao": "O RedeProtege usa criptografia total. A denúncia vai direto ao órgão competente sem identificar o denunciante. E o usuário acompanha o andamento de forma anônima.",
+        "modelo": "Prefeituras e estados contratam como canal oficial. ONGs financiam. Empresas contratam para compliance.",
+        "fechamento": "Denunciar não deveria ter risco. O RedeProtege garante que justiça seja buscada com segurança."
+      }
+    },
+    {
+      "id": "TAD-16",
+      "nome": "BrailDigital",
+      "resumo": "Conversor de conteúdo digital para Braille e impressão em baixo custo",
+      "cliente": "Pessoas cegas ou com deficiência visual severa que precisam de material em Braille mas não têm acesso a impressoras especializadas.",
+      "problema": "Impressoras Braille são caras e raras. Pessoas cegas ficam sem acesso a material impresso em Braille para estudo, leitura e documentos.",
+      "solucao": "Plataforma que converte qualquer PDF ou texto digital para Braille e envia para impressão em rede de impressoras parceiras espalhadas pela cidade.",
+      "monetizacao": "Pagamento por impressão. Assinatura mensal para usuários frequentes. Prefeituras e escolas contratam o serviço.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o BrailDigital para que pessoa cega tenha acesso a qualquer texto em Braille sem precisar de equipamento próprio.",
+        "problema": "Impressora Braille custa R$ 15.000. Pessoa cega que quer ler um livro ou uma apostila não tem como. O Braille ficou acessível só para quem pode pagar pelo equipamento.",
+        "solucao": "O BrailDigital converte qualquer PDF para Braille e manda imprimir na impressora parceira mais perto de você. Você pega o material pronto. Sem equipamento próprio.",
+        "modelo": "Pagamento por impressão. Assinatura mensal. Prefeituras e escolas contratam.",
+        "fechamento": "Braille não é tecnologia do passado — é direito do presente. O BrailDigital coloca esse direito ao alcance."
+      }
+    },
+    {
+      "id": "TAD-17",
+      "nome": "GestureCtrl",
+      "resumo": "Controle de dispositivos por gestos e expressões faciais para pessoas com paralisia motora grave",
+      "cliente": "Pessoas com paralisia motora grave (ELA, lesão medular alta, paralisia cerebral) que não conseguem usar teclado, mouse ou tela touch.",
+      "problema": "Pessoas com paralisia severa ficam dependentes de cuidadores para usar computador, tablet e celular por falta de interface adaptada acessível.",
+      "solucao": "Software que usa câmera do computador para controlar o cursor por movimentos oculares, expressões faciais e movimentos sutis de cabeça. Compatível com qualquer sistema.",
+      "monetizacao": "Venda por licença anual. Parcerias com hospitais de reabilitação. Planos de saúde incluem como dispositivo de assistência. Editais de tecnologia assistiva.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o GestureCtrl para que paralisia não seja a última palavra sobre independência digital.",
+        "problema": "Pessoa com ELA perde o movimento progressivamente. Chega um ponto em que não consegue mais usar teclado nem tela. A independência digital vai embora junto.",
+        "solucao": "O GestureCtrl usa a câmera do computador para detectar olhar, expressão e movimento de cabeça. Você pisca para clicar, olha para mover. Controle total sem tocar em nada.",
+        "modelo": "Licença anual. Parceria com hospitais. Planos de saúde incluem. Editais de tecnologia assistiva.",
+        "fechamento": "Independência não tem preço. O GestureCtrl devolve o controle para quem achou que havia perdido."
+      }
+    },
+    {
+      "id": "TAD-18",
+      "nome": "EduTDA",
+      "resumo": "Material didático adaptado para crianças com TDAH e dislexia em formato multissensorial",
+      "cliente": "Crianças com TDAH e dislexia em escolas públicas que têm dificuldade com material didático convencional.",
+      "problema": "Crianças com TDAH e dislexia aprendem diferente mas recebem o mesmo material que todos. O resultado é reprovação, exclusão e diagnóstico de fracasso escolar.",
+      "solucao": "Plataforma de adaptação de material didático: fontes específicas para dislexia, fragmentação de tarefas, gamificação de exercícios e feedback imediato. Professor configura por aluno.",
+      "monetizacao": "Secretarias de educação licenciam. Editais de educação especial e inclusão. Versão gratuita para uma escola por cidade.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EduTDA para que criança com TDAH ou dislexia aprenda do jeito que ela aprende.",
+        "problema": "Criança com dislexia vê letras embaralhadas. Com TDAH não consegue focar por mais de cinco minutos. O livro didático convencional foi feito para outro tipo de cérebro.",
+        "solucao": "O EduTDA adapta o mesmo conteúdo: fonte especial para dislexia, exercícios fragmentados para TDAH, gamificação e feedback imediato. O professor configura para cada aluno.",
+        "modelo": "Secretarias licenciam. Editais de educação especial. Uma escola gratuita por cidade.",
+        "fechamento": "Não existe criança que não aprende. Existe criança que ainda não recebeu o material certo. O EduTDA muda isso."
+      }
+    },
+    {
+      "id": "TAD-19",
+      "nome": "SinalTráfego",
+      "resumo": "Sistema de sinalização inteligente de trânsito por áudio e vibração para pedestres cegos e surdos",
+      "cliente": "Pedestres com deficiência visual e auditiva que têm dificuldade de traversar vias com segurança.",
+      "problema": "Semáforos convencionais não são acessíveis para cegos e surdos. A travessia de vias movimentadas é um risco real e diário.",
+      "solucao": "Sistema de sinalização semafórica com feedback por áudio e vibração em dispositivo pessoal. O pedestre solicita sinal sonoro pelo celular ou dispositivo dedicado.",
+      "monetizacao": "Prefeituras contratam para implantação em cruzamentos. Editais de mobilidade inclusiva. Financiamento do Ministério das Cidades.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SinalTráfego para que atravessar a rua não seja uma aposta para quem não enxerga.",
+        "problema": "Semáforo abre para pedestres por 20 segundos. Para o cego, não há sinal sonoro. Atravessa no escuro, torcendo para o carro frear. Isso acontece todo dia em toda cidade.",
+        "solucao": "O SinalTráfego avisa pelo celular quando o semáforo está aberto para pedestres com sinal sonoro e vibração. O pedestre atravessa com segurança.",
+        "modelo": "Prefeituras contratam para implantação. Editais de mobilidade inclusiva. Ministério das Cidades financia.",
+        "fechamento": "Semáforo acessível não é detalhe — é vida. O SinalTráfego coloca segurança nas mãos de quem mais precisa."
+      }
+    },
+    {
+      "id": "TAD-20",
+      "nome": "AuditoriaIA",
+      "resumo": "Ferramenta de auditoria de viés algorítmico em processos seletivos de empresas",
+      "cliente": "Empresas que usam IA em seleção de candidatos e precisam garantir que os algoritmos não discriminam por raça, gênero ou origem.",
+      "problema": "Algoritmos de seleção replicam e ampliam vieses humanos. Mulheres, negros e pessoas do interior são sistematicamente desfavorecidos por sistemas de IA que ninguém audita.",
+      "solucao": "Plataforma que analisa o histórico de decisões dos algoritmos de RH e identifica padrões de discriminação, com relatório de viés e recomendações de correção.",
+      "monetizacao": "Assinatura mensal para empresas. Relatório de auditoria anual. Certificação de RH não enviesado como diferencial de mercado.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AuditoriaIA para que a tecnologia de seleção não amplifique preconceitos que a empresa já está tentando combater.",
+        "problema": "A empresa diz que não discrimina. Mas o algoritmo de triagem de currículos elimina nomes femininos e sobrenomes nordestinos. A intenção é boa, mas o resultado é discriminatório.",
+        "solucao": "O AuditoriaIA analisa o histórico do algoritmo de seleção e mostra onde o viés acontece. Relatório com padrões de discriminação e como corrigir. Certificado de RH auditado.",
+        "modelo": "Assinatura mensal. Relatório anual. Certificação como diferencial.",
+        "fechamento": "IA justa não nasce — é construída. O AuditoriaIA garante que a sua selecione pelo talento, não pelo preconceito."
+      }
+    },
+    {
+      "id": "TAD-21",
+      "nome": "MóvelConecta",
+      "resumo": "Laboratório digital móvel para escolas rurais e periféricas sem infraestrutura",
+      "cliente": "Escolas rurais e periféricas sem computadores, internet ou laboratório de informática.",
+      "problema": "Escolas rurais e periféricas formam alunos sem nenhuma experiência com tecnologia, criando desvantagem competitiva permanente no mercado de trabalho.",
+      "solucao": "Van equipada com notebooks, internet via satélite e materiais de programação e robótica que circula entre escolas em dias fixos, com educador tecnológico a bordo.",
+      "monetizacao": "Secretarias de educação contratam. Editais de educação digital do MEC. Empresas de tecnologia patrocinam como responsabilidade social.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o MóvelConecta para levar laboratório de informática a quem nunca vai ter um fixo.",
+        "problema": "Aluno de escola rural termina o ensino médio sem nunca ter tocado num computador. No mercado de trabalho, está décadas atrás. E ninguém vai levar internet a esse lugar tão cedo.",
+        "solucao": "O MóvelConecta é uma van com laboratório completo: computadores, internet via satélite e kit de robótica. Vai à escola em dias fixos com um educador especializado.",
+        "modelo": "Secretarias de educação contratam. Editais do MEC. Empresas de tecnologia patrocinam.",
+        "fechamento": "Tecnologia é o idioma do futuro. O MóvelConecta ensina esse idioma onde o futuro está sendo formado."
+      }
+    },
+    {
+      "id": "TAD-22",
+      "nome": "VozDoMédico",
+      "resumo": "Transcrição e resumo automático de consultas médicas para pacientes com dificuldade de memória",
+      "cliente": "Pacientes idosos, com comprometimento cognitivo ou com dificuldade de compreensão que esquecem as instruções médicas após a consulta.",
+      "problema": "Pacientes saem da consulta sem lembrar o que o médico disse. Diagnóstico, medicação, retorno — tudo se perde. Erros de medicação e não-adesão ao tratamento são comuns.",
+      "solucao": "App que grava a consulta (com consentimento), transcreve automaticamente e gera um resumo simples com os pontos principais: diagnóstico, medicação, retorno e cuidados.",
+      "monetizacao": "Assinatura mensal. Licença para clínicas e hospitais. Planos de saúde incluem como ferramenta de adesão ao tratamento.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o VozDoMédico para que o paciente saia da consulta sabendo exatamente o que fazer.",
+        "problema": "Paciente idoso sai do médico. Em casa, não lembra o nome do remédio, não sabe se pode comer. Liga para o filho. O filho não sabe. Volta ao médico. Um ciclo caro e desgastante.",
+        "solucao": "O VozDoMédico grava a consulta com o consentimento do médico e gera um resumo simples: diagnóstico, medicação, dosagem, retorno. O paciente lê ou ouve em casa.",
+        "modelo": "Assinatura mensal. Licença para clínicas. Planos de saúde incluem.",
+        "fechamento": "Consulta que não é lembrada é consulta pela metade. O VozDoMédico completa a informação."
+      }
+    },
+    {
+      "id": "TAD-23",
+      "nome": "PixSocial",
+      "resumo": "Plataforma de doação recorrente simplificada para projetos sociais locais via Pix",
+      "cliente": "Doadores que querem apoiar projetos sociais locais de forma simples e verificável, e ONGs pequenas sem estrutura de captação.",
+      "problema": "ONGs pequenas e projetos locais não conseguem captar doações recorrentes por falta de plataforma acessível. Doadores não sabem como ajudar de forma simples.",
+      "solucao": "Plataforma de doação recorrente via Pix onde o doador configura o valor e a frequência e recebe relatório de impacto mensal do projeto apoiado.",
+      "monetizacao": "Taxa de 5% sobre doações. Assinatura para ONGs com mais funcionalidades. Empresas pagam para visibilidade de seus programas de doação.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o PixSocial para que ajudar um projeto local seja tão simples quanto pagar uma conta.",
+        "problema": "Quero ajudar aquela ONG do bairro. Mas como? Transferência bancária toda mês? TED? Boleto? A burocracia faz a boa vontade desistir antes de começar.",
+        "solucao": "O PixSocial configura doação recorrente em 2 minutos. Você escolhe o projeto, o valor e a frequência. Todo mês, Pix automático. E um relatório mostrando o que sua doação fez.",
+        "modelo": "Taxa de 5% sobre doações. Assinatura para ONGs. Empresas pagam por visibilidade.",
+        "fechamento": "Boa vontade não deveria naufragar na burocracia. O PixSocial remove os obstáculos entre quem quer ajudar e quem precisa."
+      }
+    },
+    {
+      "id": "TAD-24",
+      "nome": "EscolaOnline",
+      "resumo": "Plataforma de gestão escolar simples para escolas municipais sem sistema de informação",
+      "cliente": "Secretarias de educação de cidades pequenas e escolas municipais sem sistema de gestão escolar adequado.",
+      "problema": "Pequenas escolas municipais ainda usam papel para controlar presença, notas e comunicação com pais. Isso gera erro, retrabalho e falta de informação para decisões.",
+      "solucao": "Sistema de gestão escolar simplificado e acessível com controle de frequência, notas, comunicação com pais por WhatsApp e relatórios automáticos para a secretaria.",
+      "monetizacao": "Assinatura mensal por escola. Contrato com secretarias municipais. Editais de tecnologia na educação pública.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o EscolaOnline para que gestão escolar deixe de ser feita no caderno.",
+        "problema": "Diretora de escola pequena ainda controla presença em papel, liga para os pais um por um e gera relatório manual para a secretaria. Perde horas que deveriam estar na educação.",
+        "solucao": "O EscolaOnline digitaliza presença, notas e comunicação com os pais. Mensagem automática no WhatsApp quando o filho faltou. Relatório gerado com um clique.",
+        "modelo": "Assinatura mensal por escola. Contratos com secretarias. Editais de tecnologia na educação.",
+        "fechamento": "Escola que gasta menos tempo com papel tem mais tempo para ensinar. O EscolaOnline libera esse tempo."
+      }
+    },
+    {
+      "id": "TAD-25",
+      "nome": "SensorSaúde",
+      "resumo": "Dispositivo de monitoramento de sinais vitais de baixo custo para pacientes crônicos em casa",
+      "cliente": "Pacientes crônicos (hipertensão, diabetes, insuficiência cardíaca) que precisam de monitoramento frequente sem ir ao posto.",
+      "problema": "Pacientes crônicos graves precisam monitorar pressão, glicemia e saturação regularmente, mas não conseguem ir ao posto toda semana e não têm aparelhos em casa.",
+      "solucao": "Kit de sensores simples (pressão, glicemia, saturação) com conectividade ao celular e envio automático dos dados ao médico ou ACS responsável com alertas de valores críticos.",
+      "monetizacao": "Assinatura mensal do kit e serviço. Secretarias de saúde contratam como ferramenta de monitoramento remoto. Planos de saúde financiam para reduzir internações.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o SensorSaúde para que o médico saiba como o paciente está — sem ele precisar sair de casa toda semana.",
+        "problema": "Paciente com hipertensão grave deveria medir pressão todo dia. Não tem aparelho em casa. Vai ao posto, fila, espera, mede, volta. Semana que vem repete. É insustentável.",
+        "solucao": "O SensorSaúde é um kit de medição que conecta ao celular e manda os dados automaticamente ao médico. Se a pressão subir demais, o sistema alerta em tempo real.",
+        "modelo": "Assinatura mensal. Secretarias de saúde contratam. Planos financiam para reduzir internações.",
+        "fechamento": "Monitoramento que acontece em casa não precisa da fila do posto. O SensorSaúde coloca o acompanhamento onde o paciente está."
+      }
+    },
+    {
+      "id": "TAD-26",
+      "nome": "ConectaPCD",
+      "resumo": "Marketplace de serviços prestados por profissionais PCD para empresas e consumidores",
+      "cliente": "Profissionais com deficiência que têm dificuldade de inserção no mercado de trabalho formal e empresas que querem diversidade.",
+      "problema": "PCD qualificados têm dificuldade de visibilidade profissional. Empresas querem diversidade mas não sabem onde encontrar profissionais PCD para contratação ou serviços.",
+      "solucao": "Marketplace onde PCD oferecem serviços profissionais (design, desenvolvimento, escrita, consultoria) para empresas e consumidores, com filtro por tipo de deficiência e habilidade.",
+      "monetizacao": "Comissão sobre cada serviço contratado. Assinatura premium para PCD com mais visibilidade. Empresas pagam por acesso ao banco de profissionais.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ConectaPCD para que talento PCD tenha o palco que merece.",
+        "problema": "PCD formado, qualificado, com portfólio. E não consegue oportunidade. A empresa quer diversidade mas não sabe onde encontrar. O problema é de visibilidade, não de capacidade.",
+        "solucao": "O ConectaPCD é um marketplace onde PCD oferece seus serviços profissionais. Empresa filtra por habilidade, contrata e avalia. O talento aparece antes da deficiência.",
+        "modelo": "Comissão sobre cada serviço. Assinatura premium para PCD. Empresas pagam pelo acesso.",
+        "fechamento": "Talento não tem deficiência. O ConectaPCD garante que ele seja visto pelo que é."
+      }
+    },
+    {
+      "id": "TAD-27",
+      "nome": "DigitalSocial",
+      "resumo": "Formação em habilidades digitais básicas para trabalhadores informais e autônomos",
+      "cliente": "Trabalhadores informais e autônomos que perdem vendas e oportunidades por não saber usar ferramentas digitais básicas.",
+      "problema": "Camelô, costureira, faxineira — trabalhadores informais perdem clientes para quem tem WhatsApp Business, Instagram e Pix configurados porque não dominam essas ferramentas.",
+      "solucao": "Cursos de 8 horas em módulos: WhatsApp Business, Instagram para negócios, Pix e pagamento digital, Google Minha Empresa. Presencial ou online com suporte pelo WhatsApp.",
+      "monetizacao": "Venda dos cursos. Parcerias com Sebrae e sindicatos. Prefeituras financiam como política de economia popular.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o DigitalSocial para que trabalhador informal não perca cliente por não saber usar o celular profissionalmente.",
+        "problema": "A costureira perde cliente para a concorrente que tem Instagram. O camelô não aceita Pix e o cliente vai embora. Não é falta de produto — é falta de ferramenta.",
+        "solucao": "O DigitalSocial ensina em 8 horas o que o trabalhador informal precisa: WhatsApp Business, Instagram, Pix, Google Minha Empresa. Presencial no bairro ou online com suporte.",
+        "modelo": "Venda dos cursos. Parcerias com Sebrae e sindicatos. Prefeituras financiam.",
+        "fechamento": "Ferramenta digital certa no lugar certo faz venda acontecer. O DigitalSocial ensina isso para quem mais precisa vender."
+      }
+    },
+    {
+      "id": "TAD-28",
+      "nome": "AcessoJurídico",
+      "resumo": "Plataforma de orientação jurídica gratuita via chat para populações vulneráveis",
+      "cliente": "Pessoas de baixa renda com questões trabalhistas, de locação, família ou previdência sem acesso a advogado ou Defensoria Pública.",
+      "problema": "Pessoas de baixa renda têm direitos trabalhistas, previdenciários e de família violados porque não sabem quais são nem como reivindicá-los. A Defensoria está sobrecarregada.",
+      "solucao": "Chatbot jurídico com linguagem simples que orienta sobre direitos e próximos passos em questões de trabalho, previdência, família e locação. Escalona para advogado voluntário quando necessário.",
+      "monetizacao": "Editais de acesso à justiça. OAB e faculdades de direito financiam como extensão. Empresas financiam como programa de responsabilidade social.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o AcessoJurídico para que direito não seja privilégio de quem pode pagar advogado.",
+        "problema": "Trabalhador foi demitido sem receber o que tem direito. Não sabe o que fazer. Ir à Defensoria? Fila de meses. Contratar advogado? Sem dinheiro. O direito existe, mas é inacessível.",
+        "solucao": "O AcessoJurídico orienta em linguagem simples: o que é seu direito, quais documentos juntar, onde reclamar. Quando é caso complexo, conecta com advogado voluntário.",
+        "modelo": "Editais de acesso à justiça. OAB e faculdades financiam. Empresas patrocinam.",
+        "fechamento": "Conhecer seu direito é o primeiro passo para exercê-lo. O AcessoJurídico ensina esse passo para quem mais precisa."
+      }
+    },
+    {
+      "id": "TAD-29",
+      "nome": "ERP Popular",
+      "resumo": "Sistema de gestão empresarial simplificado e gratuito para microempreendedores individuais",
+      "cliente": "MEIs e pequenos negócios que precisam controlar estoque, caixa e clientes sem pagar por sistema caro.",
+      "problema": "Microempreendedores gerenciam o negócio no caderno ou na memória, perdendo controle de estoque, caixa e clientes. Sistemas de gestão existentes são caros ou complexos demais.",
+      "solucao": "App gratuito de gestão para MEI com controle de estoque, registro de vendas, emissão de nota fiscal, DAS simplificado e relatório mensal de resultado.",
+      "monetizacao": "Versão gratuita com funcionalidades básicas. Plano premium acessível. Parcerias com bancos e fintechs que oferecem como benefício para clientes MEI.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ERP Popular para que o MEI gerencie o negócio sem precisar de contador para tudo.",
+        "problema": "MEI não sabe quanto vendeu no mês. Não sabe o que tem no estoque. Não sabe se lucrou. Tudo está na cabeça ou no caderno. O negócio cresce no escuro.",
+        "solucao": "O ERP Popular é gratuito para MEI. Controla estoque, registra vendas, calcula o DAS e gera relatório do mês. Simples como um aplicativo de celular.",
+        "modelo": "Gratuito com funcionalidades básicas. Premium acessível. Bancos oferecem como benefício para MEI.",
+        "fechamento": "Negócio que se conhece se gerencia. O ERP Popular coloca esse conhecimento na mão do MEI."
+      }
+    },
+    {
+      "id": "TAD-30",
+      "nome": "ConectaCampo",
+      "resumo": "Internet rural de baixo custo via redes comunitárias sem fio para agricultores e comunidades",
+      "cliente": "Comunidades rurais e agricultores sem acesso à internet de qualidade que precisam de conectividade para negócios e serviços.",
+      "problema": "Comunidades rurais ficam fora do acesso à internet por custo proibitivo das operadoras. Sem internet, não há acesso a preços de mercado, clima, saúde e governo digital.",
+      "solucao": "Rede comunitária sem fio (Wi-Fi mesh) instalada por técnicos locais treinados. Sinal compartilhado entre as propriedades. Gestão e manutenção pela própria comunidade.",
+      "monetizacao": "Mensalidade da comunidade (menor que a operadora). Prefeituras e governos estaduais financiam o equipamento. Editais do CGI e programas de conectividade rural.",
+      "roteiro": {
+        "apresentacao": "Sou [nome], do Senac Araçatuba. Criei o ConectaCampo para que internet no campo seja tão normal quanto na cidade.",
+        "problema": "Agricultor precisa saber o preço da soja agora. Filho quer estudar online. Posto de saúde marcou consulta por telemedicina. E a internet da operadora não chega — ou custa R$ 300 por mês.",
+        "solucao": "O ConectaCampo instala uma rede comunitária sem fio que cobre toda a comunidade. O sinal é dividido entre as propriedades. A mensalidade é menor que qualquer operadora.",
+        "modelo": "Mensalidade da comunidade. Prefeituras e estados financiam. Editais de conectividade rural.",
+        "fechamento": "Internet é infraestrutura básica como estrada. O ConectaCampo garante que o campo não fique para trás."
+      }
+    }
+  ]
+}
