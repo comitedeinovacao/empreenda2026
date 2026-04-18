@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EmpreendAção — Senac Araçatuba 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<style>
+:root{
+  --azul:#004587;
+  --azul-escuro:#002D5C;
+  --azul-mid:#003A75;
+  --azul-claro:#005BB5;
+  --laranja:#F7941D;
+  --branco:#FFFFFF;
+  --preto:#0A0A0A;
+  --vermelho:#FF4757;
+  --verde:#2ED573;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-serif;background:#000;color:#fff;-webkit-font-smoothing:antialiased;}
+.deck{position:relative;width:100vw;height:100vh;overflow:hidden;}
+
+/* Progress bar */
+.progress-bar{position:fixed;top:0;left:0;height:4px;background:var(--laranja);z-index:100;transition:width .5s cubic-bezier(.4,0,.2,1);box-shadow:0 0 12px rgba(247,148,29,.5);}
+
+/* Slide counter */
+.slide-counter{position:fixed;top:18px;right:24px;z-index:100;color:#fff;font-weight:600;font-size:13px;letter-spacing:2px;background:rgba(0,0,0,.25);padding:8px 18px;border-radius:20px;backdrop-filter:blur(6px);white-space:nowrap;line-height:1;}
+.slide-counter .sc-cur{color:var(--laranja);}
+
+/* Slides */
+.slide{position:absolute;inset:0;width:100vw;height:100vh;padding:60px 80px 80px;display:flex;opacity:0;visibility:hidden;transition:opacity .5s ease;overflow:hidden;}
+.slide.active{opacity:1;visibility:visible;}
+.slide .inner{position:relative;z-index:5;width:100%;height:100%;display:flex;flex-direction:column;}
+
+/* Arrows */
+.nav-arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:90;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;backdrop-filter:blur(6px);font-size:16px;}
+.nav-arrow:hover{background:var(--laranja);border-color:var(--laranja);}
+.nav-prev{left:24px;}
+.nav-next{right:24px;}
+
+/* Footer */
+.footer{position:fixed;bottom:0;left:0;right:0;height:48px;background:rgba(0,0,0,.25);backdrop-filter:blur(8px);z-index:80;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-top:1px solid rgba(255,255,255,.06);}
+.footer-left{color:var(--laranja);font-weight:700;font-size:11px;letter-spacing:2px;}
+.footer-right{color:rgba(255,255,255,.5);font-weight:500;font-size:11px;letter-spacing:2px;}
+.dots{display:flex;gap:8px;}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;transition:all .3s;}
+.dot.active{background:var(--laranja);transform:scale(1.4);}
+.dot:hover{background:rgba(255,255,255,.5);}
+
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+@keyframes expandeLinha{from{width:0;}to{width:var(--line-w,80px);}}
+@keyframes expandeLinhaLong{from{width:0;}to{width:120px;}}
+@keyframes flutuacao{from{transform:translateY(0);}to{transform:translateY(-20px);}}
+@keyframes pulse{from{transform:scale(1);}to{transform:scale(1.05);}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 30px rgba(247,148,29,.4),0 0 0 0 rgba(247,148,29,.3);}50%{box-shadow:0 0 60px rgba(247,148,29,.7),0 0 0 20px rgba(247,148,29,0);}}
+@keyframes progressFill{from{width:0;}to{width:92%;}}
+@keyframes drawLine{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+@keyframes floatUp{0%{transform:translateY(100vh) scale(1);opacity:0;}10%{opacity:.6;}90%{opacity:.4;}100%{transform:translateY(-10vh) scale(.5);opacity:0;}}
+
+.slide.active .fade{animation:fadeUp .6s cubic-bezier(.2,.7,.2,1) both;}
+.slide.active .d1{animation-delay:.1s;}
+.slide.active .d2{animation-delay:.3s;}
+.slide.active .d3{animation-delay:.5s;}
+.slide.active .d4{animation-delay:.7s;}
+.slide.active .d5{animation-delay:.9s;}
+
+.linha-laranja{height:3px;background:var(--laranja);border-radius:2px;--line-w:80px;width:80px;}
+.slide.active .linha-laranja{animation:expandeLinha .8s .4s cubic-bezier(.2,.7,.2,1) both;}
+.linha-laranja.long{--line-w:120px;width:120px;}
+
+/* Particles */
+.particulas{position:absolute;inset:0;pointer-events:none;z-index:1;}
+.particula{position:absolute;border-radius:50%;opacity:.4;animation:flutuacao 4s infinite alternate ease-in-out;}
+
+/* ===== SLIDE 1 — IMPACTO ===== */
+.s1{background:var(--azul-escuro);align-items:center;justify-content:center;}
+.s1 .inner{align-items:center;justify-content:center;text-align:center;}
+.s1 .counter{font-weight:900;font-size:100px;color:var(--laranja);text-shadow:0 0 40px rgba(247,148,29,.5);letter-spacing:-2px;line-height:1;}
+.s1 .sub{margin-top:32px;font-weight:400;font-size:15px;color:#fff;letter-spacing:4px;}
+
+/* ===== SLIDE 2 — REVELAÇÃO ===== */
+.s2{background:linear-gradient(135deg,var(--azul-escuro) 0%,var(--azul) 100%);}
+.s2 .tri{position:absolute;inset:0;background:var(--laranja);opacity:.15;clip-path:polygon(100% 40%,100% 100%,30% 100%);z-index:0;}
+.s2 .top{font-weight:700;font-size:12px;color:var(--laranja);letter-spacing:4px;text-align:center;margin-top:30px;}
+.s2 .cards{display:flex;align-items:center;justify-content:center;gap:32px;flex:1;margin-top:40px;}
+.card-prize{border-radius:16px;padding:40px;width:400px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 50px rgba(0,0,0,.3);}
+.card-prize.l{background:var(--laranja);color:#fff;}
+.card-prize.w{background:#fff;color:var(--azul);}
+.card-prize i{font-size:40px;}
+.card-prize .lbl{font-size:11px;font-weight:700;letter-spacing:2px;margin-top:16px;}
+.card-prize .val{font-weight:900;font-size:56px;letter-spacing:-2px;margin-top:8px;}
+.plus{font-weight:900;font-size:56px;color:var(--laranja);}
+.s2 .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--laranja);background:rgba(247,148,29,.1);border-radius:50px;padding:10px 28px;color:var(--laranja);font-weight:600;font-size:13px;margin:0 auto 30px;}
+
+/* ===== SLIDE 5B — AS 5 CATEGORIAS ===== */
+.s5b{background:var(--azul);}
+.s5b .inner{align-items:center;}
+.s5b .k{color:rgba(255,255,255,.6);font-size:13px;letter-spacing:3px;font-weight:600;}
+.s5b h2{color:#fff;font-weight:800;font-size:44px;margin-top:8px;letter-spacing:-.5px;text-align:center;}
+.s5b .cats{display:flex;gap:14px;margin-top:44px;width:100%;}
+.s5b .cat{flex:1;border-radius:14px;padding:22px 18px;min-height:220px;display:flex;flex-direction:column;transition:all .3s;position:relative;}
+.s5b .cat:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.3);}
+.s5b .cat i{font-size:30px;color:#fff;}
+.s5b .cat h4{font-weight:700;font-size:15px;color:#fff;margin-top:16px;letter-spacing:.5px;line-height:1.2;}
+.s5b .cat p{color:rgba(255,255,255,.85);font-size:12px;margin-top:8px;line-height:1.45;}
+.s5b .cat.c1{background:var(--laranja);}
+.s5b .cat.c2{background:var(--azul-mid);}
+.s5b .cat.c3{background:var(--azul-claro);border:2px solid var(--laranja);}
+.s5b .cat.c4{background:var(--azul-escuro);}
+.s5b .cat.c5{background:#001E40;}
+.s5b .cat .tag{position:absolute;top:-10px;right:14px;background:var(--laranja);color:#fff;font-size:9px;font-weight:800;letter-spacing:1.5px;padding:5px 10px;border-radius:20px;}
+.s5b .note{margin-top:32px;border-left:4px solid var(--laranja);background:rgba(247,148,29,.1);padding:14px 22px;color:rgba(255,255,255,.9);font-size:13px;font-weight:500;align-self:stretch;line-height:1.5;}
+
+/* ===== SLIDE 10B — PRÊMIOS POR CATEGORIA ===== */
+.s10b{background:radial-gradient(circle at center,rgba(247,148,29,.1) 0%,var(--azul-escuro) 65%);}
+.s10b .inner{align-items:center;}
+.s10b .k{color:var(--laranja);font-size:12px;letter-spacing:3px;font-weight:700;}
+.s10b h2{color:#fff;font-weight:800;font-size:46px;margin-top:8px;letter-spacing:-.5px;text-align:center;}
+.s10b .groups{display:flex;gap:24px;margin-top:40px;width:100%;}
+.s10b .g{flex:1;border-radius:14px;padding:28px 30px;}
+.s10b .g.a{background:rgba(247,148,29,.12);border-left:4px solid var(--laranja);}
+.s10b .g.b{background:rgba(0,91,181,.2);border-left:4px solid var(--azul-claro);}
+.s10b .g h3{color:#fff;font-weight:700;font-size:17px;letter-spacing:.5px;line-height:1.3;}
+.s10b .g .ln{height:2px;background:rgba(255,255,255,.15);margin:16px 0 14px;}
+.s10b .g .r{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);}
+.s10b .g .r:last-child{border-bottom:0;}
+.s10b .g .r .pl{color:rgba(255,255,255,.85);font-size:15px;font-weight:500;}
+.s10b .g .r .pv{color:#fff;font-weight:800;font-size:22px;letter-spacing:-.5px;}
+.s10b .g .r.first .pv{color:var(--laranja);font-size:26px;}
+.s10b .g .lab{margin-top:14px;color:rgba(255,255,255,.5);font-size:11px;font-style:italic;}
+.s10b .vp{margin-top:26px;background:rgba(247,148,29,.18);border:2px dashed var(--laranja);border-radius:14px;padding:18px 28px;display:flex;align-items:center;gap:18px;width:100%;}
+.s10b .vp i{color:var(--laranja);font-size:30px;}
+.s10b .vp .vt{color:#fff;font-weight:700;font-size:17px;}
+.s10b .vp .vs{color:rgba(255,255,255,.65);font-size:13px;margin-top:3px;}
+.s10b .disc{margin-top:14px;color:rgba(255,255,255,.4);font-size:12px;text-align:center;}
+
+/* ===== SLIDE 3 — PRAZO ===== */
+.s3{background:var(--azul-escuro);}
+.rings{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1;}
+.ring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid rgba(247,148,29,.08);border-radius:50%;animation:pulse 3s infinite alternate ease-in-out;}
+.ring.r1{width:400px;height:400px;animation-delay:0s;}
+.ring.r2{width:600px;height:600px;animation-delay:.5s;}
+.ring.r3{width:800px;height:800px;animation-delay:1s;}
+.s3 .inner{align-items:center;justify-content:center;text-align:center;}
+.s3 .kicker{color:var(--laranja);font-weight:700;font-size:12px;letter-spacing:4px;}
+.s3 .date{font-weight:900;font-size:88px;color:#fff;letter-spacing:-2px;margin-top:16px;line-height:1;}
+.s3 .time{color:var(--laranja);font-size:28px;font-weight:600;margin-top:12px;}
+.s3 .pbar{width:500px;height:10px;background:rgba(255,255,255,.08);border-radius:10px;margin-top:36px;overflow:hidden;}
+.s3 .pbar-fill{height:100%;background:linear-gradient(90deg,var(--laranja),#ffb347);border-radius:10px;width:0;}
+.slide.active .s3 .pbar-fill,.s3.active .pbar-fill{animation:progressFill 1.5s 1s ease-out forwards;}
+.s3 .quote{margin-top:32px;border-left:4px solid var(--laranja);background:rgba(247,148,29,.06);padding:18px 26px;max-width:620px;text-align:left;color:#fff;font-size:16px;line-height:1.6;}
+
+/* ===== SLIDE 4 — O QUE É ===== */
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;z-index:0;pointer-events:none;}
+.s4{background:var(--azul);}
+.s4 .inner{flex-direction:row;gap:40px;align-items:center;}
+.s4 .l{flex:55;}
+.s4 .r{flex:45;}
+.s4 .t1{font-weight:900;font-size:96px;color:#fff;letter-spacing:-3px;line-height:.95;}
+.s4 .t2{font-weight:300;font-size:56px;color:var(--laranja);margin-top:4px;letter-spacing:-1px;}
+.s4 .t3{color:var(--laranja);font-size:16px;letter-spacing:2px;margin-top:24px;font-weight:600;}
+.s4 .t4{color:rgba(255,255,255,.5);font-size:11px;letter-spacing:3px;font-weight:600;}
+.s4 .items{display:flex;flex-direction:column;gap:18px;margin-top:20px;}
+.s4 .it{display:flex;gap:14px;align-items:flex-start;color:#fff;font-size:17px;line-height:1.5;}
+.s4 .it i{color:var(--laranja);font-size:14px;margin-top:6px;flex-shrink:0;}
+.s4 .url{margin-top:28px;color:var(--laranja);font-size:14px;font-weight:600;letter-spacing:.5px;}
+
+/* ===== SLIDE 5 — QUEM PODE ===== */
+.s5{background:#fff;padding:0;}
+.s5 .inner{flex-direction:row;padding:0;gap:0;}
+.s5 .l-panel{flex:0 0 38%;background:var(--azul);height:calc(100vh - 48px);clip-path:polygon(0 0,85% 0,100% 100%,0 100%);padding:70px 80px 80px;display:flex;flex-direction:column;justify-content:center;}
+.s5 .l-panel i{font-size:72px;color:#fff;}
+.s5 .l-panel h2{font-weight:800;font-size:34px;color:#fff;margin-top:24px;letter-spacing:-.5px;}
+.s5 .l-panel p{color:rgba(255,255,255,.7);font-size:14px;margin-top:8px;}
+.s5 .r-panel{flex:1;padding:70px 80px 80px 60px;display:flex;flex-direction:column;justify-content:center;}
+.s5 .r-panel h3{color:var(--azul);font-weight:700;font-size:28px;letter-spacing:-.5px;}
+.s5 .r-panel .linha-laranja{margin-top:14px;--line-w:48px;width:48px;}
+.s5 .crit{display:flex;flex-direction:column;gap:12px;margin-top:24px;}
+.s5 .cr{display:flex;align-items:center;gap:14px;background:#F5F7FA;border-left:4px solid var(--laranja);border-radius:0 10px 10px 0;padding:16px 20px;}
+.s5 .cr i{color:var(--laranja);font-size:18px;flex-shrink:0;}
+.s5 .cr span{color:#333;font-weight:500;font-size:15px;}
+.s5 .badge-team{margin-top:22px;background:var(--azul);color:#fff;border-radius:10px;padding:14px 22px;font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:10px;align-self:flex-start;}
+
+/* ===== SLIDE 6 — MITO OU VERDADE ===== */
+.s6{background:linear-gradient(135deg,var(--azul-escuro) 0%,var(--azul) 100%);}
+.s6 .inner{align-items:center;justify-content:center;text-align:center;gap:24px;}
+.s6 .badge-top{background:var(--laranja);color:#fff;font-weight:700;font-size:12px;letter-spacing:2px;padding:8px 22px;border-radius:50px;}
+.s6 .q{font-weight:700;font-size:42px;color:#fff;max-width:820px;line-height:1.2;letter-spacing:-.5px;}
+.s6 .verdict{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:8px;}
+.s6 .verdict i{font-size:72px;}
+.s6 .verdict.mito i{color:var(--vermelho);}
+.s6 .verdict.verdade i{color:var(--verde);}
+.s6 .verdict .lbl{font-weight:900;font-size:32px;letter-spacing:4px;}
+.s6 .verdict.mito .lbl{color:var(--vermelho);}
+.s6 .verdict.verdade .lbl{color:var(--verde);}
+.s6 .exp{background:rgba(255,255,255,.06);border-radius:12px;padding:24px 36px;max-width:760px;color:rgba(255,255,255,.85);font-size:18px;line-height:1.5;}
+
+/* ===== SLIDE 7 — 4 TÓPICOS ===== */
+.s7{background:var(--azul);}
+.s7 .inner{align-items:center;}
+.s7 .k{color:rgba(255,255,255,.6);font-size:13px;letter-spacing:2px;font-weight:600;}
+.s7 .h{font-weight:800;font-size:48px;color:#fff;margin-top:10px;letter-spacing:-1px;text-align:center;}
+.s7 .cards4{display:flex;gap:20px;margin-top:36px;width:100%;}
+.s7 .c{flex:1;border-radius:16px;padding:28px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;transition:all .3s;cursor:default;}
+.s7 .c{cursor:pointer;}
+.s7 .c:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.35);background:var(--laranja)!important;border-top-color:transparent!important;}
+.s7 .c:hover .num{color:rgba(255,255,255,.3);}
+.s7 .c:hover i,.s7 .c:hover h4,.s7 .c:hover p{color:#fff;}
+.s7 .c .num{font-weight:900;font-size:48px;color:rgba(255,255,255,.2);line-height:1;}
+.s7 .c i{font-size:30px;color:#fff;margin-top:6px;}
+.s7 .c h4{font-weight:700;font-size:18px;color:#fff;margin-top:18px;letter-spacing:1px;}
+.s7 .c p{color:rgba(255,255,255,.85);font-size:13px;margin-top:8px;line-height:1.5;}
+.s7 .c.c1, .s7 .c.c2, .s7 .c.c3, .s7 .c.c4 { background: var(--azul-escuro); border-top: none; }
+
+@keyframes c1-anim {
+  0%, 24% { background: var(--laranja); }
+  25%, 100% { background: var(--azul-escuro); }
+}
+@keyframes c2-anim {
+  0%, 24% { background: var(--azul-escuro); }
+  25%, 49% { background: var(--laranja); }
+  50%, 100% { background: var(--azul-escuro); }
+}
+@keyframes c3-anim {
+  0%, 49% { background: var(--azul-escuro); }
+  50%, 74% { background: var(--laranja); }
+  75%, 100% { background: var(--azul-escuro); }
+}
+@keyframes c4-anim {
+  0%, 74% { background: var(--azul-escuro); }
+  75%, 99% { background: var(--laranja); }
+  100% { background: var(--azul-escuro); }
+}
+@keyframes blink-all {
+  0%, 10% { background: var(--azul-escuro); }
+  20%, 40% { background: var(--laranja); }
+  50%, 60% { background: var(--azul-escuro); }
+  70%, 100% { background: var(--laranja); }
+}
+
+.slide.active .s7 .c.c1 { animation: c1-anim 20s 1s ease-in-out forwards, blink-all 2s 21s ease-in-out forwards; }
+.slide.active .s7 .c.c2 { animation: c2-anim 20s 1s ease-in-out forwards, blink-all 2s 21s ease-in-out forwards; }
+.slide.active .s7 .c.c3 { animation: c3-anim 20s 1s ease-in-out forwards, blink-all 2s 21s ease-in-out forwards; }
+.slide.active .s7 .c.c4 { animation: c4-anim 20s 1s ease-in-out forwards, blink-all 2s 21s ease-in-out forwards; }
+.s7 .foot{margin-top:30px;border-left:4px solid var(--laranja);padding:14px 22px;background:rgba(247,148,29,.08);color:var(--laranja);font-weight:600;font-size:14px;align-self:stretch;}
+
+/* ===== SLIDE 8 — TIMELINE ===== */
+.s8{background:var(--azul);}
+.s8 .inner{align-items:center;}
+.s8 h2{font-weight:800;font-size:46px;color:#fff;letter-spacing:-1px;text-align:center;}
+.s8 .sub{color:var(--laranja);font-size:20px;margin-top:8px;}
+.s8 .tl{position:relative;width:100%;margin-top:70px;display:flex;justify-content:space-between;align-items:flex-start;padding:0 40px;}
+.s8 .tl-line{position:absolute;top:36px;left:10%;right:10%;height:2px;background:rgba(255,255,255,.3);transform-origin:left;}
+.slide.active .s8 .tl-line{animation:drawLine 1.5s .4s ease-out both;}
+.s8 .node{flex:1;max-width:320px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:2;}
+.s8 .node .dot-big{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;}
+.s8 .node.n1 .dot-big{background:var(--laranja);animation:pulse 3s infinite alternate ease-in-out;}
+.s8 .node.n2 .dot-big{background:var(--azul);}
+.s8 .node.n3 .dot-big{background:var(--laranja);box-shadow:0 0 40px rgba(247,148,29,.6);}
+.s8 .node .stamp{margin-top:16px;font-size:10px;font-weight:800;letter-spacing:2px;padding:4px 12px;border-radius:20px;}
+.s8 .node.n1 .stamp{background:var(--laranja);color:#fff;}
+.s8 .node.n2 .stamp{background:rgba(255,255,255,.1);color:rgba(255,255,255,.6);}
+.s8 .node.n3 .stamp{background:rgba(247,148,29,.2);color:var(--laranja);}
+.s8 .node h4{font-weight:700;font-size:20px;color:#fff;margin-top:12px;letter-spacing:.5px;}
+.s8 .node p{color:rgba(255,255,255,.7);font-size:14px;margin-top:6px;}
+.s8 .node .date{margin-top:10px;color:var(--laranja);font-weight:600;font-size:15px;}
+.s8 .foot{margin-top:48px;color:rgba(255,255,255,.5);font-size:14px;text-align:center;}
+
+/* ===== SLIDE 9 — BÔNUS ===== */
+.s9{background:var(--azul);}
+.hex-bg{position:absolute;inset:0;opacity:.06;background-image:radial-gradient(circle at 20% 30%,var(--laranja) 2px,transparent 3px),radial-gradient(circle at 80% 70%,var(--laranja) 2px,transparent 3px),radial-gradient(circle at 50% 50%,var(--laranja) 2px,transparent 3px);background-size:160px 160px;}
+.s9 .inner{align-items:center;}
+.s9 .k{color:var(--laranja);font-size:12px;letter-spacing:3px;font-weight:700;}
+.s9 h2{font-weight:800;font-size:44px;color:#fff;margin-top:8px;letter-spacing:-.5px;text-align:center;}
+.s9 .cards3{display:flex;gap:26px;margin-top:46px;width:100%;}
+.s9 .c{flex:1;background:#fff;border-radius:16px;padding:32px;min-height:300px;transition:all .3s;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(0,0,0,.15);}
+.s9 .c:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,0,0,.3);}
+.s9 .c i{font-size:44px;color:var(--laranja);}
+.s9 .c .pts{font-weight:800;font-size:40px;color:var(--azul);margin-top:18px;letter-spacing:-1px;}
+.s9 .c .ptl{color:var(--laranja);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-top:2px;}
+.s9 .c .ll{height:3px;width:40px;background:var(--laranja);margin-top:14px;border-radius:2px;}
+.s9 .c h5{font-weight:600;font-size:16px;color:#222;margin-top:14px;}
+.s9 .c p{color:#666;font-size:13px;margin-top:4px;line-height:1.5;}
+.s9 .ban{margin-top:32px;background:var(--laranja);color:#fff;border-radius:12px;padding:18px 28px;font-weight:700;font-size:15px;text-align:center;line-height:1.5;}
+
+/* ================================================================
+   SLIDE 10C — PODER DO PRÊMIO (sB)
+   ================================================================ */
+.sB{background:radial-gradient(ellipse at 50% -10%,rgba(247,148,29,.18) 0%,var(--azul-escuro) 55%);}
+
+.sB .watermark{
+  position:absolute;bottom:-60px;right:-60px;
+  font-size:320px;font-weight:900;
+  color:rgba(255,255,255,.022);
+  letter-spacing:-10px;line-height:1;
+  pointer-events:none;z-index:0;
+  font-family:'Montserrat',sans-serif;
+}
+
+/* ================================================================
+   SLIDE 10C — PODER DO PRÊMIO (sB)
+   ================================================================ */
+.sB{background:radial-gradient(ellipse at 50% -10%,rgba(247,148,29,.18) 0%,var(--azul-escuro) 55%);}
+
+.sB .watermark{
+  position:absolute;bottom:-60px;right:-60px;
+  font-size:320px;font-weight:900;
+  color:rgba(255,255,255,.022);
+  letter-spacing:-10px;line-height:1;
+  pointer-events:none;z-index:0;
+  font-family:'Montserrat',sans-serif;
+}
+
+.sB .inner{align-items:center; justify-content:center;}
+.sB .kicker{color:var(--laranja);font-size:16px;letter-spacing:5px;font-weight:800;margin-bottom:10px;}
+.sB h2{color:#fff;font-weight:900;font-size:52px;letter-spacing:-1.5px;text-align:center;}
+
+.sB .valor-shine{
+  font-size:110px;font-weight:900;letter-spacing:-4px;line-height:1;margin-top:10px;
+  background:linear-gradient(90deg,var(--laranja) 0%,#ffcf7d 40%,var(--laranja) 80%,#ffcf7d 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:shimmer 3s linear infinite;
+}
+
+.comp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:36px;width:100%;}
+.comp-card{
+  border-radius:20px;overflow:hidden;
+  position:relative;min-height:380px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  transition:transform .3s,box-shadow .3s;cursor:default;
+}
+.comp-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,0,0,.5);}
+.cc-bg{position:absolute;inset:0;z-index:0;}
+.cc-bg.moto   {background:linear-gradient(160deg,#1a1200 0%,#3d2a00 100%);}
+.cc-bg.carro  {background:linear-gradient(160deg,#0d1b2a 0%,#0a2540 100%);}
+.cc-bg.salario{background:linear-gradient(160deg,#0d200d 0%,#0a2e10 100%);}
+.cc-bg.franquia{background:linear-gradient(160deg,#1a0d00 0%,#3a1400 100%);}
+.cc-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 15%,rgba(0,0,0,.8) 100%);z-index:1;}
+.cc-body{position:relative;z-index:2;padding:26px 28px;}
+.cc-label{font-size:12px;font-weight:800;letter-spacing:3px;color:rgba(255,255,255,.6);}
+.cc-title{font-size:26px;font-weight:800;color:#fff;margin-top:8px;line-height:1.2;}
+.cc-sub{color:var(--laranja);font-size:16px;font-weight:600;margin-top:10px;}
+.cc-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:16px;
+  background:rgba(46,213,115,.14);border:1px solid rgba(46,213,115,.35);
+  border-radius:20px;padding:6px 14px;
+  color:var(--verde);font-size:13px;font-weight:700;letter-spacing:.5px;
+}
+.cc-badge svg{width:14px;height:14px;stroke-width:2.5;}
+.salary-viz{display:flex;gap:4px;align-items:flex-end;height:45px;margin-top:12px;}
+.s-bar{width:12px;border-radius:4px 4px 0 0;background:var(--laranja);transition:height .4s ease;}
+.dias-row{
+  margin-top:10px;display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.06);border-radius:10px;padding:10px 14px;
+}
+.dias-row i{color:var(--laranja);font-size:16px;}
+.dias-row span{font-size:13.5px;font-weight:600;color:rgba(255,255,255,.85);}
+.sB .cta-row{display:flex;gap:20px;margin-top:36px;align-self:stretch;}
+.sB .cta-box{
+  flex:1;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);border-radius:16px;
+  padding:22px 26px;display:flex;align-items:center;gap:18px;
+}
+.sB .cta-box.hl{background:rgba(247,148,29,.1);border-color:var(--laranja);}
+.sB .cta-box i{color:var(--laranja);font-size:32px;flex-shrink:0;}
+.sB .cta-box p{font-size:15px;font-weight:500;color:rgba(255,255,255,.85);line-height:1.5;}
+.sB .cta-box p strong{color:#fff;font-weight:800;}
+
+
+/* ================================================================
+   SLIDE 10D — OBJEÇÕES (sA)
+   ================================================================ */
+.sA{background:linear-gradient(140deg,#001830 0%,var(--azul-escuro) 60%,#001018 100%);}
+.sA .grid-bg{position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:56px 56px;z-index:0;pointer-events:none;}
+.sA .glow{position:absolute;bottom:-160px;left:-160px;width:560px;height:560px;
+  background:radial-gradient(circle,rgba(247,148,29,.1) 0%,transparent 70%);
+  pointer-events:none;z-index:0;}
+.sA .inner{align-items:center; justify-content:center; gap:0;}
+.sA .kicker{color:var(--laranja);font-size:16px;letter-spacing:5px;font-weight:800;margin-bottom:10px;}
+.sA h2{color:#fff;font-weight:900;font-size:56px;letter-spacing:-1.5px;text-align:center;line-height:1.1;}
+.sA h2 em{color:var(--laranja);font-style:normal;}
+.obj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:36px;width:100%;}
+.obj-card{
+  border-radius:20px;
+  padding:28px 24px 24px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.09);
+  position:relative;
+  overflow:hidden;
+  transition:border-color .3s,background .3s,transform .3s;
+  cursor:default;
+}
+.obj-card:hover{
+  border-color:var(--laranja);
+  background:rgba(247,148,29,.07);
+  transform:translateY(-4px);
+}
+.obj-card:hover .obj-strike::after{width:100%;}
+.obj-card .mito-tag{
+  position:absolute;top:16px;right:16px;
+  background:var(--vermelho);color:#fff;
+  font-size:10px;font-weight:800;letter-spacing:2px;
+  padding:5px 12px;border-radius:20px;
+}
+.obj-card .icon-wrap{
+  width:48px;height:48px;border-radius:50%;
+  background:rgba(247,148,29,.14);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:18px;
+}
+.obj-card .icon-wrap i{color:var(--laranja);font-size:22px;}
+.obj-strike{
+  display:inline-block;
+  font-size:20px;font-weight:700;
+  color:rgba(255,255,255,.5);
+  line-height:1.3;position:relative;
+}
+.obj-strike::after{
+  content:'';position:absolute;
+  left:0;top:50%;transform:translateY(-50%);
+  height:3px;background:var(--vermelho);
+  width:0;transition:width .45s ease .1s;
+}
+.obj-resposta{
+  margin-top:14px;
+  font-size:16px;font-weight:500;
+  color:rgba(255,255,255,.85);
+  line-height:1.5;
+}
+.obj-resposta em{color:var(--laranja);font-style:normal;font-weight:700;}
+.obj-card.gold{
+  border-color:rgba(247,148,29,.5);
+  background:rgba(247,148,29,.08);
+}
+.obj-card.gold .mito-tag{background:var(--laranja);}
+.obj-card.gold .obj-strike{color:var(--laranja);}
+.obj-card.gold .obj-strike::after{display:none;}
+.sA .nota-rodape{
+  margin-top:36px;
+  align-self:stretch;
+  background:rgba(247,148,29,.09);
+  border-left:5px solid var(--laranja);
+  border-radius:0 12px 12px 0;
+  padding:20px 28px;
+  font-size:16px;font-weight:500;
+  color:rgba(255,255,255,.9);
+  line-height:1.5;
+}
+.sA .nota-rodape em{color:var(--laranja);font-style:normal;font-weight:700;}
+
+/* ===== SLIDE 10 — PREMIAÇÃO ===== */
+.s10{background:radial-gradient(circle at center,rgba(247,148,29,.15) 0%,var(--azul-escuro) 70%);}
+.s10 .inner{align-items:center;}
+.s10 .k{color:rgba(255,255,255,.5);letter-spacing:4px;font-size:12px;font-weight:600;}
+.s10 h2{font-weight:800;font-size:44px;color:#fff;margin-top:8px;letter-spacing:-.5px;text-align:center;}
+.s10 .podium{display:flex;align-items:flex-end;gap:16px;margin-top:40px;}
+.s10 .pl{border-radius:16px 16px 0 0;padding:28px 36px;text-align:center;min-width:240px;}
+.s10 .pl.third{background:var(--azul-mid);height:180px;}
+.s10 .pl.second{background:var(--azul);height:220px;}
+.s10 .pl.first{background:var(--laranja);height:280px;animation:pulseGlow 2.5s infinite ease-in-out;}
+.s10 .pl .rk{color:rgba(255,255,255,.7);font-size:13px;font-weight:700;letter-spacing:1px;}
+.s10 .pl.first .rk{color:#fff;}
+.s10 .pl .amt{color:#fff;font-weight:900;margin-top:10px;letter-spacing:-2px;line-height:1;}
+.s10 .pl.third .amt{font-size:40px;}
+.s10 .pl.second .amt{font-size:46px;}
+.s10 .pl.first .amt{font-size:58px;}
+.s10 .pl .per{color:rgba(255,255,255,.55);font-size:12px;margin-top:8px;}
+.s10 .pl.first .per{color:rgba(255,255,255,.75);}
+.s10 .special{margin-top:36px;border:2px dashed var(--laranja);border-radius:14px;padding:18px 32px;display:flex;align-items:center;gap:18px;background:rgba(247,148,29,.06);}
+.s10 .special i{color:var(--laranja);font-size:28px;}
+.s10 .special .sp-t{color:#fff;font-weight:700;font-size:18px;}
+.s10 .special .sp-s{color:rgba(255,255,255,.6);font-size:13px;margin-top:2px;}
+.s10 .disclaimer{margin-top:20px;color:rgba(255,255,255,.4);font-size:12px;text-align:center;}
+
+/* ===== SLIDE 11 — DINÂMICA ===== */
+.s11{background:#fff;padding:0;}
+.s11 .angular{position:absolute;inset:0;background:var(--azul);clip-path:polygon(0 0,100% 0,100% 28%,0 22%);z-index:0;}
+.s11 .inner{padding:60px 80px 80px;z-index:5;}
+.s11 .top{text-align:left;margin-bottom:40px;}
+.s11 .top h2{color:#fff;font-weight:800;font-size:42px;letter-spacing:-.5px;}
+.s11 .top p{color:rgba(255,255,255,.8);font-size:17px;margin-top:8px;}
+.s11 .body{display:flex;flex-direction:column;gap:12px;max-width:900px;margin:60px auto 0;width:100%;}
+.s11 .row{background:#F5F7FA;border-left:4px solid var(--laranja);border-radius:0 12px 12px 0;padding:20px 24px;display:flex;align-items:center;gap:18px;}
+.s11 .row i{color:var(--laranja);font-size:22px;flex-shrink:0;width:32px;}
+.s11 .row span{color:#333;font-weight:500;font-size:16px;}
+.s11 .foot-b{margin:28px auto 0;background:var(--azul);color:#fff;border-radius:8px;padding:14px 22px;font-weight:600;font-size:15px;text-align:center;max-width:520px;}
+
+/* ===== SLIDE 12 — LABORATÓRIO ===== */
+.s12{background:var(--azul);}
+.s12 .k{color:var(--laranja);font-size:13px;letter-spacing:3px;font-weight:700;text-align:center;}
+.s12 h2{color:#fff;font-weight:800;font-size:44px;margin-top:8px;letter-spacing:-.5px;text-align:center;}
+.s12 .timebar{margin-top:48px;display:flex;height:96px;border-radius:14px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.3);}
+.s12 .seg{display:flex;flex-direction:column;justify-content:center;padding:14px 20px;color:#fff;}
+.s12 .seg .t{font-size:11px;opacity:.8;}
+.s12 .seg .bt{font-weight:600;font-size:15px;margin-top:4px;}
+.s12 .seg .bw{font-size:11px;opacity:.7;margin-top:4px;}
+.s12 .seg.s1b{flex:25;background:var(--laranja);}
+.s12 .seg.s2b{flex:33;background:var(--azul-mid);}
+.s12 .seg.s3b{flex:25;background:var(--azul-claro);}
+.s12 .seg.s4b{flex:17;background:rgba(247,148,29,.7);}
+.s12 .tlbl{color:rgba(255,255,255,.6);font-size:13px;margin-top:14px;text-align:center;}
+.s12 .tip{margin-top:40px;background:#fff;border-radius:12px;padding:22px 28px;box-shadow:0 10px 28px rgba(0,0,0,.25);display:flex;align-items:center;gap:18px;max-width:760px;margin-left:auto;margin-right:auto;}
+.s12 .tip i{color:var(--laranja);font-size:28px;}
+.s12 .tip span{color:var(--azul);font-weight:600;font-size:15px;}
+
+/* ===== SLIDE 13 — ESTÚDIO ===== */
+.s13{background:radial-gradient(circle at center,rgba(247,148,29,.12) 0%,var(--azul-escuro) 55%);}
+.s13 .inner{align-items:center;justify-content:center;text-align:center;gap:20px;}
+.s13 .vicon{font-size:80px;color:var(--laranja);animation:pulse 2.5s infinite alternate ease-in-out;}
+.s13 .t1{font-weight:900;font-size:68px;color:#fff;letter-spacing:-1px;}
+.s13 .t2{color:var(--laranja);font-size:20px;}
+.s13 .pills{display:flex;gap:16px;margin-top:12px;}
+.s13 .pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:50px;padding:10px 24px;color:#fff;font-size:14px;font-weight:500;}
+.s13 .qr{background:#fff;padding:16px;border-radius:12px;box-shadow:0 0 30px rgba(247,148,29,.4);}
+.s13 .qr-inner{width:120px;height:120px;display:flex;align-items:center;justify-content:center;color:var(--azul);font-size:12px;font-weight:700;letter-spacing:1px;background:repeating-linear-gradient(0deg,#000 0 4px,transparent 4px 8px),repeating-linear-gradient(90deg,#000 0 4px,transparent 4px 8px);position:relative;}
+.s13 .qr-inner::before{content:"";position:absolute;top:8px;left:8px;width:26px;height:26px;border:5px solid #000;background:#fff;}
+.s13 .qr-inner::after{content:"";position:absolute;top:8px;right:8px;width:26px;height:26px;border:5px solid #000;background:#fff;}
+.s13 .qr-inner span{position:absolute;bottom:8px;left:8px;width:26px;height:26px;border:5px solid #000;background:#fff;}
+.s13 .url{color:var(--laranja);font-weight:600;font-size:16px;margin-top:6px;}
+.s13 .small{color:rgba(255,255,255,.55);font-size:13px;}
+
+/* ===== SLIDE 14 — ENCERRAMENTO ===== */
+.s14{background:linear-gradient(135deg,var(--azul-escuro) 0%,var(--azul) 100%);}
+.s14 .float-p{position:absolute;bottom:-20px;border-radius:50%;animation:floatUp linear infinite;z-index:1;}
+.s14 .inner{align-items:center;justify-content:center;text-align:center;gap:14px;}
+.s14 .t1{font-weight:900;font-size:82px;color:#fff;letter-spacing:-2px;line-height:1;}
+.s14 .t2{font-weight:300;font-size:52px;color:var(--laranja);letter-spacing:-.5px;margin-top:-4px;}
+.s14 .linha-laranja.long{margin-top:12px;}
+.s14 .msg1{font-weight:800;font-size:56px;color:#fff;letter-spacing:-1.5px;margin-top:24px;line-height:1.05;}
+.s14 .msg2{font-weight:800;font-size:56px;color:var(--laranja);letter-spacing:-1.5px;line-height:1.05;}
+.s14 .cta{color:var(--laranja);font-weight:600;font-size:22px;margin-top:12px;}
+.s14 .qr2{background:#fff;border-radius:16px;padding:20px;box-shadow:0 0 40px rgba(247,148,29,.4);margin-top:14px;}
+.s14 .qr2-inner{width:140px;height:140px;display:flex;align-items:center;justify-content:center;color:var(--azul);font-size:12px;font-weight:700;letter-spacing:1px;background:repeating-linear-gradient(0deg,#000 0 5px,transparent 5px 10px),repeating-linear-gradient(90deg,#000 0 5px,transparent 5px 10px);position:relative;}
+.s14 .qr2-inner::before,.s14 .qr2-inner::after{content:"";position:absolute;width:30px;height:30px;border:6px solid #000;background:#fff;}
+.s14 .qr2-inner::before{top:10px;left:10px;}
+.s14 .qr2-inner::after{top:10px;right:10px;}
+.s14 .url{color:#fff;font-weight:700;font-size:16px;margin-top:10px;}
+.s14 .foot-t{color:rgba(255,255,255,.5);font-weight:400;font-size:13px;margin-top:18px;}
+
+</style>
+</head>
+<body>
+<div class="progress-bar" id="progress"></div>
+<div class="slide-counter"><span class="sc-cur" id="scCur">01</span>&nbsp;<span style="opacity:.4;">/&nbsp;<span id="scTotal">20</span></span></div>
+
+<div class="deck" id="deck">
+
+<!-- SLIDE 1 -->
+<section class="slide s1" data-slide="1">
+  <div class="particulas" id="p1"></div>
+  <div class="inner">
+    <div class="counter fade d1" id="counter">R$ 0,00</div>
+    <div class="linha-laranja" style="margin-top:28px;"></div>
+    <div class="sub fade d3">ESSE VALOR PODE MUDAR SUA HISTÓRIA</div>
+  </div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide s2" data-slide="2">
+  <div class="tri"></div>
+  <div class="inner">
+    <div class="top fade d1" style="font-size: 28px; color: rgb(247, 148, 29);">DOIS PRÊMIOS · UMA EQUIPE · VOCÊ</div>
+    <div class="cards">
+      <div class="card-prize l fade d2">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <div class="lbl">1º LUGAR — MELHOR IDEIA DA SUA CATEGORIA</div>
+          <div class="val">R$ 35.000</div>
+        </div>
+      </div>
+      <div class="plus fade d3">+</div>
+      <div class="card-prize w fade d4">
+        <i class="fa-solid fa-heart" style="color:var(--laranja);"></i>
+        <div>
+          <div class="lbl" style="color:var(--azul);">VOTO POPULAR</div>
+          <div class="val">R$ 20.000</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;">
+      <div class="badge fade d5"><i class="fa-solid fa-check"></i> Acumuláveis — previsto no regulamento oficial</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide s3" data-slide="3">
+  <div class="particulas" id="p3"></div>
+  <div class="rings"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div></div>
+  <div class="inner">
+    <div class="kicker fade d1">ATENÇÃO · PRAZO FINAL</div>
+    <div class="date fade d2">27 DE ABRIL</div>
+    <div class="time fade d3">às 21h — horário de Brasília</div>
+    <div class="pbar fade d4"><div class="pbar-fill"></div></div>
+    <div class="quote fade d5">
+      O vídeo pode ser gravado no celular.<br>
+      A inscrição é online.<br>
+      <strong style="color:var(--laranja);">Não existe desculpa para não tentar.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide s4" data-slide="4">
+  <div class="grid-bg"></div>
+  <div class="inner">
+    <div class="l">
+      <div class="t1 fade d1">EMPREENDA</div>
+      <div class="t2 fade d2">SENAC</div>
+      <div class="linha-laranja fade d3" style="margin-top:24px;"></div>
+      <div class="t3 fade d4">19ª EDIÇÃO — 2026</div>
+    </div>
+    <div class="r">
+      <div class="t4 fade d1">SOBRE A COMPETIÇÃO</div>
+      <div class="items">
+        <div class="it fade d2"><i class="fa-solid fa-chevron-right"></i><span>Uma das maiores competições de empreendedorismo do Brasil</span></div>
+        <div class="it fade d3"><i class="fa-solid fa-chevron-right"></i><span>Aberta para alunos do Senac SP — 5 categorias</span></div>
+        <div class="it fade d4"><i class="fa-solid fa-chevron-right"></i><span>Individual ou em equipe de até 4 pessoas</span></div>
+        <div class="it fade d5"><i class="fa-solid fa-chevron-right"></i><span>Da inscrição à premiação: março a novembro de 2026</span></div>
+      </div>
+      <div class="url fade d5">www.sp.senac.br/empreenda</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide s5" data-slide="5">
+  <div class="inner">
+    <div class="l-panel">
+      <i class="fa-solid fa-user-graduate fade d1"></i>
+      <h2 class="fade d2">VOCÊ PODE</h2>
+      <p class="fade d3">5 categorias. Escolha a sua.</p>
+    </div>
+    <div class="r-panel">
+      <h3 class="fade d1">Critérios de participação</h3>
+      <div class="linha-laranja fade d2"></div>
+      <div class="crit">
+        <div class="cr fade d2"><i class="fa-solid fa-check-circle"></i><span>Aluno regularmente matriculado em 2026 no Senac SP</span></div>
+        <div class="cr fade d3"><i class="fa-solid fa-check-circle"></i><span>Em qualquer uma das <strong>5 categorias</strong> do Empreenda Senac</span></div>
+        <div class="cr fade d4"><i class="fa-solid fa-check-circle"></i><span>Ter uma ideia — mesmo que seja um rascunho</span></div>
+        <div class="cr fade d5"><i class="fa-solid fa-check-circle"></i><span>Conseguir gravar 1 minuto de vídeo</span></div>
+      </div>
+      <div class="badge-team fade d5"><i class="fa-solid fa-users"></i> Individual ou em equipe de até 4 pessoas</div>
+      <div style="margin-top:14px;color:rgba(0,69,135,.55);font-size:12px;font-weight:500;">A equipe deve ser formada por alunos de uma mesma categoria.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5B — AS 5 CATEGORIAS -->
+<section class="slide s5b" data-slide="5b">
+  <div class="grid-bg"></div>
+  <div class="inner">
+    <div class="k fade d1">QUEM PODE PARTICIPAR</div>
+    <h2 class="fade d2">5 categorias do Empreenda Senac</h2>
+    <div class="linha-laranja fade d3" style="margin-top:18px;"></div>
+    <div class="cats">
+      <div class="cat c1 fade d2">
+        <i class="fa-solid fa-hands-helping"></i>
+        <h4>PROGRAMAS</h4>
+        <p>Senac Aprendizagem + Trampolim</p>
+      </div>
+      <div class="cat c2 fade d3">
+        <i class="fa-solid fa-school"></i>
+        <h4>ENSINO MÉDIO TÉCNICO</h4>
+        <p>Ensino Médio Técnico Integrado (presencial)</p>
+      </div>
+      <div class="cat c3 fade d4">
+        <div class="tag">A SUA</div>
+        <i class="fa-solid fa-tools"></i>
+        <h4>CURSOS TÉCNICOS</h4>
+        <p>Técnicos, Especialização e Qualificação (presencial/híbrido)</p>
+      </div>
+      <div class="cat c4 fade d5">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h4>GRADUAÇÃO</h4>
+        <p>Cursos de graduação (presencial/EAD)</p>
+      </div>
+      <div class="cat c5 fade d5">
+        <i class="fa-solid fa-user-tie"></i>
+        <h4>PÓS-GRADUAÇÃO</h4>
+        <p>Cursos de pós-graduação (presencial/EAD)</p>
+      </div>
+    </div>
+    <div class="note fade d5">Cada estudante se inscreve obrigatoriamente na categoria em que está matriculado. Equipes devem ser formadas por alunos da mesma categoria.</div>
+  </div>
+</section>
+
+<!-- SLIDE 6a -->
+<section class="slide s6" data-slide="6">
+  <div class="inner">
+    <div class="badge-top fade d1">MITO OU VERDADE?</div>
+    <div class="q fade d2">Precisa ser um gênio para participar?</div>
+    <div class="linha-laranja fade d3"></div>
+    <div class="verdict mito fade d4">
+      <i class="fa-solid fa-times-circle"></i>
+      <div class="lbl">MITO</div>
+    </div>
+    <div class="exp fade d5">Só precisa observar problemas reais ao redor.</div>
+  </div>
+</section>
+
+<!-- SLIDE 6b -->
+<section class="slide s6" data-slide="7">
+  <div class="inner">
+    <div class="badge-top fade d1">MITO OU VERDADE?</div>
+    <div class="q fade d2">Precisa ter empresa aberta?</div>
+    <div class="linha-laranja fade d3"></div>
+    <div class="verdict mito fade d4">
+      <i class="fa-solid fa-times-circle"></i>
+      <div class="lbl">MITO</div>
+    </div>
+    <div class="exp fade d5">Rascunhos são bem-vindos. Ideia não implementada.</div>
+  </div>
+</section>
+
+<!-- SLIDE 6c -->
+<section class="slide s6" data-slide="8">
+  <div class="inner">
+    <div class="badge-top fade d1">MITO OU VERDADE?</div>
+    <div class="q fade d2">Demora muito para se inscrever?</div>
+    <div class="linha-laranja fade d3"></div>
+    <div class="verdict mito fade d4">
+      <i class="fa-solid fa-times-circle"></i>
+      <div class="lbl">MITO</div>
+    </div>
+    <div class="exp fade d5">Um formulário + 1 vídeo de 60 segundos. Feito.</div>
+  </div>
+</section>
+
+<!-- SLIDE 6d -->
+<section class="slide s6" data-slide="9">
+  <div class="inner">
+    <div class="badge-top fade d1">MITO OU VERDADE?</div>
+    <div class="q fade d2">Pode fazer com colegas de outros cursos?</div>
+    <div class="linha-laranja fade d3"></div>
+    <div class="verdict verdade fade d4">
+      <i class="fa-solid fa-check-circle"></i>
+      <div class="lbl">VERDADE</div>
+    </div>
+    <div class="exp fade d5">Até 4 integrantes de unidades diferentes.</div>
+  </div>
+</section>
+
+<!-- SLIDE 6e -->
+<section class="slide s6" data-slide="10">
+  <div class="inner">
+    <div class="badge-top fade d1">MITO OU VERDADE?</div>
+    <div class="q fade d2">Uma equipe pode ganhar os dois prêmios?</div>
+    <div class="linha-laranja fade d3"></div>
+    <div class="verdict verdade fade d4">
+      <i class="fa-solid fa-check-circle"></i>
+      <div class="lbl">VERDADE</div>
+    </div>
+    <div class="exp fade d5">1º lugar + Voto Popular são acumuláveis.</div>
+  </div>
+</section>
+
+<!-- Note: the spec listed 14 total slides; we have 1,2,3,4,5,6a-e(5),7,8,9,10,11,12,13,14 = 19. To honor "14 slides" + "6a-e", we deliver the deck as specified and count slides accordingly. Comment: per spec the dots say 14 — we keep it simple and show ALL slides. Use actual count. -->
+
+<!-- SLIDE 7 -->
+<section class="slide s7" data-slide="11">
+  <div class="grid-bg"></div>
+  <div class="inner">
+    <div class="k fade d1">SEU VÍDEO PRECISA RESPONDER</div>
+    <div class="h fade d2">4 perguntas. Em 1 minuto.</div>
+    <div class="linha-laranja fade d3" style="margin-top:18px;"></div>
+    <div class="cards4">
+      <div class="c c1 fade d2">
+        <div><div class="num">01</div><i class="fa-solid fa-user"></i></div>
+        <div><h4>PARA QUEM</h4><p>Quem vai usar ou pagar?</p></div>
+      </div>
+      <div class="c c2 fade d3">
+        <div><div class="num">02</div><i class="fa-solid fa-exclamation-circle"></i></div>
+        <div><h4>PROBLEMA</h4><p>Qual dificuldade real essa pessoa enfrenta?</p></div>
+      </div>
+      <div class="c c3 fade d4">
+        <div><div class="num">03</div><i class="fa-solid fa-lightbulb"></i></div>
+        <div><h4>SOLUÇÃO</h4><p>O que você oferece e como funciona?</p></div>
+      </div>
+      <div class="c c4 fade d5">
+        <div><div class="num">04</div><i class="fa-solid fa-dollar-sign"></i></div>
+        <div><h4>MONETIZAÇÃO</h4><p>Como você ganha dinheiro com isso?</p></div>
+      </div>
+    </div>
+    <div class="foot fade d5">★ A clareza no problema é o critério mais valorizado.</div>
+  </div>
+</section>
+
+<!-- SLIDE 8 -->
+<section class="slide s8" data-slide="12">
+  <div class="inner">
+    <h2 class="fade d1">Sua jornada</h2>
+    <div class="sub fade d2">do vídeo à premiação</div>
+    <div class="tl">
+      <div class="tl-line"></div>
+      <div class="node n1 fade d2">
+        <div class="dot-big"><i class="fa-solid fa-video"></i></div>
+        <div class="stamp">AGORA</div>
+        <h4>FASE INICIAL</h4>
+        <p>Inscrição + Vídeo de 1 minuto</p>
+        <div class="date">Até 27/04/2026</div>
+      </div>
+      <div class="node n2 fade d3">
+        <div class="dot-big"><i class="fa-solid fa-file-alt"></i></div>
+        <div class="stamp">SEMIFINAL</div>
+        <h4>PLANO EMPREENDEDOR</h4>
+        <p>Plano + Vídeo de Apoio</p>
+        <div class="date" style="color:rgba(255,255,255,.6);">Jun – Set/2026</div>
+      </div>
+      <div class="node n3 fade d4">
+        <div class="dot-big"><i class="fa-solid fa-trophy"></i></div>
+        <div class="stamp">FINAL</div>
+        <h4>PREMIAÇÃO</h4>
+        <p>Apresentação presencial em São Paulo</p>
+        <div class="date">26/11/2026</div>
+      </div>
+    </div>
+    <div class="foot fade d5">A fase inicial é a única barreira de entrada.</div>
+  </div>
+</section>
+
+<!-- SLIDE 9 -->
+<section class="slide s9" data-slide="13">
+  <div class="hex-bg"></div>
+  <div class="inner">
+    <div class="k fade d1">DETALHES QUE FAZEM DIFERENÇA</div>
+    <h2 class="fade d2">Os bônus que somam à nota final</h2>
+    <div class="cards3">
+      <div class="c fade d2">
+        <i class="fa-solid fa-stopwatch"></i>
+        <div class="pts">+0,25</div>
+        <div class="ptl">pontos</div>
+        <div class="ll"></div>
+        <h5>Vídeo da fase inicial</h5>
+        <p>entregue com até 1 minuto exato</p>
+      </div>
+      <div class="c fade d3">
+        <i class="fa-solid fa-users"></i>
+        <div class="pts">+0,25</div>
+        <div class="ptl">pontos</div>
+        <div class="ll"></div>
+        <h5>Equipe que permanece</h5>
+        <p>do início até a fase final</p>
+      </div>
+      <div class="c fade d4">
+        <i class="fa-solid fa-microphone"></i>
+        <div class="pts">+0,25</div>
+        <div class="ptl">pontos</div>
+        <div class="ll"></div>
+        <h5>Pré-apresentação</h5>
+        <p>antes do painel da fase final</p>
+      </div>
+    </div>
+    <div class="ban fade d5">Acumulando os 3 bônus: <strong>+0,75 pontos.</strong> Pode ser a diferença entre o 1º e o 2º lugar.</div>
+  </div>
+</section>
+
+<!-- SLIDE 10B — PRÊMIOS POR CATEGORIA -->
+<section class="slide s10b" data-slide="10b">
+  <div class="inner">
+    <div class="k fade d1">VALORES POR CATEGORIA</div>
+    <h2 class="fade d2">Quanto vale o 1º lugar?</h2>
+    <div class="linha-laranja fade d3" style="margin-top:16px;"></div>
+    <div class="groups" style="justify-content: center;">
+      <div class="g a fade d2" style="flex: 0 1 600px;">
+        <h3 style="text-align: center;">Aprendizagem e Cursos Técnicos</h3>
+        <div class="ln"></div>
+        <div class="r first"><span class="pl">🥇 1º lugar</span><span class="pv">R$ 35.000</span></div>
+        <div class="r"><span class="pl">🥈 2º lugar</span><span class="pv">R$ 25.000</span></div>
+        <div class="r"><span class="pl">🥉 3º lugar</span><span class="pv">R$ 20.000</span></div>
+        <div class="lab" style="text-align: center;">Valores brutos, divididos entre integrantes da equipe</div>
+      </div>
+    </div>
+    <div class="vp fade d4">
+      <i class="fa-solid fa-heart"></i>
+      <div>
+        <div class="vt">Voto Popular — R$ 20.000 · Único, entre todas as categorias</div>
+        <div class="vs">Acumulável com o 1º lugar da sua categoria</div>
+      </div>
+    </div>
+    <div class="disc fade d5">Valores brutos, sujeitos à tributação. Divididos igualmente entre integrantes da equipe.</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 10C — PODER DO PRÊMIO
+     ============================================================ -->
+<section class="slide sB" data-slide="10c">
+  <div class="watermark">55K</div>
+  <div class="particulas" id="pB"></div>
+
+  <div class="inner">
+    <div class="kicker fade d1">O QUE VOCÊ FAZ COM</div>
+    <h2 class="fade d2">R$ 55.000,00 no seu bolso?</h2>
+    <div class="valor-shine fade d3">R$ 55.000</div>
+
+    <div class="comp-grid">
+
+      <!-- MOTO -->
+      <div class="comp-card fade-l d3">
+        <div class="cc-bg moto"></div>
+
+        <div class="cc-overlay"></div>
+        <div class="cc-body">
+          <div class="cc-label">OPÇÃO 1 — LIBERDADE</div>
+          <div class="cc-title">Moto 0 km<br>+ troco no bolso</div>
+          <div class="cc-sub">Honda CG 160 ≈ R$ 14.000</div>
+          <div class="cc-badge"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Sobram ~R$ 41 mil</div>
+          <div class="dias-row"><i class="fa-solid fa-briefcase"></i><span>≈ 9 meses de salário mínimo</span></div>
+        </div>
+      </div>
+
+      <!-- CARRO -->
+      <div class="comp-card fade-l d4">
+        <div class="cc-bg carro"></div>
+
+        <div class="cc-overlay"></div>
+        <div class="cc-body">
+          <div class="cc-label">OPÇÃO 2 — MOBILIDADE</div>
+          <div class="cc-title">Carro 0 km<br>à vista</div>
+          <div class="cc-sub">Fiat Mobi / VW Polo entrada</div>
+          <div class="cc-badge"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Cobre entrada + parcelas</div>
+          <div class="dias-row"><i class="fa-solid fa-car"></i><span>≈ 3 anos de financiamento resolvido</span></div>
+        </div>
+      </div>
+
+      <!-- SALÁRIOS -->
+      <div class="comp-card fade-r d4">
+        <div class="cc-bg salario"></div>
+
+        <div class="cc-overlay"></div>
+        <div class="cc-body">
+          <div class="cc-label">OPÇÃO 3 — TEMPO</div>
+          <div class="cc-title">34 salários mínimos<br>de uma vez</div>
+          <div class="cc-sub">Salário mínimo 2026 ≈ R$ 1.621</div>
+          <div class="salary-viz" id="salaryViz"></div>
+          <div class="dias-row" style="margin-top:8px;"><i class="fa-solid fa-hourglass-half"></i><span>quase 3 anos de trabalho</span></div>
+        </div>
+      </div>
+
+      <!-- FRANQUIA -->
+      <div class="comp-card fade-r d5">
+        <div class="cc-bg franquia"></div>
+
+        <div class="cc-overlay"></div>
+        <div class="cc-body">
+          <div class="cc-label">OPÇÃO 4 — NEGÓCIO PRÓPRIO</div>
+          <div class="cc-title">Abrir uma franquia<br>ou o seu negócio</div>
+          <div class="cc-sub">Açaí, petshop, delivery, laundry…</div>
+          <div class="cc-badge"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Várias opções abaixo de R$ 50k</div>
+          <div class="dias-row"><i class="fa-solid fa-store"></i><span>Capital inicial para empreender</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-row">
+      <div class="cta-box fade d6">
+        <i class="fa-solid fa-money-check-dollar" style="flex-shrink:0;"></i>
+        <p>Se você trabalhasse 8h/dia, 5 dias/semana ganhando salário mínimo, levaria <strong>mais de 3 anos</strong> para juntar R$ 55 mil.</p>
+      </div>
+      <div class="cta-box hl fade d7">
+        <i class="fa-solid fa-video" style="flex-shrink:0;"></i>
+        <p>No Empreenda Senac, você pode conquistar isso <strong>apresentando uma ideia</strong> — dentro do horário de aula, com apoio do Senac.</p>
+      </div>
+      <div class="cta-box fade d8">
+        <i class="fa-solid fa-rocket" style="flex-shrink:0;"></i>
+        <p>O prêmio é real. O regulamento é oficial. <strong>A única coisa que falta é a sua inscrição.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 10D — QUEBRA DE OBJEÇÕES
+     ============================================================ -->
+<section class="slide sA" data-slide="10d">
+  <div class="grid-bg"></div>
+  <div class="glow"></div>
+  <div class="particulas" id="pA"></div>
+
+  <div class="inner">
+    <div class="kicker fade d1">OUÇO MUITO POR AÍ…</div>
+    <h2 class="fade d2">Vamos <em>conversar</em> sobre esses pensamentos?</h2>
+    <div class="linha-laranja fade d2" style="margin-top:10px;margin-bottom:0;"></div>
+
+    <div class="obj-grid">
+
+      <div class="obj-card fade d3">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-regular fa-clock"></i></div>
+        <div class="obj-strike">"Não tenho tempo."</div>
+        <div class="obj-resposta">O projeto é desenvolvido <em>em sala, no horário das aulas.</em> Não é lição de casa — é parte do seu curso.</div>
+      </div>
+
+      <div class="obj-card fade d3">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-solid fa-mountain"></i></div>
+        <div class="obj-strike">"É muito difícil."</div>
+        <div class="obj-resposta">O Senac te dá roteiro, mentoria e suporte do início ao fim. Difícil mesmo é <em>ficar de fora.</em></div>
+      </div>
+
+      <div class="obj-card fade d4">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-regular fa-lightbulb"></i></div>
+        <div class="obj-strike">"Não tenho ideias."</div>
+        <div class="obj-resposta">Você resolve problemas todo dia sem perceber. <em>Qualquer problema do dia a dia pode virar um negócio.</em></div>
+      </div>
+
+      <div class="obj-card fade d4">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-solid fa-question"></i></div>
+        <div class="obj-strike">"Minha ideia é boa?"</div>
+        <div class="obj-resposta">Você não sabe até tentar. <em>O processo te ajuda a descobrir e aprimorar</em> — essa é a função do Empreenda.</div>
+      </div>
+
+      <div class="obj-card fade d5">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-solid fa-user-ninja"></i></div>
+        <div class="obj-strike">"Tenho vergonha."</div>
+        <div class="obj-resposta">Toda pessoa bem-sucedida já sentiu isso. A vergonha <em>some quando você começa.</em> O arrependimento não.</div>
+      </div>
+
+      <div class="obj-card fade d5">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-solid fa-person-digging"></i></div>
+        <div class="obj-strike">"Dá muito trabalho."</div>
+        <div class="obj-resposta">Dá, sim — e também dá <em>R$ 55.000</em> para quem não desistiu. Cada hora investida tem retorno real.</div>
+      </div>
+
+      <div class="obj-card fade d6">
+        <div class="mito-tag">MITO</div>
+        <div class="icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="obj-strike">"Não sei mexer no computador."</div>
+        <div class="obj-resposta">A apresentação pode ser feita <em>no celular, em vídeo, até desenhada.</em> O que importa é a ideia.</div>
+      </div>
+
+      <div class="obj-card gold fade d6">
+        <div class="mito-tag" style="background:var(--laranja);">E SE…</div>
+        <div class="icon-wrap" style="background:rgba(247,148,29,.25);"><i class="fa-solid fa-trophy" style="color:var(--laranja);"></i></div>
+        <div class="obj-strike">"E se eu ganhar?"</div>
+        <div class="obj-resposta"><em>R$ 55 mil na conta</em> é uma história que você vai contar pelo resto da vida. <em>Essa é a única objeção que vale!</em></div>
+      </div>
+
+    </div>
+
+    <div class="nota-rodape fade d7">
+      <em>Lembre-se:</em> o Empreenda Senac não é só uma competição — é a experiência mais próxima do mundo real que você terá dentro do seu curso. <em>Participar já é ganhar.</em>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SLIDE 10 -->
+<section class="slide s10" data-slide="14">
+  <div class="inner" style="justify-content:center;">
+    <div class="k fade d1">PARTICIPE · APRENDIZAGEM · ENSINO MÉDIO TÉCNICO · CURSOS TÉCNICOS</div>
+    <h2 class="fade d2" style="margin-top:12px;">Inscrições abertas</h2>
+    <div class="linha-laranja fade d3" style="margin-top:18px;"></div>
+    <div style="display:flex;align-items:center;gap:60px;margin-top:48px;">
+      <div style="background:#fff;padding:20px;border-radius:16px;box-shadow:0 0 40px rgba(247,148,29,.4);" class="fade d3">
+        <img src="qr-inscricao.png" alt="QR Code de inscrição" style="display:block;width:220px;height:220px;">
+      </div>
+      <div style="text-align:left;" class="fade d4">
+        <div style="color:rgba(255,255,255,.55);font-size:12px;letter-spacing:3px;font-weight:600;">ESCANEIE OU ACESSE</div>
+        <div style="color:var(--laranja);font-weight:700;font-size:26px;margin-top:10px;letter-spacing:-.5px;">empreenda.digito1.com.br</div>
+        <div style="color:#fff;font-weight:600;font-size:17px;margin-top:18px;">Prazo: 27/04 · 21h (horário de Brasília)</div>
+        <div style="color:rgba(255,255,255,.6);font-size:14px;margin-top:8px;max-width:360px;line-height:1.5;">Formulário online + vídeo de 1 minuto com a ideia de negócio.</div>
+      </div>
+    </div>
+    <div class="disclaimer fade d5" style="margin-top:40px;">Valores dos prêmios detalhados no slide anterior.</div>
+  </div>
+</section>
+
+<!-- SLIDE 13 -->
+<section class="slide s13" data-slide="17">
+  <div class="inner">
+    <i class="fa-solid fa-video vicon fade d1"></i>
+    <div class="t1 fade d2">AGORA É A HORA.</div>
+    <div class="t2 fade d3">O estúdio está montado aqui.</div>
+    <div class="pills fade d4">
+      <div class="pill">📋 Roteiro pronto</div>
+      <div class="pill">🎥 Câmera configurada</div>
+      <div class="pill">🔗 Link de inscrição</div>
+    </div>
+    <div class="qr fade d5"><img src="qr-inscricao.png" alt="QR Code" style="display:block;width:120px;height:120px;"></div>
+    <div class="url fade d5">empreenda.digito1.com.br</div>
+    <div class="small fade d5">Grave aqui ou em casa. Prazo: 27/04 às 21h.</div>
+  </div>
+</section>
+
+<!-- SLIDE 14 -->
+<section class="slide s14" data-slide="18">
+  <div class="particulas" id="p14"></div>
+  <div class="inner">
+    <div class="t1 fade d1">EMPREENDA</div>
+    <div class="t2 fade d2">SENAC</div>
+    <div class="linha-laranja long fade d3"></div>
+    <div class="msg1 fade d3">Sua ideia vale mais</div>
+    <div class="msg2 fade d4">do que você imagina.</div>
+    <div class="linha-laranja long fade d4" style="margin-top:16px;"></div>
+    <div class="cta fade d5">Inscreva-se até 27/04 — 21h</div>
+    <div class="qr2 fade d5" style="padding:18px;"><img src="qr-inscricao.png" alt="QR Code" style="display:block;width:140px;height:140px;"></div>
+    <div class="url fade d5">empreenda.digito1.com.br</div>
+    <div class="foot-t fade d5">Comitê de Inovação — Senac Araçatuba 2026</div>
+  </div>
+</section>
+
+
+</div>
+
+<button class="nav-arrow nav-prev" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="nav-arrow nav-next" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+<div class="footer">
+  <div class="footer-left">SENAC ARAÇATUBA</div>
+  <div class="dots" id="dots"></div>
+  <div class="footer-right">EMPREENDA SENAC 2026</div>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const total = slides.length;
+let current = 0;
+
+// Build dots
+const dotsWrap = document.getElementById('dots');
+for(let i=0;i<total;i++){
+  const d = document.createElement('div');
+  d.className='dot'+(i===0?' active':'');
+  d.addEventListener('click',()=>goTo(i));
+  dotsWrap.appendChild(d);
+}
+const dots = document.querySelectorAll('.dot');
+
+function pad(n){return String(n).padStart(2,'0');}
+
+function goTo(n){
+  if(n<0||n>=total||n===current)return;
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = n;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+  document.getElementById('progress').style.width = (((current+1)/total)*100)+'%';
+  document.getElementById('scCur').textContent = pad(current+1);
+  document.getElementById('scTotal').textContent = pad(total);
+  try{localStorage.setItem('empreenda_slide',current);}catch(e){}
+  if(current===0)runCounter();
+}
+
+document.getElementById('next').addEventListener('click',()=>goTo(current+1));
+document.getElementById('prev').addEventListener('click',()=>goTo(current-1));
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' ')goTo(current+1);
+  if(e.key==='ArrowLeft')goTo(current-1);
+  if(e.key==='Home')goTo(0);
+  if(e.key==='End')goTo(total-1);
+});
+
+// Counter on slide 1
+function runCounter(){
+  const el = document.getElementById('counter');
+  const end = 55000;
+  const dur = 2000;
+  const start = performance.now();
+  function frame(t){
+    const p = Math.min(1,(t-start)/dur);
+    const eased = 1-Math.pow(1-p,3);
+    const v = Math.floor(eased*end);
+    el.textContent = 'R$ '+v.toLocaleString('pt-BR')+',00';
+    if(p<1)requestAnimationFrame(frame);
+    else el.textContent='R$ 55.000,00';
+  }
+  requestAnimationFrame(frame);
+}
+
+// Particles
+function makeParticles(containerId, count=20, colors=['#F7941D','#004587']){
+  const c = document.getElementById(containerId);
+  if(!c)return;
+  for(let i=0;i<count;i++){
+    const p = document.createElement('div');
+    p.className='particula';
+    const size = 4+Math.random()*4;
+    p.style.width=size+'px';p.style.height=size+'px';
+    p.style.background=colors[i%colors.length];
+    p.style.left=Math.random()*100+'%';
+    p.style.top=Math.random()*100+'%';
+    p.style.animationDelay=(Math.random()*4)+'s';
+    p.style.animationDuration=(3+Math.random()*3)+'s';
+    c.appendChild(p);
+  }
+}
+makeParticles('p1',20,['#F7941D','#004587']);
+makeParticles('p3',20,['#F7941D','#FF4757']);
+makeParticles('p14',22,['#ffffff','#F7941D']);
+makeParticles('pA',18,['#F7941D','#004587','#ffffff']);
+makeParticles('pB',18,['#F7941D','#ffcf7d','#003A75']);
+
+// Salary viz bars
+(function(){
+  const wrap=document.getElementById('salaryViz');
+  if(!wrap)return;
+  const heights=[100,94,88,82,76,70,64,58,52,46,40,34];
+  heights.forEach(h=>{
+    const b=document.createElement('div');
+    b.className='s-bar';
+    b.style.height=h+'%';
+    b.style.opacity=(0.4+(h/100)*0.6).toFixed(2);
+    wrap.appendChild(b);
+  });
+})();
+
+// Hover strike effect
+document.querySelectorAll('.obj-card').forEach(card=>{
+  card.addEventListener('mouseenter',()=>{
+    const s=card.querySelector('.obj-strike');
+    if(s)s.style.setProperty('width','100%');
+  });
+});
+
+// Slide 14 upward-floating particles
+(function(){
+  const c = document.getElementById('p14');
+  if(!c)return;
+  for(let i=0;i<18;i++){
+    const p = document.createElement('div');
+    p.className='float-p';
+    const size = 4+Math.random()*6;
+    p.style.width=size+'px';p.style.height=size+'px';
+    p.style.background = i%2===0?'#fff':'#F7941D';
+    p.style.opacity=.5;
+    p.style.left=Math.random()*100+'%';
+    p.style.animationDuration=(8+Math.random()*8)+'s';
+    p.style.animationDelay=(Math.random()*10)+'s';
+    c.appendChild(p);
+  }
+})();
+
+// Init
+function init(){
+  let start = 0;
+  try{const s = parseInt(localStorage.getItem('empreenda_slide'));if(!isNaN(s)&&s>=0&&s<total)start=s;}catch(e){}
+  slides[0].classList.remove('active');
+  slides[start].classList.add('active');
+  dots[0].classList.remove('active');
+  dots[start].classList.add('active');
+  current = start;
+  document.getElementById('progress').style.width=(((current+1)/total)*100)+'%';
+  document.getElementById('scCur').textContent=pad(current+1);
+  if(current===0)runCounter();
+}
+init();
+</script>
+</body>
+</html>
