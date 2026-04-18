@@ -669,6 +669,19 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-s
   .particulas { display: none !important; }
 }
 }
+
+/* ===== SLIDE AI TOOLS ===== */
+.s-ai { background: linear-gradient(135deg, var(--azul-escuro) 0%, rgb(18, 59, 107) 100%); }
+.s-ai .ai-cols { display: flex; gap: 30px; justify-content: center; width: 100%; max-width: 900px; margin: 0 auto; }
+.s-ai .ai-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; flex: 1; text-align: center; }
+.s-ai .ai-icon { font-size: 40px; color: var(--laranja); margin-bottom: 20px; }
+.s-ai .ai-box h3 { color: #fff; font-weight: 800; font-size: 22px; margin-bottom: 10px; }
+.s-ai .ai-box p { color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 30px; line-height: 1.5; }
+.s-ai .ai-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.s-ai .ai-btn { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.15); color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; transition: all 0.3s; }
+.s-ai .ai-btn i { color: var(--laranja); }
+.s-ai .ai-btn:hover { background: var(--laranja); border-color: var(--laranja); color: #fff; transform: translateY(-3px); }
+.s-ai .ai-btn:hover i { color: #fff; }
 </style>
 </head>
 <body>
@@ -1221,6 +1234,49 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Montserrat',sans-s
     <div class="small fade d5">Grave aqui ou em casa. Prazo: 27/04 às 21h.</div>
   </div>
 </section>
+
+
+<!-- SLIDE AI AVATARS -->
+<section class="slide s-ai" data-slide="17-B">
+  <div class="inner">
+    <div class="k fade d1">NÃO QUER APARECER NO VÍDEO?</div>
+    <h2 class="fade d2">Deixe a Inteligência Artificial apresentar por você!</h2>
+    <p class="fade d3" style="text-align:center; color:rgba(255,255,255,0.7); max-width:700px; margin: 10px auto 40px; font-size:16px;">
+        Se a timidez for um obstáculo, não fique de fora! Use essas I.A.s incríveis para gerar avatares fotorrealistas ou estruturar roteiros perfeitos para o seu vídeo em minutos.
+    </p>
+    
+    <div class="ai-cols fade d4" style="display:flex;">
+        <!-- Coluna Avatares -->
+        <div class="ai-box">
+            <div class="ai-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+            <h3>Avatares Narradores</h3>
+            <p>Escreva o roteiro e a ferramenta cria um vídeo de um apresentador realista falando por você.</p>
+            <div class="ai-links">
+                <a href="https://app.heygen.com" target="_blank" class="ai-btn"><i class="fa-solid fa-link"></i> HeyGen</a>
+                <a href="https://pt.vidnoz.com/?insur=pt_asc_pop" target="_blank" class="ai-btn"><i class="fa-solid fa-link"></i> Vidnoz</a>
+                <a href="https://app.elai.io/login" target="_blank" class="ai-btn"><i class="fa-solid fa-link"></i> Elai</a>
+                <a href="https://www.aistudios.com/pt" target="_blank" class="ai-btn"><i class="fa-solid fa-link"></i> Ai Studios</a>
+            </div>
+        </div>
+        
+        <!-- Coluna Áudio e Scripts -->
+        <div class="ai-box">
+            <div class="ai-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Roteiristas & Áudio</h3>
+            <p>Crie podcasts brilhantes com a sua voz ou use a IA como colega para estruturar seu texto.</p>
+            <div class="ai-links">
+                <a href="https://notebooklm.google.com" target="_blank" class="ai-btn"><i class="fa-solid fa-headphones"></i> NotebookLM</a>
+                <a href="https://kimi.moonshot.cn" target="_blank" class="ai-btn"><i class="fa-solid fa-robot"></i> Kimi AI</a>
+                <a href="https://www.perplexity.ai" target="_blank" class="ai-btn"><i class="fa-solid fa-robot"></i> Perplexity</a>
+                <a href="https://claude.ai" target="_blank" class="ai-btn"><i class="fa-solid fa-robot"></i> Claude</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
