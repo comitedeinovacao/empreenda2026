@@ -343,13 +343,172 @@
         .v-footer span { font-size: 10px; color: #999; letter-spacing: 1px; font-weight: 500; }
         .v-footer .laranja { color: #F7941D; font-weight: 700; }
 
+        /* ==========================================
+         * MOBILE BOTTOM SHEET
+         * ========================================== */
+        @media (max-width: 768px) {
+            .modal-overlay {
+                align-items: flex-end;
+                justify-content: center;
+            }
+            .modal-content {
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                max-width: 100%;
+                max-height: 92vh;
+                padding: 20px 16px 32px;
+                transform: translateY(100%);
+            }
+            .modal-overlay.active .modal-content {
+                transform: translateY(0);
+            }
+            #canvas-render-area {
+                display: none !important;
+            }
+            #mobile-canvas {
+                display: flex !important;
+            }
+            .modal-header h2 {
+                font-size: 16px;
+            }
+            .btn-print {
+                font-size: 12px;
+                padding: 8px 14px;
+            }
+            .close-btn {
+                top: 14px; right: 14px;
+            }
+        }
+
+        /* ==========================================
+         * MOBILE CANVAS COMPONENT
+         * ========================================== */
+        #mobile-canvas {
+            display: none;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .mc-header {
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 2px;
+        }
+        .mc-category {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--laranja);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .mc-title {
+            color: var(--azul-escuro);
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .mc-quadrante {
+            background: #eef2ff;
+            border-radius: 12px;
+            padding: 14px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .mc-q-num {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--laranja);
+        }
+        .mc-q-titulo {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--azul-escuro);
+        }
+        .mc-q-pergunta {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .mc-q-content {
+            background: #fff;
+            border-left: 3px solid var(--laranja);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            font-size: 14px;
+            color: #222;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-top: 6px;
+            word-break: break-word;
+        }
+
+        .mc-roteiro {
+            background: var(--azul-escuro);
+            border-radius: 12px;
+            padding: 18px 16px;
+            color: #fff;
+        }
+        .mc-roteiro-kicker {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            color: var(--laranja);
+        }
+        .mc-roteiro-titulo {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .mc-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 14px;
+        }
+        .mc-step {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .mc-step-num {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: var(--laranja);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .mc-step-nome {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .mc-step-desc {
+            font-size: 13px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.45;
+            margin-top: 2px;
+        }
+
         /* Print Settings */
         @media print {
             body * { visibility: hidden; }
             #canvas-render-area, #canvas-render-area * { visibility: visible; }
             #canvas-render-area {
                 position: absolute; left: 0; top: 0; margin: 0; padding: 0;
+                display: flex !important;
             }
+            #mobile-canvas { display: none !important; }
             .card-a5 {
                 width: 210mm; height: 148mm;
                 page-break-after: always;
@@ -401,6 +560,67 @@
                 <button class="btn-print" onclick="window.print()"><i class="fa-solid fa-print"></i> BAIXAR / IMPRIMIR (A5)</button>
             </div>
             
+            <!-- Mobile Canvas (visível apenas em mobile, oculto na impressão) -->
+            <div id="mobile-canvas">
+                <div class="mc-header">
+                    <div class="mc-category" id="mc-category"></div>
+                    <div class="mc-title" id="mc-title"></div>
+                </div>
+                <div class="mc-quadrante">
+                    <div class="mc-q-num">01 — CLIENTE</div>
+                    <div class="mc-q-titulo">Para quem?</div>
+                    <div class="mc-q-pergunta">Quem vai usar ou pagar pela sua solução?</div>
+                    <div class="mc-q-content" id="mc-cliente"></div>
+                </div>
+                <div class="mc-quadrante">
+                    <div class="mc-q-num">02 — PROBLEMA</div>
+                    <div class="mc-q-titulo">Qual é a dor?</div>
+                    <div class="mc-q-pergunta">Que dificuldade real essa pessoa enfrenta hoje?</div>
+                    <div class="mc-q-content" id="mc-problema"></div>
+                </div>
+                <div class="mc-quadrante">
+                    <div class="mc-q-num">03 — SOLUÇÃO</div>
+                    <div class="mc-q-titulo">O que você oferece?</div>
+                    <div class="mc-q-pergunta">O que você entrega e como funciona na prática?</div>
+                    <div class="mc-q-content" id="mc-solucao"></div>
+                </div>
+                <div class="mc-quadrante">
+                    <div class="mc-q-num">04 — MONETIZAÇÃO</div>
+                    <div class="mc-q-titulo">Como você ganha?</div>
+                    <div class="mc-q-pergunta">Como o dinheiro entra? Venda direta, assinatura, comissão...?</div>
+                    <div class="mc-q-content" id="mc-monetizacao"></div>
+                </div>
+                <div class="mc-roteiro">
+                    <div class="mc-roteiro-kicker">ROTEIRO DE GRAVAÇÃO</div>
+                    <div class="mc-roteiro-titulo">
+                        Como gravar seu vídeo
+                        <span class="badge-tempo">60 SEG</span>
+                    </div>
+                    <div class="mc-steps">
+                        <div class="mc-step">
+                            <div class="mc-step-num">1</div>
+                            <div><div class="mc-step-nome">Apresente-se (10 seg)</div><div class="mc-step-desc">Nome, curso e a frase: "Eu resolvi o problema de..."</div></div>
+                        </div>
+                        <div class="mc-step">
+                            <div class="mc-step-num">2</div>
+                            <div><div class="mc-step-nome">Mostre o problema (15 seg)</div><div class="mc-step-desc">Quem sofre com isso e por que ainda não foi resolvido?</div></div>
+                        </div>
+                        <div class="mc-step">
+                            <div class="mc-step-num">3</div>
+                            <div><div class="mc-step-nome">Apresente sua solução (20 seg)</div><div class="mc-step-desc">Como funciona? Seja concreto — mostre ou simule o produto/serviço.</div></div>
+                        </div>
+                        <div class="mc-step">
+                            <div class="mc-step-num">4</div>
+                            <div><div class="mc-step-nome">Explique o modelo (10 seg)</div><div class="mc-step-desc">Como o dinheiro entra? Quem paga e quanto?</div></div>
+                        </div>
+                        <div class="mc-step">
+                            <div class="mc-step-num">5</div>
+                            <div><div class="mc-step-nome">Feche com impacto (5 seg)</div><div class="mc-step-desc">Uma frase forte. Por que o júri deve escolher a sua ideia?</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="canvas-render-area">
                 <!-- FRENTE -->
                 <div class="card-a5">
@@ -557,19 +777,28 @@
         }
 
         function openModal(ideia) {
+            // A5 canvas (desktop / impressão)
             document.getElementById('cv-title-header').innerText = ideia.nome;
-            
             document.getElementById('cv-cliente').innerText = ideia.cliente || '';
             document.getElementById('cv-problema').innerText = ideia.problema || '';
             document.getElementById('cv-solucao').innerText = ideia.solucao || ideia.descricao;
             document.getElementById('cv-monetizacao').innerText = ideia.monetizacao || '';
-
             toggleLines('l-cli', ideia.cliente);
             toggleLines('l-prob', ideia.problema);
-            toggleLines('l-sol', true); // Solucao is mapped to description right now
+            toggleLines('l-sol', true);
             toggleLines('l-mon', ideia.monetizacao);
 
+            // Mobile canvas (leitura fluida no celular)
+            document.getElementById('mc-category').innerText = ideia.categoriaNome || '';
+            document.getElementById('mc-title').innerText = ideia.nome;
+            document.getElementById('mc-cliente').innerText = ideia.cliente || '—';
+            document.getElementById('mc-problema').innerText = ideia.problema || '—';
+            document.getElementById('mc-solucao').innerText = ideia.solucao || ideia.descricao;
+            document.getElementById('mc-monetizacao').innerText = ideia.monetizacao || '—';
+
             modal.classList.add('active');
+            // Volta ao topo do modal ao abrir
+            document.querySelector('.modal-content').scrollTop = 0;
         }
 
         document.getElementById('close-modal').addEventListener('click', () => {
