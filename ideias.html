@@ -10,11 +10,9 @@
         :root {
             --azul: #004587;
             --azul-escuro: #002D5C;
-            --azul-mid: #003A75;
             --laranja: #F7941D;
-            --branco: #FFFFFF;
-            --bg-glass: rgba(255, 255, 255, 0.05);
-            --border-glass: rgba(255, 255, 255, 0.1);
+            --bg-glass: rgba(255,255,255,0.05);
+            --border-glass: rgba(255,255,255,0.1);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,7 +26,6 @@
             overflow-x: hidden;
         }
 
-        /* Abstract Background Elements */
         .grid-bg {
             position: fixed; inset: 0;
             background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
@@ -43,253 +40,109 @@
         }
 
         .container {
-            position: relative;
-            z-index: 10;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
+            position: relative; z-index: 10;
+            max-width: 1200px; margin: 0 auto; padding: 60px 20px;
         }
 
-        /* Header */
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .kicker {
-            color: var(--laranja);
-            font-size: 14px;
-            letter-spacing: 4px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        h1 {
-            font-weight: 900;
-            font-size: 48px;
-            letter-spacing: -1.5px;
-            margin-top: 10px;
-        }
-        header p {
-            color: rgba(255,255,255,0.7);
-            font-size: 18px;
-            margin-top: 10px;
-            max-width: 600px;
-            margin-inline: auto;
-        }
+        header { text-align: center; margin-bottom: 50px; }
+        .kicker { color: var(--laranja); font-size: 14px; letter-spacing: 4px; font-weight: 700; text-transform: uppercase; }
+        h1 { font-weight: 900; font-size: 48px; letter-spacing: -1.5px; margin-top: 10px; }
+        header p { color: rgba(255,255,255,0.7); font-size: 18px; margin-top: 10px; max-width: 600px; margin-inline: auto; }
 
-        /* Categories */
-        .category-nav {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
+        .category-nav { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
         .cat-btn {
-            background: var(--bg-glass);
-            border: 1px solid var(--border-glass);
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 30px;
-            font-family: inherit;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+            background: var(--bg-glass); border: 1px solid var(--border-glass);
+            color: #fff; padding: 12px 24px; border-radius: 30px;
+            font-family: inherit; font-weight: 600; font-size: 14px;
+            cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(10px);
         }
-        .cat-btn:hover {
-            background: rgba(255,255,255,0.1);
-            transform: translateY(-2px);
-        }
-        .cat-btn.active {
-            background: var(--laranja);
-            border-color: var(--laranja);
-            box-shadow: 0 0 20px rgba(247,148,29,0.4);
-        }
+        .cat-btn:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .cat-btn.active { background: var(--laranja); border-color: var(--laranja); box-shadow: 0 0 20px rgba(247,148,29,0.4); }
 
-        /* Grid */
-        .ideias-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 24px;
-        }
+        .ideias-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
 
-        /* Card */
         .ideia-card {
-            background: var(--bg-glass);
-            border: 1px solid var(--border-glass);
-            border-radius: 20px;
-            padding: 28px;
-            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-            cursor: pointer;
-            backdrop-filter: blur(10px);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
+            background: var(--bg-glass); border: 1px solid var(--border-glass);
+            border-radius: 20px; padding: 28px;
+            transition: all 0.4s cubic-bezier(0.2,0.8,0.2,1);
+            cursor: pointer; backdrop-filter: blur(10px);
+            display: flex; flex-direction: column; position: relative; overflow: hidden;
         }
-        .ideia-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--laranja);
-            background: rgba(247,148,29,0.05);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-        .ideia-card::before {
-            content: '';
-            position: absolute; top: 0; left: 0; width: 4px; height: 100%;
-            background: var(--laranja);
-            transform: scaleY(0);
-            transition: transform 0.4s ease;
-            transform-origin: bottom;
-        }
-        .ideia-card:hover::before {
-            transform: scaleY(1);
-        }
-        .ideia-cat {
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--laranja);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-        .ideia-title {
-            font-size: 22px;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 12px;
-            color: #fff;
-        }
-        .ideia-desc {
-            font-size: 14px;
-            color: rgba(255,255,255,0.7);
-            line-height: 1.6;
-            margin-bottom: 24px;
-            flex-grow: 1;
-        }
-        .ideia-action {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--branco);
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-        .ideia-card:hover .ideia-action {
-            color: var(--laranja);
-        }
+        .ideia-card:hover { transform: translateY(-8px); border-color: var(--laranja); background: rgba(247,148,29,0.05); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .ideia-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--laranja); transform: scaleY(0); transition: transform 0.4s ease; transform-origin: bottom; }
+        .ideia-card:hover::before { transform: scaleY(1); }
+        .ideia-cat { font-size: 11px; font-weight: 700; color: var(--laranja); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+        .ideia-title { font-size: 22px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; color: #fff; }
+        .ideia-desc { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 24px; flex-grow: 1; }
+        .ideia-action { display: flex; align-items: center; gap: 8px; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 1px; transition: color 0.3s; }
+        .ideia-card:hover .ideia-action { color: var(--laranja); }
 
-        /* Modal / A5 Canvas View */
+        .back-nav {
+            position: absolute; top: 40px; left: 40px;
+            color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 10px;
+            text-decoration: none; font-weight: 600; font-size: 14px;
+            transition: color 0.2s; z-index: 20;
+        }
+        .back-nav:hover { color: #fff; }
+
+        /* ================================
+           MODAL — base (desktop)
+           ================================ */
         .modal-overlay {
             position: fixed; inset: 0;
             background: rgba(0,0,0,0.8);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             opacity: 0; visibility: hidden;
-            transition: all 0.3s;
+            transition: opacity 0.3s, visibility 0.3s;
         }
-        .modal-overlay.active {
-            opacity: 1; visibility: visible;
-        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+
         .modal-content {
             background: #e8e8e8;
             padding: 30px;
             border-radius: 20px;
-            max-width: 900px;
-            width: 95%;
-            max-height: 95vh;
-            overflow-y: auto;
+            max-width: 900px; width: 95%;
+            max-height: 95vh; overflow-y: auto;
             position: relative;
             transform: translateY(30px);
-            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            transition: transform 0.4s cubic-bezier(0.2,0.8,0.2,1);
         }
-        .modal-overlay.active .modal-content {
-            transform: translateY(0);
-        }
+        .modal-overlay.active .modal-content { transform: translateY(0); }
+
         .close-btn {
-            position: absolute;
-            top: 20px; right: 20px;
-            background: rgba(0,0,0,0.1);
-            border: none;
-            width: 40px; height: 40px;
-            border-radius: 50%;
+            position: absolute; top: 20px; right: 20px;
+            background: rgba(0,0,0,0.1); border: none;
+            width: 40px; height: 40px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #333;
-            font-size: 18px;
-            z-index: 50;
-        }
-        .close-btn:hover {
-            background: var(--vermelho); color: #fff;
+            cursor: pointer; transition: all 0.2s; color: #333; font-size: 18px; z-index: 50;
         }
 
-        .modal-header {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 24px;
-        }
-        .modal-header h2 {
-            color: var(--azul-escuro);
-            font-weight: 800;
-            font-size: 24px;
-        }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .modal-header h2 { color: var(--azul-escuro); font-weight: 800; font-size: 24px; }
+
         .btn-print {
-            background: var(--laranja);
-            color: #fff;
-            border: none; padding: 12px 24px;
-            border-radius: 8px; font-weight: 700;
-            font-family: inherit; font-size: 14px;
-            cursor: pointer; display: flex; align-items: center; gap: 8px;
-            transition: all 0.2s;
+            background: var(--laranja); color: #fff;
+            border: none; padding: 12px 24px; border-radius: 8px;
+            font-weight: 700; font-family: inherit; font-size: 14px;
+            cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all 0.2s;
         }
-        .btn-print:hover { background: #e08316; transform: scale(1.05); }
+        .btn-print:hover { background: #e08316; }
 
-        .back-nav {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            color: rgba(255,255,255,0.6);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: color 0.2s;
-            z-index: 20;
-        }
-        .back-nav:hover {
-            color: #fff;
-        }
+        /* ================================
+           CANVAS A5 — desktop / impressão
+           ================================ */
+        #canvas-a5 { display: flex; flex-direction: column; align-items: center; gap: 30px; }
 
-        /* 
-         * ==========================================
-         * ESTILOS DO CANVAS A5 (HERDADOS DO ORIGINAL)
-         * ==========================================
-         */
-        #canvas-render-area {
-            display: flex; flex-direction: column; align-items: center; gap: 30px;
-        }
         .card-a5 {
             width: 794px; height: 560px;
             background: #fff; overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            position: relative;
-            flex-shrink: 0;
-            transform-origin: top center;
+            position: relative; flex-shrink: 0;
         }
-        
-
         .frente, .verso { display: flex; height: 100%; flex-direction: column; }
-        .f-header {
-            background: #004587; padding: 22px 36px 18px; display: flex;
-            justify-content: space-between; align-items: flex-start; flex-shrink: 0;
-        }
+        .f-header { background: #004587; padding: 22px 36px 18px; display: flex; justify-content: space-between; align-items: flex-start; flex-shrink: 0; }
         .f-header-left .titulo { color: #fff; font-size: 18px; font-weight: 700; letter-spacing: .5px; }
         .f-header-left .sub { color: #F7941D; font-size: 10px; font-weight: 700; letter-spacing: 3px; margin-top: 4px; }
         .f-header-right { font-size: 60px; font-weight: 800; color: rgba(255,255,255,.12); line-height: 1; letter-spacing: -2px; }
@@ -300,9 +153,8 @@
         .quadrante:nth-child(4) { border-bottom: none; border-right: none; }
         .q-num { font-size: 8.5px; font-weight: 700; letter-spacing: 2px; color: #F7941D; }
         .q-titulo { font-size: 13px; font-weight: 700; color: #002D5C; margin-top: 2px; }
-        .q-pergunta { font-size: 11px; color: #666; line-height: 1.5; margin-top: 2px; font-weight: 500;}
-        .q-filled-content { font-size: 13px; color: #111; line-height: 1.4; margin-top: 8px; font-weight: 600; font-style: italic;}
-        
+        .q-pergunta { font-size: 11px; color: #666; line-height: 1.5; margin-top: 2px; font-weight: 500; }
+        .q-filled-content { font-size: 13px; color: #111; line-height: 1.4; margin-top: 8px; font-weight: 600; font-style: italic; }
         .linhas { display: flex; flex-direction: column; gap: 10px; margin-top: auto; padding-top: 14px; }
         .linha { height: 1px; background: #ddd; }
         .f-footer { background: #004587; padding: 9px 36px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
@@ -310,13 +162,12 @@
         .dot-row { display: flex; gap: 5px; align-items: center; }
         .dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,.2); }
         .dot.on { background: #F7941D; }
-
         .verso { flex-direction: row; }
         .v-left { width: 240px; flex-shrink: 0; background: #002D5C; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px 24px; gap: 16px; }
         .qr-box { width: 150px; height: 150px; background: #fff; border-radius: 10px; padding: 12px; display: flex; align-items: center; justify-content: center; }
         .qr-label { font-size: 8.5px; color: rgba(255,255,255,.7); letter-spacing: 1px; text-align: center; line-height: 1.6; font-weight: 500; }
         .qr-url { font-size: 9px; color: #F7941D; font-weight: 700; letter-spacing: .5px; text-align: center; }
-        .v-right { flex: 1; padding: 24px 32px; display: flex; flex-direction: column; height: 100%; background:#fff;}
+        .v-right { flex: 1; padding: 24px 32px; display: flex; flex-direction: column; height: 100%; background: #fff; }
         .roteiro-kicker { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; color: #F7941D; }
         .roteiro-titulo { font-size: 20px; font-weight: 700; color: #002D5C; margin-top: 4px; display: flex; align-items: center; gap: 10px; }
         .badge-tempo { background: #F7941D; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 4px 12px; border-radius: 20px; }
@@ -330,126 +181,92 @@
         .v-footer span { font-size: 10px; color: #999; letter-spacing: 1px; font-weight: 500; }
         .v-footer .laranja { color: #F7941D; font-weight: 700; }
 
-        /* ==========================================
-         * MOBILE VIEW — div separada, fora do modal
-         * Controlada 100% por JavaScript (window.innerWidth)
-         * Sem media query, sem scroll aninhado, sem iOS bug
-         * ========================================== */
-        #mv {
-            display: none;
-            position: fixed;
-            inset: 0;
-            z-index: 3000;
-            background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul) 100%);
-            overflow-y: scroll;
-        }
-        #mv-body {
-            padding: 60px 16px 80px;
-            display: flex;
+        /* ================================
+           MOBILE CONTENT — dentro do modal
+           Visível APENAS em telas ≤768px
+           via CSS @media — sem JavaScript
+           ================================ */
+        #mobile-content {
+            display: none; /* escondido por padrão; media query abaixo ativa no mobile */
             flex-direction: column;
-            gap: 16px;
-            max-width: 540px;
-            margin: 0 auto;
-        }
-        #mv-close {
-            position: fixed;
-            top: 14px; right: 14px;
-            z-index: 3001;
-            background: var(--laranja);
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 44px; height: 44px;
-            font-size: 20px;
-            cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.35);
-        }
-        .mv-cat {
-            font-size: 11px; font-weight: 700;
-            color: var(--laranja); letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        .mv-titulo {
-            font-size: 26px; font-weight: 900;
-            color: #fff; line-height: 1.2;
-            margin-top: 4px; margin-bottom: 4px;
-        }
-        .mv-bloco {
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(255,255,255,0.12);
-            border-radius: 16px;
-            padding: 16px 18px;
-        }
-        .mv-bloco-num {
-            font-size: 10px; font-weight: 700;
-            letter-spacing: 2px; color: var(--laranja);
-        }
-        .mv-bloco-titulo {
-            font-size: 16px; font-weight: 800;
-            color: #fff; margin: 4px 0 10px;
-        }
-        .mv-bloco-texto {
-            font-size: 15px; color: rgba(255,255,255,0.92);
-            line-height: 1.65; font-weight: 500;
-            word-break: break-word;
-        }
-        .mv-roteiro {
-            background: rgba(247,148,29,0.12);
-            border: 1px solid rgba(247,148,29,0.3);
-            border-radius: 16px;
-            padding: 18px 18px 20px;
-        }
-        .mv-roteiro-kicker {
-            font-size: 10px; font-weight: 700;
-            letter-spacing: 2.5px; color: var(--laranja);
-        }
-        .mv-roteiro-titulo {
-            font-size: 20px; font-weight: 800;
-            color: #fff; margin: 6px 0 16px;
-            display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-        }
-        .mv-step {
-            display: flex; gap: 14px;
-            align-items: flex-start;
-            padding: 10px 0;
-            border-top: 1px solid rgba(255,255,255,0.08);
-        }
-        .mv-step:first-child { border-top: none; padding-top: 0; }
-        .mv-step-num {
-            width: 32px; height: 32px; flex-shrink: 0;
-            border-radius: 50%; background: var(--laranja);
-            color: #fff; font-size: 14px; font-weight: 800;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .mv-step-nome {
-            font-size: 15px; font-weight: 700; color: #fff;
-        }
-        .mv-step-desc {
-            font-size: 14px; color: rgba(255,255,255,0.78);
-            line-height: 1.5; margin-top: 3px;
+            gap: 14px;
         }
 
-        /* Print Settings */
+        .mc-cat { font-size: 11px; font-weight: 700; color: var(--laranja); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+        .mc-titulo { font-size: 22px; font-weight: 900; color: var(--azul-escuro); line-height: 1.2; margin-bottom: 12px; }
+
+        .mc-bloco { background: #dce8ff; border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
+        .mc-bloco-num { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--laranja); }
+        .mc-bloco-titulo { font-size: 15px; font-weight: 800; color: var(--azul-escuro); margin: 3px 0 8px; }
+        .mc-bloco-texto { font-size: 15px; color: #1a1a2e; line-height: 1.7; font-weight: 500; word-break: break-word; }
+
+        .mc-roteiro { background: var(--azul-escuro); border-radius: 14px; padding: 18px 18px 22px; color: #fff; }
+        .mc-roteiro-kicker { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; color: var(--laranja); }
+        .mc-roteiro-titulo { font-size: 18px; font-weight: 800; color: #fff; margin: 6px 0 14px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+        .mc-step { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.1); }
+        .mc-step:first-of-type { border-top: none; padding-top: 0; }
+        .mc-step-num { width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--laranja); color: #fff; font-size: 14px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+        .mc-step-nome { font-size: 14px; font-weight: 700; color: #fff; }
+        .mc-step-desc { font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.55; margin-top: 3px; }
+
+        /* ================================
+           MOBILE OVERRIDES — CSS puro
+           Ativa em ≤768px sem JavaScript
+           ================================ */
+        @media (max-width: 768px) {
+            /* O overlay vira o elemento que rola */
+            .modal-overlay {
+                align-items: flex-start;
+                overflow-y: auto;
+            }
+            /* O conteúdo cresce livremente — sem corte */
+            .modal-content {
+                width: 100%;
+                max-width: 100%;
+                min-height: 100%;
+                max-height: none;       /* SEM limite de altura */
+                overflow: visible;      /* SEM clipping */
+                border-radius: 0;
+                padding: 60px 16px 48px;
+                transform: none !important;
+                transition: none;
+            }
+            .modal-overlay.active .modal-content { transform: none !important; }
+            /* Canvas A5 some completamente no mobile */
+            #canvas-a5 { display: none !important; }
+            /* Conteúdo mobile aparece */
+            #mobile-content { display: flex !important; }
+            /* Header compacto */
+            .modal-header { flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+            .modal-header h2 { font-size: 15px; color: var(--azul-escuro); }
+            .btn-print { font-size: 12px; padding: 8px 14px; }
+            /* Botão fechar fixo, sempre visível ao rolar */
+            .close-btn {
+                position: fixed;
+                top: 12px; right: 12px;
+                background: var(--laranja);
+                color: #fff;
+                z-index: 1001;
+            }
+        }
+
+        /* Desktop: garante que mobile-content nunca apareça */
+        @media (min-width: 769px) {
+            #mobile-content { display: none !important; }
+        }
+
+        /* ================================
+           IMPRESSÃO — sempre A5
+           ================================ */
         @media print {
             body * { visibility: hidden; }
-            #canvas-render-area, #canvas-render-area * { visibility: visible; }
-            #canvas-render-area {
-                position: absolute; left: 0; top: 0; margin: 0; padding: 0;
-                display: flex !important;
-            }
-            #mv { display: none !important; }
-            .card-a5 {
-                width: 210mm; height: 148mm;
-                page-break-after: always;
-                box-shadow: none;
-                transform: scale(1) !important;
-                margin: 0 !important;
-            }
-            /* Removes extra gap in print */
+            #canvas-a5, #canvas-a5 * { visibility: visible; }
+            #canvas-a5 { position: absolute; left: 0; top: 0; margin: 0; padding: 0; display: flex !important; }
+            #mobile-content { display: none !important; }
+            .card-a5 { width: 210mm; height: 148mm; page-break-after: always; box-shadow: none; }
             @page { margin: 0; size: A5 landscape; }
         }
-
     </style>
 </head>
 <body>
@@ -457,15 +274,15 @@
     <div class="grid-bg"></div>
     <div class="glow"></div>
 
-    <a href="empreendacao.html" class="back-nav">
-        <i class="fa-solid fa-arrow-left"></i> Voltar à Apresentação
+    <a href="index.html" class="back-nav">
+        <i class="fa-solid fa-arrow-left"></i> Voltar
     </a>
 
     <div class="container">
         <header>
             <div class="kicker">Catálogo Oficial</div>
             <h1>Empreenda Senac Araçatuba</h1>
-            <p>Selecione uma categoria abaixo e descubra ideias focadas em inovação para usar como base no seu Empreenda.</p>
+            <p>Selecione uma categoria e descubra ideias para usar como base no seu projeto.</p>
         </header>
 
         <div class="category-nav" id="cat-nav">
@@ -476,28 +293,64 @@
             <button class="cat-btn" data-cat="Economia">Economia Criativa</button>
         </div>
 
-        <div class="ideias-grid" id="ideias-grid">
-            <!-- Cards gerados via JS -->
-        </div>
+        <div class="ideias-grid" id="ideias-grid"></div>
     </div>
 
-    <!-- Modal Canvas -->
+    <!-- MODAL — usado em todos os dispositivos -->
     <div class="modal-overlay" id="modal">
         <div class="modal-content">
-            <button class="close-btn" id="close-modal"><i class="fa-solid fa-times"></i></button>
+            <button class="close-btn" id="close-modal" type="button"><i class="fa-solid fa-times"></i></button>
+
             <div class="modal-header">
-                <h2>Visualização do Canvas A5</h2>
-                <button class="btn-print" onclick="window.print()"><i class="fa-solid fa-print"></i> BAIXAR / IMPRIMIR (A5)</button>
+                <h2 id="modal-titulo-header">Ideia</h2>
+                <button class="btn-print" type="button" onclick="window.print()">
+                    <i class="fa-solid fa-print"></i> IMPRIMIR / PDF (A5)
+                </button>
             </div>
-            
-            <div id="canvas-render-area">
-                <!-- FRENTE -->
+
+            <!-- MOBILE: texto limpo, rolável — visível via CSS em ≤768px -->
+            <div id="mobile-content">
+                <div>
+                    <div class="mc-cat" id="mc-cat"></div>
+                    <div class="mc-titulo" id="mc-titulo"></div>
+                </div>
+                <div class="mc-bloco">
+                    <div class="mc-bloco-num">01 — CLIENTE</div>
+                    <div class="mc-bloco-titulo">Para quem?</div>
+                    <div class="mc-bloco-texto" id="mc-cliente"></div>
+                </div>
+                <div class="mc-bloco">
+                    <div class="mc-bloco-num">02 — PROBLEMA</div>
+                    <div class="mc-bloco-titulo">Qual é a dor?</div>
+                    <div class="mc-bloco-texto" id="mc-problema"></div>
+                </div>
+                <div class="mc-bloco">
+                    <div class="mc-bloco-num">03 — SOLUÇÃO</div>
+                    <div class="mc-bloco-titulo">O que você oferece?</div>
+                    <div class="mc-bloco-texto" id="mc-solucao"></div>
+                </div>
+                <div class="mc-bloco">
+                    <div class="mc-bloco-num">04 — MONETIZAÇÃO</div>
+                    <div class="mc-bloco-titulo">Como você ganha?</div>
+                    <div class="mc-bloco-texto" id="mc-monetizacao"></div>
+                </div>
+                <div class="mc-roteiro">
+                    <div class="mc-roteiro-kicker">ROTEIRO DE GRAVAÇÃO</div>
+                    <div class="mc-roteiro-titulo">
+                        Como gravar seu vídeo <span class="badge-tempo">60 SEG</span>
+                    </div>
+                    <div id="mc-steps"></div>
+                </div>
+            </div>
+
+            <!-- DESKTOP: canvas A5 — visível via CSS em >768px -->
+            <div id="canvas-a5">
                 <div class="card-a5">
                     <div class="frente">
                         <div class="f-header">
                             <div class="f-header-left">
                                 <div class="titulo">EMPREENDA SENAC 2026</div>
-                                <div class="sub">CANVAS DA IDEIA: <span id="cv-title-header" style="color:#fff; font-weight:800; margin-left:4px;"></span></div>
+                                <div class="sub">CANVAS DA IDEIA: <span id="cv-titulo" style="color:#fff;font-weight:800;margin-left:4px;"></span></div>
                             </div>
                             <div class="f-header-right">#</div>
                         </div>
@@ -505,89 +358,56 @@
                             <div class="quadrante">
                                 <div class="q-num">01 — CLIENTE</div>
                                 <div class="q-titulo">Para quem?</div>
-                                <div class="q-pergunta">Quem vai usar ou pagar pela sua solução? Descreva essa pessoa.</div>
+                                <div class="q-pergunta">Quem vai usar ou pagar pela sua solução?</div>
                                 <div class="q-filled-content" id="cv-cliente"></div>
-                                <div class="linhas" id="l-cli">
-                                    <div class="linha"></div><div class="linha"></div><div class="linha"></div>
-                                </div>
+                                <div class="linhas" id="l-cli"><div class="linha"></div><div class="linha"></div><div class="linha"></div></div>
                             </div>
                             <div class="quadrante">
                                 <div class="q-num">02 — PROBLEMA</div>
                                 <div class="q-titulo">Qual é a dor?</div>
-                                <div class="q-pergunta">Que dificuldade real essa pessoa enfrenta hoje? Por que é um problema?</div>
+                                <div class="q-pergunta">Que dificuldade real essa pessoa enfrenta hoje?</div>
                                 <div class="q-filled-content" id="cv-problema"></div>
-                                <div class="linhas" id="l-prob">
-                                    <div class="linha"></div><div class="linha"></div><div class="linha"></div>
-                                </div>
+                                <div class="linhas" id="l-prob"><div class="linha"></div><div class="linha"></div><div class="linha"></div></div>
                             </div>
                             <div class="quadrante">
                                 <div class="q-num">03 — SOLUÇÃO</div>
                                 <div class="q-titulo">O que você oferece?</div>
-                                <div class="q-pergunta">O que você entrega e como funciona na prática?</div>
+                                <div class="q-pergunta">O que você entrega e como funciona?</div>
                                 <div class="q-filled-content" id="cv-solucao"></div>
-                                <div class="linhas" id="l-sol">
-                                    <div class="linha"></div><div class="linha"></div><div class="linha"></div>
-                                </div>
+                                <div class="linhas" id="l-sol"><div class="linha"></div><div class="linha"></div><div class="linha"></div></div>
                             </div>
                             <div class="quadrante">
                                 <div class="q-num">04 — MONETIZAÇÃO</div>
                                 <div class="q-titulo">Como você ganha?</div>
-                                <div class="q-pergunta">Como o dinheiro entra? Venda direta, assinatura, comissão...?</div>
+                                <div class="q-pergunta">Como o dinheiro entra? Venda direta, assinatura...?</div>
                                 <div class="q-filled-content" id="cv-monetizacao"></div>
-                                <div class="linhas" id="l-mon">
-                                    <div class="linha"></div><div class="linha"></div><div class="linha"></div>
-                                </div>
+                                <div class="linhas" id="l-mon"><div class="linha"></div><div class="linha"></div><div class="linha"></div></div>
                             </div>
                         </div>
                         <div class="f-footer">
                             <span>SENAC ARAÇATUBA — COMITÊ DE INOVAÇÃO</span>
-                            <div class="dot-row">
-                                <div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                            </div>
+                            <div class="dot-row"><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                             <span>VERSO: ROTEIRO DE VÍDEO</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- VERSO -->
                 <div class="card-a5">
                     <div class="verso">
                         <div class="v-left">
-                            <div class="qr-box">
-                                <!-- Place holder image for QR code similar to what they had -->
-                                <img src="qr-inscricao.png" alt="QR Code" style="width:126px;height:126px;display:block;">
-                            </div>
-                            <div class="qr-label">Escaneie para acessar o roteiro completo e exemplos de gravação</div>
+                            <div class="qr-box"><img src="qr-inscricao.png" alt="QR Code" style="width:126px;height:126px;display:block;"></div>
+                            <div class="qr-label">Escaneie para acessar o roteiro completo</div>
                             <div class="qr-url">www.sp.senac.br/empreenda</div>
                         </div>
                         <div class="v-right">
                             <div class="roteiro-kicker">ROTEIRO DE GRAVAÇÃO</div>
-                            <div class="roteiro-titulo">
-                                Como gravar seu vídeo
-                                <span class="badge-tempo">60 SEG</span>
-                            </div>
+                            <div class="roteiro-titulo">Como gravar seu vídeo <span class="badge-tempo">60 SEG</span></div>
                             <div class="divisor"></div>
                             <div class="steps">
-                                <div class="step">
-                                    <div class="step-num">1</div>
-                                    <div><div class="step-nome">Apresente-se (10 seg)</div><div class="step-desc">Nome, curso e a frase: "Eu resolvi o problema de..."</div></div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-num">2</div>
-                                    <div><div class="step-nome">Mostre o problema (15 seg)</div><div class="step-desc">Quem sofre com isso e por que ainda não foi resolvido?</div></div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-num">3</div>
-                                    <div><div class="step-nome">Apresente sua solução (20 seg)</div><div class="step-desc">Como funciona? Seja concreto — mostre ou simule o produto/serviço.</div></div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-num">4</div>
-                                    <div><div class="step-nome">Explique o modelo (10 seg)</div><div class="step-desc">Como o dinheiro entra? Quem paga e quanto?</div></div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-num">5</div>
-                                    <div><div class="step-nome">Feche com impacto (5 seg)</div><div class="step-desc">Uma frase forte. Por que o júri deve escolher a sua ideia?</div></div>
-                                </div>
+                                <div class="step"><div class="step-num">1</div><div><div class="step-nome">Apresente-se (10 seg)</div><div class="step-desc" id="cv-r1">Nome, curso e: "Eu resolvi o problema de..."</div></div></div>
+                                <div class="step"><div class="step-num">2</div><div><div class="step-nome">Mostre o problema (15 seg)</div><div class="step-desc" id="cv-r2">Quem sofre com isso e por que não foi resolvido?</div></div></div>
+                                <div class="step"><div class="step-num">3</div><div><div class="step-nome">Apresente a solução (20 seg)</div><div class="step-desc" id="cv-r3">Como funciona? Mostre ou simule o produto/serviço.</div></div></div>
+                                <div class="step"><div class="step-num">4</div><div><div class="step-nome">Explique o modelo (10 seg)</div><div class="step-desc" id="cv-r4">Como o dinheiro entra? Quem paga e quanto?</div></div></div>
+                                <div class="step"><div class="step-num">5</div><div><div class="step-nome">Feche com impacto (5 seg)</div><div class="step-desc" id="cv-r5">Uma frase forte. Por que escolher sua ideia?</div></div></div>
                             </div>
                             <div class="v-footer">
                                 <span>EMPREENDA SENAC 2026</span>
@@ -600,65 +420,19 @@
         </div>
     </div>
 
-    <!-- MOBILE VIEW: fora do modal, controlado por JS, scroll nativo garantido -->
-    <div id="mv">
-        <button type="button" id="mv-close" aria-label="Fechar"><i class="fa-solid fa-times"></i></button>
-        <div id="mv-body">
-            <div>
-                <div class="mv-cat" id="mv-cat"></div>
-                <div class="mv-titulo" id="mv-titulo"></div>
-            </div>
-
-            <div class="mv-bloco">
-                <div class="mv-bloco-num">01 — CLIENTE</div>
-                <div class="mv-bloco-titulo">Para quem?</div>
-                <div class="mv-bloco-texto" id="mv-cliente"></div>
-            </div>
-
-            <div class="mv-bloco">
-                <div class="mv-bloco-num">02 — PROBLEMA</div>
-                <div class="mv-bloco-titulo">Qual é a dor?</div>
-                <div class="mv-bloco-texto" id="mv-problema"></div>
-            </div>
-
-            <div class="mv-bloco">
-                <div class="mv-bloco-num">03 — SOLUÇÃO</div>
-                <div class="mv-bloco-titulo">O que você oferece?</div>
-                <div class="mv-bloco-texto" id="mv-solucao"></div>
-            </div>
-
-            <div class="mv-bloco">
-                <div class="mv-bloco-num">04 — MONETIZAÇÃO</div>
-                <div class="mv-bloco-titulo">Como você ganha?</div>
-                <div class="mv-bloco-texto" id="mv-monetizacao"></div>
-            </div>
-
-            <div class="mv-roteiro">
-                <div class="mv-roteiro-kicker">ROTEIRO DE GRAVAÇÃO</div>
-                <div class="mv-roteiro-titulo">
-                    Como gravar seu vídeo
-                    <span class="badge-tempo">60 SEG</span>
-                </div>
-                <div id="mv-steps-container"></div>
-            </div>
-        </div>
-    </div>
-
     <script>
         const ideias = [];
-        const grid = document.getElementById('ideias-grid');
-        const btns = document.querySelectorAll('.cat-btn');
-        const modal = document.getElementById('modal');
-        const mv = document.getElementById('mv');
+        const grid   = document.getElementById('ideias-grid');
+        const modal  = document.getElementById('modal');
+        const btns   = document.querySelectorAll('.cat-btn');
 
         const catKeyMap = {
             'Inovação Social e Inclusão': 'Social',
-            'Sustentabilidade e ESG': 'Sustentabilidade',
-            'Tecnologia Assistiva': 'Tecnologia',
-            'Economia Criativa': 'Economia'
+            'Sustentabilidade e ESG':     'Sustentabilidade',
+            'Tecnologia Assistiva':       'Tecnologia',
+            'Economia Criativa':          'Economia'
         };
 
-        // Carrega os 4 JSONs de ideias
         Promise.all([
             'cat1_social_inclusao.json',
             'cat2_sustentabilidade_esg.json',
@@ -670,7 +444,7 @@
                 cat.ideias.forEach(ideia => {
                     ideias.push({
                         ...ideia,
-                        descricao: ideia.resumo,
+                        descricao:     ideia.resumo,
                         categoriaNome: cat.categoria,
                         categoriaChave: catKeyMap[cat.categoria] || 'Outras'
                     });
@@ -682,12 +456,12 @@
 
         function renderIdeias(filter = 'all') {
             grid.innerHTML = '';
-            if (ideias.length === 0) {
+            if (!ideias.length) {
                 grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:rgba(255,255,255,0.5);">As ideias serão adicionadas em breve.</div>';
                 return;
             }
-            const filtered = filter === 'all' ? ideias : ideias.filter(i => i.categoriaChave === filter);
-            filtered.forEach(ideia => {
+            const lista = filter === 'all' ? ideias : ideias.filter(i => i.categoriaChave === filter);
+            lista.forEach(ideia => {
                 const card = document.createElement('div');
                 card.className = 'ideia-card';
                 card.innerHTML = `
@@ -696,81 +470,91 @@
                     <div class="ideia-desc">${ideia.descricao}</div>
                     <div class="ideia-action">CONHECER A IDEIA <i class="fa-solid fa-arrow-right"></i></div>
                 `;
-                card.addEventListener('click', () => openModal(ideia));
+                card.addEventListener('click', () => abrirIdeia(ideia));
                 grid.appendChild(card);
             });
         }
 
-        function toggleLines(id, hasContent) {
+        function set(id, txt) {
             const el = document.getElementById(id);
-            if (el) el.style.display = hasContent ? 'none' : 'flex';
+            if (el) el.textContent = txt;
         }
 
-        function openModal(ideia) {
-            // Popula o canvas A5 (usado na impressão via desktop)
-            document.getElementById('cv-title-header').innerText = ideia.nome;
-            document.getElementById('cv-cliente').innerText = ideia.cliente || '';
-            document.getElementById('cv-problema').innerText = ideia.problema || '';
-            document.getElementById('cv-solucao').innerText = ideia.solucao || ideia.descricao;
-            document.getElementById('cv-monetizacao').innerText = ideia.monetizacao || '';
-            toggleLines('l-cli', ideia.cliente);
-            toggleLines('l-prob', ideia.problema);
-            toggleLines('l-sol', true);
-            toggleLines('l-mon', ideia.monetizacao);
+        function toggleLinhas(id, temConteudo) {
+            const el = document.getElementById(id);
+            if (el) el.style.display = temConteudo ? 'none' : 'flex';
+        }
 
-            if (window.innerWidth <= 768) {
-                // MOBILE — tela de leitura limpa, sem nenhum card A5
-                document.getElementById('mv-cat').innerText = ideia.categoriaNome || '';
-                document.getElementById('mv-titulo').innerText = ideia.nome;
-                document.getElementById('mv-cliente').innerText = ideia.cliente || '—';
-                document.getElementById('mv-problema').innerText = ideia.problema || '—';
-                document.getElementById('mv-solucao').innerText = ideia.solucao || ideia.descricao;
-                document.getElementById('mv-monetizacao').innerText = ideia.monetizacao || '—';
+        function abrirIdeia(ideia) {
+            /* ---- Desktop: canvas A5 ---- */
+            set('modal-titulo-header', ideia.nome);
+            set('cv-titulo',      ideia.nome);
+            set('cv-cliente',     ideia.cliente     || '');
+            set('cv-problema',    ideia.problema    || '');
+            set('cv-solucao',     ideia.solucao     || ideia.descricao);
+            set('cv-monetizacao', ideia.monetizacao || '');
+            toggleLinhas('l-cli',  ideia.cliente);
+            toggleLinhas('l-prob', ideia.problema);
+            toggleLinhas('l-sol',  true);
+            toggleLinhas('l-mon',  ideia.monetizacao);
 
-                // Roteiro: usa o texto personalizado da ideia se disponível
-                const r = ideia.roteiro;
-                const steps = r ? [
-                    { n: 1, nome: 'Apresentação (10 seg)', desc: r.apresentacao },
-                    { n: 2, nome: 'O Problema (15 seg)',   desc: r.problema },
-                    { n: 3, nome: 'A Solução (20 seg)',    desc: r.solucao },
-                    { n: 4, nome: 'O Modelo (10 seg)',     desc: r.modelo },
-                    { n: 5, nome: 'Fechamento (5 seg)',    desc: r.fechamento }
-                ] : [
-                    { n: 1, nome: 'Apresente-se (10 seg)',        desc: 'Nome, curso e: "Eu resolvi o problema de..."' },
-                    { n: 2, nome: 'Mostre o problema (15 seg)',   desc: 'Quem sofre com isso e por que não foi resolvido?' },
-                    { n: 3, nome: 'Apresente a solução (20 seg)', desc: 'Como funciona? Mostre ou simule o produto/serviço.' },
-                    { n: 4, nome: 'Explique o modelo (10 seg)',   desc: 'Como o dinheiro entra? Quem paga e quanto?' },
-                    { n: 5, nome: 'Feche com impacto (5 seg)',    desc: 'Uma frase forte. Por que o júri deve escolher sua ideia?' }
-                ];
-
-                document.getElementById('mv-steps-container').innerHTML = steps.map((s, i) => `
-                    <div class="mv-step" style="${i === 0 ? 'border-top:none;padding-top:0' : ''}">
-                        <div class="mv-step-num">${s.n}</div>
-                        <div>
-                            <div class="mv-step-nome">${s.nome}</div>
-                            <div class="mv-step-desc">${s.desc}</div>
-                        </div>
-                    </div>
-                `).join('');
-
-                mv.style.display = 'block';
-                mv.scrollTop = 0;
-            } else {
-                // DESKTOP — canvas A5
-                modal.classList.add('active');
-                document.querySelector('.modal-content').scrollTop = 0;
+            const r = ideia.roteiro;
+            if (r) {
+                set('cv-r1', r.apresentacao || '');
+                set('cv-r2', r.problema     || '');
+                set('cv-r3', r.solucao      || '');
+                set('cv-r4', r.modelo       || '');
+                set('cv-r5', r.fechamento   || '');
             }
+
+            /* ---- Mobile: texto limpo ---- */
+            set('mc-cat',        ideia.categoriaNome || '');
+            set('mc-titulo',     ideia.nome);
+            set('mc-cliente',    ideia.cliente     || '—');
+            set('mc-problema',   ideia.problema    || '—');
+            set('mc-solucao',    ideia.solucao     || ideia.descricao);
+            set('mc-monetizacao',ideia.monetizacao || '—');
+
+            const steps = r ? [
+                { n:1, nome:'Apresentação (10 seg)', desc: r.apresentacao },
+                { n:2, nome:'O Problema (15 seg)',   desc: r.problema },
+                { n:3, nome:'A Solução (20 seg)',     desc: r.solucao },
+                { n:4, nome:'O Modelo (10 seg)',      desc: r.modelo },
+                { n:5, nome:'Fechamento (5 seg)',     desc: r.fechamento }
+            ] : [
+                { n:1, nome:'Apresente-se (10 seg)',        desc:'Nome, curso e: "Eu resolvi o problema de..."' },
+                { n:2, nome:'Mostre o problema (15 seg)',   desc:'Quem sofre e por que não foi resolvido?' },
+                { n:3, nome:'Apresente a solução (20 seg)', desc:'Como funciona? Mostre o produto/serviço.' },
+                { n:4, nome:'Explique o modelo (10 seg)',   desc:'Como o dinheiro entra? Quem paga?' },
+                { n:5, nome:'Feche com impacto (5 seg)',    desc:'Uma frase forte. Por que escolher sua ideia?' }
+            ];
+
+            document.getElementById('mc-steps').innerHTML = steps.map(s => `
+                <div class="mc-step">
+                    <div class="mc-step-num">${s.n}</div>
+                    <div>
+                        <div class="mc-step-nome">${s.nome}</div>
+                        <div class="mc-step-desc">${s.desc}</div>
+                    </div>
+                </div>
+            `).join('');
+
+            /* Abre o modal — CSS decide o que mostrar */
+            modal.classList.add('active');
+            modal.scrollTop = 0;
         }
 
-        document.getElementById('mv-close').addEventListener('click', () => {
-            mv.style.display = 'none';
-        });
         document.getElementById('close-modal').addEventListener('click', () => {
             modal.classList.remove('active');
+            modal.scrollTop = 0;
         });
         modal.addEventListener('click', e => {
-            if (e.target === modal) modal.classList.remove('active');
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                modal.scrollTop = 0;
+            }
         });
+
         btns.forEach(btn => {
             btn.addEventListener('click', () => {
                 btns.forEach(b => b.classList.remove('active'));
